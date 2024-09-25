@@ -23,21 +23,21 @@ This project is built with **Vite**, utilizing **HTML**, **CSS**, and **JavaScri
 The **Midwest Pumpkins** project is all about celebrating the beauty and versatility of pumpkins, especially during the fall season. Our website includes a Hero section, an About page, and user reviews highlighting different pumpkin farms, recipes, and Halloween festivities.
 
 - **Tech Stack**: Vite, HTML, CSS (CSS Modules), JavaScript
-- **Design**: Our Figma design is open for exploration! Check it out [here](#link-to-figma-design).
+- **Design**: Our Figma design is open for exploration! Check it out [here](https://www.figma.com/design/6keWgZp7kRbn3CLMt3rWqp/Midwest-Pumpkins?node-id=0-1&t=aWiNYQLtVJyRpLbG-1).
 - **Purpose**: Build a fun, responsive, and user-friendly pumpkin-themed website that promotes community interaction and celebrates Halloween and the fall season.
 
 ---
 
 ## 🎃 Hacktoberfest Participation
 
-We’re excited to participate in **Hacktoberfest 2024**, an annual event where developers worldwide contribute to open-source projects! You can contribute to **Midwest Pumpkins** and earn a Hacktoberfest badge by adding the `hacktoberfest-accepted` label to your pull requests.
+We’re excited to participate in **Hacktoberfest 2024**, an annual event where developers worldwide contribute to open-source projects! You can contribute to **Midwest Pumpkins** and earn a Hacktoberfest badge by adding the `hacktoberfest2024` label to your pull requests.
 
 If you’re interested in contributing, here’s how to get started:
 
 ### Hacktoberfest Guidelines:
 
 1. **Sign Up** for Hacktoberfest at [hacktoberfest.com](https://hacktoberfest.com/).
-2. Make sure your pull request is labeled with `hacktoberfest-accepted` to count towards Hacktoberfest contributions.
+2. Make sure your pull request is labeled with `hacktoberfest2024` to count towards Hacktoberfest contributions.
 3. Contributions can range from code improvements to bug fixes, documentation, or even design changes!
 
 ---
@@ -96,26 +96,31 @@ To maintain a clean and organized project, please adhere to the following branch
    - Example: `feature/add-pumpkin-gallery` or `bugfix/fix-header-alignment`.
 2. **Create a new branch for each task** you work on. Avoid making changes directly on the `main` branch.
 3. **Keep your branches up to date** with the `main` branch by merging the latest changes from `main` into your feature branch regularly.
-4. **Delete your branch after merging** to keep the repository clean and prevent clutter.
+   - To sync with the latest updates from the `main` branch, use the following command in your feature branch:
+   ```bash
+   git pull origin main
+   ```
+   
+5. **Delete your branch after merging** to keep the repository clean and prevent clutter.
    Following these guidelines will help ensure a smooth collaboration process and make it easier for everyone to contribute effectively to the Midwest Pumpkins project. Thank you for your participation!
 
 ---
 
 ## 📝 License
 
-## This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
 ## 🐞 Issues
 
-## If you encounter any issues or bugs while working on the Midwest Pumpkins project, please report them using the [Issues](https://github.com/OpenCodeChicago/Midwest-Pumpkins/issues) section of the repository. Be sure to provide a clear description of the issue and any relevant information to help us address it promptly.
+If you encounter any issues or bugs while working on the Midwest Pumpkins project, please report them using the [Issues](https://github.com/OpenCodeChicago/Midwest-Pumpkins/issues) section of the repository. Be sure to provide a clear description of the issue and any relevant information to help us address it promptly.
 
 ---
 
 ## 💬 Feedback
 
-## We value your input! If you have any feedback or suggestions for improving the project, please feel free to share your thoughts. You can submit feedback through the Issues section or contact us directly at opencodechicago@gmail.com
+We value your input! If you have any feedback or suggestions for improving the project, please feel free to share your thoughts. You can submit feedback through the Issues section or contact us directly at opencodechicago@gmail.com
 
 ---
 
@@ -126,26 +131,24 @@ Stay updated on project developments and engage with our open-source community! 
 <div align="center">
 <a href="https://www.linkedin.com/company/open-code-chicago" target="_blank">
 <img src=https://img.shields.io/badge/linkedin-%231E77B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white alt=linkedin style="margin-bottom: 5px;" />
-</a>
-<a href="https://www.youtube.com/@AlexSmaginDev" target="_blank">
+</a><a href="https://www.youtube.com/@AlexSmaginDev" target="_blank">
 <img src="https://img.shields.io/badge/youtube-%23FF0000.svg?&style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube" style="margin-bottom: 5px;" />
-</a>
-<a href="https://discord.gg/t6MGsCqdFX" target="_blank">
+</a><a href="https://discord.gg/t6MGsCqdFX" target="_blank">
     <img src="https://img.shields.io/badge/discord-%237289DA.svg?&style=for-the-badge&logo=discord&logoColor=white" alt="Discord" style="margin-bottom: 5px;" />
-</a>
-<a href="https://www.meetup.com/open-code-chicago" target="_blank">
+</a><a href="https://www.meetup.com/open-code-chicago" target="_blank">
     <img src="https://img.shields.io/badge/Meetup-%23ED1C40.svg?&style=for-the-badge&logo=meetup&logoColor=white" alt="Meetup" style="margin-bottom: 5px;" />
-</a>
-<a href="https://github.com/Alexandrbig1" target="_blank">
+</a><a href="https://github.com/Alexandrbig1" target="_blank">
     <img src="https://img.shields.io/badge/GitHub-%2312100E.svg?&style=for-the-badge&logo=github&logoColor=white" alt="GitHub" style="margin-bottom: 5px;" />
 </a>
 </div>
 <br />
 Join us to participate in discussions, share ideas, and collaborate on exciting projects. Subscribe to our YouTube channel for upcoming video tutorials and insights into open-source development!
 <br />
+<br />
 We’d love to have you as part of our community!
 
 ---
 
 ## 🙏 Acknowledgments
-A big thank you to all contributors for your hard work and dedication to the Midwest Pumpkins project. We also want to acknowledge Hacktoberfest for providing a platform to promote open-source contributions and encourage community involvement.
+
+A big thank you to all contributors for your hard work and dedication to the **Midwest Pumpkins project**. We also want to acknowledge **Hacktoberfest** for providing a platform to promote open-source contributions and encourage community involvement.
