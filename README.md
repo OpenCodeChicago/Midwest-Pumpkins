@@ -37,3 +37,8 @@ We welcome contributions from both team members and the broader open-source comm
 1. **Fork the repository** to your own GitHub account:
    ```bash
    git clone https://github.com/YourUsername/midwest-pumpkins.git
+
+1. **Fork the repository** to your own GitHub account:
+   ```bash
+   git clone https://github.com/YourUsername/midwest-pumpkins.git
+   ```
