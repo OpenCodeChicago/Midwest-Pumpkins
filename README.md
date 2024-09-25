@@ -20,7 +20,7 @@ This project is built with **Vite**, utilizing **HTML**, **CSS**, and **JavaScri
 
 🌾 **Project Overview**
 
-The **Midwest Pumpkins** project is a fully responsive web application dedicated to celebrating the beauty and versatility of pumpkins during the fall season. Our site features a dynamic **Hero section**, an informative **About page**, and engaging user **reviews**, all showcasing various pumpkin farms, delicious recipes, and festive Halloween activities.
+The **Midwest Pumpkins** project is a fully responsive web application dedicated to celebrating the beauty and versatility of pumpkins during the fall season. This project is a collaborative effort by the **OpenCode Academy team**, along with contributions from other open-source enthusiasts who wanted to participate in **Hacktoberfest 2024**.
 
 ### Key Features:
 
