@@ -49,12 +49,13 @@ We welcome contributions from both team members and the broader open-source comm
 ### Steps to Contribute:
 
 1. **Fork the repository** to your own GitHub account by clicking the "Fork" button at the top-right of the repository page:
-   
+
    _Note: For a detailed video walkthrough on how to fork and clone a repository, check out this [YouTube video](https://www.youtube.com/watch?v=UwgNvAiTrhc&t=12s):_
 
 2. **Clone the forked repository** to your local machine:
+
    - Open a terminal and run the following command:
-  
+
    ```bash
     git clone https://github.com/OpenCodeChicago/Midwest-Pumpkins.git
    ```
@@ -76,7 +77,7 @@ We welcome contributions from both team members and the broader open-source comm
    ```bash
    npm run dev
    ```
-5. **Create a new branch** for your feature or bugfix:
+4. **Create a new branch** for your feature or bugfix:
 
    ```bash
    git checkout -b feature/your-branch-name
@@ -84,23 +85,24 @@ We welcome contributions from both team members and the broader open-source comm
 
    _Note: Please follow the branch naming convention: `feature/your-branch-name` or `bugfix/your-branch-name`._
 
-6. **Work on your task** and commit your changes:
+5. **Work on your task** and commit your changes:
+
    ```bash
    git add .
    git commit -m "Your meaningful commit message"
    ```
 
-7. **Push your branch** to your forked repository:
+6. **Push your branch** to your forked repository:
+
    ```bash
    git push -u origin feature/your-branch-name
    ```
 
-8. **Create a pull request** to merge your changes into the main project:
+7. **Create a pull request** to merge your changes into the main project:
    - Go to the original repository and click "Compare & pull request."
    - Assign the pull request to **Alexandrbig1** for review.
    - Use labels like `hacktoberfest2024` to ensure it's counted for Hacktoberfest!
-   
-9. **Wait for review**. Your PR will be reviewed by the team lead, and once approved, it will be merged.
+8. **Wait for review**. Your PR will be reviewed by the team lead, and once approved, it will be merged.
 
 ---
 
@@ -116,8 +118,7 @@ To maintain a clean and organized project, please adhere to the following branch
    ```bash
    git pull origin main
    ```
-   
-5. **Delete your branch after merging** to keep the repository clean and prevent clutter.
+4. **Delete your branch after merging** to keep the repository clean and prevent clutter.
    Following these guidelines will help ensure a smooth collaboration process and make it easier for everyone to contribute effectively to the Midwest Pumpkins project. Thank you for your participation!
 
 ---
@@ -147,13 +148,17 @@ Stay updated on project developments and engage with our open-source community! 
 <div align="center">
 <a href="https://www.linkedin.com/company/open-code-chicago" target="_blank">
 <img src=https://img.shields.io/badge/linkedin-%231E77B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white alt=linkedin style="margin-bottom: 5px;" />
-</a><a href="https://www.youtube.com/@AlexSmaginDev" target="_blank">
+</a>
+<a href="https://www.youtube.com/@AlexSmaginDev" target="_blank">
 <img src="https://img.shields.io/badge/youtube-%23FF0000.svg?&style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube" style="margin-bottom: 5px;" />
-</a><a href="https://discord.gg/t6MGsCqdFX" target="_blank">
+</a>
+<a href="https://discord.gg/t6MGsCqdFX" target="_blank">
     <img src="https://img.shields.io/badge/discord-%237289DA.svg?&style=for-the-badge&logo=discord&logoColor=white" alt="Discord" style="margin-bottom: 5px;" />
-</a><a href="https://www.meetup.com/open-code-chicago" target="_blank">
+</a>
+<a href="https://www.meetup.com/open-code-chicago" target="_blank">
     <img src="https://img.shields.io/badge/Meetup-%23ED1C40.svg?&style=for-the-badge&logo=meetup&logoColor=white" alt="Meetup" style="margin-bottom: 5px;" />
-</a><a href="https://github.com/Alexandrbig1" target="_blank">
+</a>
+<a href="https://github.com/Alexandrbig1" target="_blank">
     <img src="https://img.shields.io/badge/GitHub-%2312100E.svg?&style=for-the-badge&logo=github&logoColor=white" alt="GitHub" style="margin-bottom: 5px;" />
 </a>
 </div>
