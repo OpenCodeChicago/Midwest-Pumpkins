@@ -69,12 +69,14 @@ We welcome contributions from both team members and the broader open-source comm
    _Note: Please follow the branch naming convention: `feature/your-branch-name` or `bugfix/your-branch-name`._
 
 4. **Work on your task** and commit your changes:
+
    ```bash
    git add .
    git commit -m "Your meaningful commit message"
    ```
 
 5. **Push your branch** to your forked repository:
+
    ```bash
    git push -u origin feature/your-branch-name
    ```
@@ -82,8 +84,7 @@ We welcome contributions from both team members and the broader open-source comm
 6. **Create a pull request** to merge your changes into the main project:
    - Go to the original repository and click "Compare & pull request."
    - Assign the pull request to **Alexandrbig1** for review.
-   - Use labels like hacktoberfest-accepted to ensure it's counted for Hacktoberfest!
-   
+   - Use labels like `hacktoberfest2024` to ensure it's counted for Hacktoberfest!
 7. **Wait for review**. Your PR will be reviewed by the team lead, and once approved, it will be merged.
 
 ---
@@ -100,8 +101,7 @@ To maintain a clean and organized project, please adhere to the following branch
    ```bash
    git pull origin main
    ```
-   
-5. **Delete your branch after merging** to keep the repository clean and prevent clutter.
+4. **Delete your branch after merging** to keep the repository clean and prevent clutter.
    Following these guidelines will help ensure a smooth collaboration process and make it easier for everyone to contribute effectively to the Midwest Pumpkins project. Thank you for your participation!
 
 ---
