@@ -18,21 +18,6 @@ This project is built with **Vite**, utilizing **HTML**, **CSS**, and **JavaScri
 
 ---
 
-## Table of Contents
-
-- [Project Overview](#🌾-project-overview)
-- [Hacktoberfest Participation](#🎃-hacktoberfest-participation)
-- [How to Contribute](#how-to-contribute)
-- [Branching Guidelines](#branching-guidelines)
-- [License](#license)
-- [Issues](#issues)
-- [Feedback](#feedback)
-- [Languages and Tools](#languages-and-tools)
-- [Connect With Us](#connect-with-us)
-- [Acknowledgments](#acknowledgments)
-
----
-
 ## 🌾 Project Overview
 
 The **Midwest Pumpkins** project is a fully responsive web application dedicated to celebrating the beauty and versatility of pumpkins during the fall season. This project is a collaborative effort by the **OpenCode Academy team**, along with contributions from other open-source enthusiasts who wanted to participate in **Hacktoberfest 2024**.
@@ -156,7 +141,7 @@ To maintain a clean and organized project, please adhere to the following branch
 
 ---
 
-## Languages and Tools:
+## 🧰 Languages and Tools:
 
 <div align="center">
 
