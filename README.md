@@ -20,8 +20,8 @@ This project is built with **Vite**, utilizing **HTML**, **CSS**, and **JavaScri
 
 ## Table of Contents
 
-- [Project Overview](#project-overview)
-- [Hacktoberfest Participation](#hacktoberfest-participation)
+- [Project Overview](#🌾-project-overview)
+- [Hacktoberfest Participation](#🎃-hacktoberfest-participation)
 - [How to Contribute](#how-to-contribute)
 - [Branching Guidelines](#branching-guidelines)
 - [License](#license)
