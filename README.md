@@ -35,7 +35,6 @@ We’re excited to participate in **Hacktoberfest 2024**, an annual event where 
 If you’re interested in contributing, here’s how to get started:
 
 ### Hacktoberfest Guidelines:
-
 1. **Sign Up** for Hacktoberfest at [hacktoberfest.com](https://hacktoberfest.com/).
 2. Make sure your pull request is labeled with `hacktoberfest-accepted` to count towards Hacktoberfest contributions.
 3. Contributions can range from code improvements to bug fixes, documentation, or even design changes!
@@ -47,18 +46,8 @@ If you’re interested in contributing, here’s how to get started:
 We welcome contributions from both team members and the broader open-source community. Please follow the steps below to contribute to the **Midwest Pumpkins** project.
 
 ### Steps to Contribute:
-
-1. **Fork the repository** to your own GitHub account:
-
-   ```bash
-<<<<<<< Updated upstream
-   git clone https://github.com/YourUsername/midwest-pumpkins.git
-
 1. **Fork the repository** to your own GitHub account:
    ```bash
-   git clone https://github.com/YourUsername/midwest-pumpkins.git
-   ```
-=======
     git clone https://github.com/OpenCodeChicago/Midwest-Pumpkins.git
    ```
 
@@ -150,4 +139,3 @@ We’d love to have you as part of our community!
 ---
 ## 🙏 Acknowledgments
 A big thank you to all contributors for your hard work and dedication to the Midwest Pumpkins project. We also want to acknowledge Hacktoberfest for providing a platform to promote open-source contributions and encourage community involvement.
->>>>>>> Stashed changes
