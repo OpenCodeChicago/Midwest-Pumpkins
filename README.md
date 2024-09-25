@@ -48,19 +48,35 @@ We welcome contributions from both team members and the broader open-source comm
 
 ### Steps to Contribute:
 
-1. **Fork the repository** to your own GitHub account:
+1. **Fork the repository** to your own GitHub account by clicking the "Fork" button at the top-right of the repository page:
+   
+   _Note: For a detailed video walkthrough on how to fork and clone a repository, check out this [YouTube video](https://www.youtube.com/watch?v=UwgNvAiTrhc&t=12s):_
 
+2. **Clone the forked repository** to your local machine:
+   - Open a terminal and run the following command:
+  
    ```bash
     git clone https://github.com/OpenCodeChicago/Midwest-Pumpkins.git
    ```
 
-2. Set up the project on your local machine:
+3. **Set up the project on your local machine**:
+   - Navigate into the project directory
    ```bash
    cd Midwest-Pumpkins
+   ```
+   - Open the project in Visual Studio Code:
+   ```bash
+   code .
+   ```
+   - Install the necessary dependencies:
+   ```bash
    npm install
+   ```
+   - Start the development server:
+   ```bash
    npm run dev
    ```
-3. **Create a new branch** for your feature or bugfix:
+5. **Create a new branch** for your feature or bugfix:
 
    ```bash
    git checkout -b feature/your-branch-name
@@ -68,23 +84,23 @@ We welcome contributions from both team members and the broader open-source comm
 
    _Note: Please follow the branch naming convention: `feature/your-branch-name` or `bugfix/your-branch-name`._
 
-4. **Work on your task** and commit your changes:
+6. **Work on your task** and commit your changes:
    ```bash
    git add .
    git commit -m "Your meaningful commit message"
    ```
 
-5. **Push your branch** to your forked repository:
+7. **Push your branch** to your forked repository:
    ```bash
    git push -u origin feature/your-branch-name
    ```
 
-6. **Create a pull request** to merge your changes into the main project:
+8. **Create a pull request** to merge your changes into the main project:
    - Go to the original repository and click "Compare & pull request."
    - Assign the pull request to **Alexandrbig1** for review.
-   - Use labels like hacktoberfest-accepted to ensure it's counted for Hacktoberfest!
+   - Use labels like `hacktoberfest2024` to ensure it's counted for Hacktoberfest!
    
-7. **Wait for review**. Your PR will be reviewed by the team lead, and once approved, it will be merged.
+9. **Wait for review**. Your PR will be reviewed by the team lead, and once approved, it will be merged.
 
 ---
 
