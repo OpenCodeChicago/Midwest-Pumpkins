@@ -20,11 +20,17 @@ This project is built with **Vite**, utilizing **HTML**, **CSS**, and **JavaScri
 
 ## 🌾 Project Overview
 
-The **Midwest Pumpkins** project is all about celebrating the beauty and versatility of pumpkins, especially during the fall season. Our website includes a Hero section, an About page, and user reviews highlighting different pumpkin farms, recipes, and Halloween festivities.
+The Midwest Pumpkins project is a fully responsive web application dedicated to celebrating the beauty and versatility of pumpkins during the fall season. Our site features a dynamic Hero section, an informative About page, and engaging user reviews, all showcasing various pumpkin farms, delicious recipes, and festive Halloween activities.
 
-- **Tech Stack**: Vite, HTML, CSS (CSS Modules), JavaScript
-- **Design**: Our Figma design is open for exploration! Check it out [here](https://www.figma.com/design/6keWgZp7kRbn3CLMt3rWqp/Midwest-Pumpkins?node-id=0-1&t=aWiNYQLtVJyRpLbG-1).
-- **Purpose**: Build a fun, responsive, and user-friendly pumpkin-themed website that promotes community interaction and celebrates Halloween and the fall season.
+---
+
+## Key Features:
+- **Responsive Design**: Adapts seamlessly across devices for an optimal user experience.
+- **Interactive Elements**: Includes modals for product purchases, user reviews, and a subscription pop-up to engage visitors.
+- **Animated Features Section**: Hover effects reveal hidden descriptions, enhancing user interaction.
+- **Scroll-to-Top Button**: A convenient feature allowing users to easily navigate back to the top of the page.
+- **Theme Changer**: A built-in feature for users to switch between different visual themes.
+- **Backend Integration**: Planned functionality for receiving and managing data from pop-ups and user submissions.
 
 ---
 
