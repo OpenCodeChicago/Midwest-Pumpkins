@@ -5,12 +5,11 @@ import path from "path";
 
 export default defineConfig({
   root: "src",
+  base: "/Midwest-Pumpkins/",
   build: {
     rollupOptions: {
       input: {
-        main: path.resolve(__dirname, "src/index.html"), // Main entry
-        // Add more HTML files if necessary, e.g.:
-        // about: path.resolve(__dirname, "src/about.html")
+        main: path.resolve(__dirname, "src/index.html"),
       },
     },
     outDir: path.resolve(__dirname, "dist"),

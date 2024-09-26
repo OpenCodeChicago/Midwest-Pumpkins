@@ -1,7 +1,4 @@
-// document.querySelector("#app").innerHTML = `
-//   <div>
-
-//   </div>
-// `;
-
-// setupCounter(document.querySelector("#counter"));
+import "./js/review.js";
+import "./js/slider.js";
+import "./js/close-window.js";
+import "./js/modal.js";

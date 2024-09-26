@@ -1,5 +1,6 @@
 {
   "name": "midwest-pumpkins",
+  "homepage": "https://github.com/OpenCodeChicago/Midwest-Pumpkins",
   "author": {
     "name": "Alex Smagin",
     "email": "contact@alexsmagin.dev"
@@ -11,12 +12,15 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "vite": "^5.4.1"
   },
   "dependencies": {
+    "gh-pages": "^6.1.1",
     "vite-plugin-full-reload": "^1.2.0",
     "vite-plugin-html-inject": "^1.1.2"
   }
