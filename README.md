@@ -16,6 +16,10 @@ Welcome to **Midwest Pumpkins**, a seasonal project perfect for October! This op
 
 This project is built with **Vite**, utilizing **HTML**, **CSS**, and **JavaScript**. We're proud to be participating in **Hacktoberfest 2024**, and we encourage the open-source community to contribute to our codebase and help us make this project great!
 
+### Watch This Video to Learn How to Contribute
+
+[![Welcome! HacktoberFest2024](/public/images/youtube.png)](https://www.youtube.com/watch?v=GMasAHu1iOU&t=37s)
+
 ---
 
 ## 🌾 Project Overview
