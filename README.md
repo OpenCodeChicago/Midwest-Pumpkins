@@ -18,7 +18,7 @@ This project is built with **Vite**, utilizing **HTML**, **CSS**, and **JavaScri
 
 ### Watch This Video to Learn How to Contribute
 
-[![Welcome! HacktoberFest2024](/public/images/youtube.png)](https://www.youtube.com/watch?v=GMasAHu1iOU&t=37s)
+[![Welcome! HacktoberFest2024](/public/images/youtube.png)](https://www.youtube.com/watch?v=1BvBKGzrw4w)
 
 ---
 
