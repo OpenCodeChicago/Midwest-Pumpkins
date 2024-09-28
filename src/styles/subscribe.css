@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+/* Subscription Container */
+.subscription-container {
+  position: relative;
+  width: 100%;
+  max-width: 311px;
+  padding: 20px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.orange-text {
+  color: #FB8500; /* Make the text orange */
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.03em;
+  text-align: left;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 311px;
+  height: 169px;
+}
+
+/* Pumpkin Image */
+.pumpkin-image {
+  width: 100%; /* Make it responsive */
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the whole area without stretching */
+}
+
+/* Close Icon */
+.close-icon {
+  position: absolute;
+  top: 10px; /* Adjust the vertical position */
+  right: 10px; /* Adjust the horizontal position */
+  width: 24px; /* Size of the close icon */
+  height: 24px; /* Size of the close icon */
+  cursor: pointer; /* Change cursor on hover */
+}
+
+/* Heading Text */
+.headline {
+  width: 263px;
+  height: 48px;
+  font-family: 'Montserrat';
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.03em;
+  text-align: left;
+}
+
+/* Form Layout */
+.subscription-form {
+  position: relative; /* To allow absolute positioning of the button */
+  width: 100%;
+  max-width: 263px; /* Match Figma width */
+  margin-top: 30px;
+}
+
+/* Email Input Field */
+.email-input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 100px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.07px;
+  letter-spacing: -0.02em;
+  border: none;
+}
+
+/* Subscribe Button */
+.subscribe-button {
+  position: absolute;
+  right: 0px;
+  top: 1px;
+  padding: 10px 18px;
+  background-color:  #FB8500; /* Adjust color as per Figma */
+  color: #fff;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  height: 45px;
+  width: 126px;
+  padding: 14px 28px;
+  gap: 14px;
+  border-radius: 100px;
+  opacity: 0px;
+}
+
+.subscribe-button:hover {
+  background-color: #ff6347; /* Hover color */
+}
