@@ -1,0 +1,154 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins';
+    font-weight: 200;
+}
+
+
+.footer {
+    background-color: #452103;
+    
+    height: 335px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: flex-start;
+}
+
+.contact-info {
+    width: 40%;
+}
+.brand-and-tagline {  
+    display: flex;
+    
+    align-items: center; 
+    justify-content: flex-start; 
+    width: 100%;
+    
+    gap: 15px;
+}
+
+.brand-name {
+    font-size: 24px;
+    font-weight: bold;
+    
+     display: flex;  
+    align-items: center; 
+    margin-right: 20px; 
+    gap: 5px;
+}
+.brand-icon{
+    height: 23px;
+    width: 23px;
+    margin-left: 8px;
+
+
+}
+
+
+.highlight {
+    color: orange;
+    font-weight: bold;
+}
+
+.tagline {
+    font-size: 25px;
+    margin: 0;
+   
+    white-space: nowrap;
+    flex-grow: 1;
+    padding-left: 250px;
+  
+
+
+}
+
+
+address {
+    font-style: normal;
+    line-height: 1.6;
+    margin-top: 15px;
+    margin-bottom: 2px;
+    
+
+}
+
+address a {
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+address a:hover {
+    text-decoration: underline;
+}
+
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px; 
+    }
+    
+    .social-icons img {
+        width: 20px;
+        height: 20px;
+    }
+   
+
+
+
+
+.footer-content { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding-top: 10px; 
+    border-top: 1px solid #9f9898;
+}
+
+.footer-nav {
+    margin-right: 20px; 
+}
+
+.footer-nav ul {
+    list-style: none;
+    display: flex; 
+    padding: 0; 
+}
+
+.footer-nav ul li {
+    margin: 0 15px; 
+}
+
+.footer-nav ul li a {
+    color: #fff; 
+    text-decoration: none; 
+}
+
+.footer-nav ul li a:hover {
+    text-decoration: underline; 
+}
+
+.footer-bottom {
+    font-size: 14px; 
+    color: rgba(255, 255, 255, 0.8);
+} 
