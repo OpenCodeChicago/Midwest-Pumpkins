@@ -1,5 +1,6 @@
 {
   "name": "midwest-pumpkins",
+  "description": "A fully responsive web application for the Midwest Pumpkin project, built using modern web technologies like HTML, CSS, JavaScript, and Vite. This project is part of the Open-Source Hacktoberfest 2024 initiative, aimed at enhancing developer skills through real-world contribution.",
   "homepage": "https://github.com/OpenCodeChicago/Midwest-Pumpkins",
   "author": {
     "name": "Alex Smagin",
@@ -9,6 +10,22 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "keywords": [
+    "hacktoberfest",
+    "hacktoberfest2024",
+    "open-source",
+    "web development",
+    "responsive design",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Vite",
+    "frontend",
+    "collaboration",
+    "GitHub Pages",
+    "GitHub workflow",
+    "Figma"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build --emptyOutDir",
