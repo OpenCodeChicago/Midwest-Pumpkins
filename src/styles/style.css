@@ -7,17 +7,20 @@
 @import url('./reviews.css');
 @import url('./subscribe.css');
 @import url('./footer.css');
+@import url('./burger-menu.css');
+@import url('./reviews-modal.css');
+@import url('./subscribe-modal.css');
+@import url('./buy-now-modal.css');
 
 :root {
-  --main-color: #02897A;
-  --main-color-hover: #346c6d;
-  --text-main-color: #22343D;
+  --main-color: #fb8500;
+  --main-color-hover: #e85d04;
+  --text-main-color: #111;
   --white-color: #fff;
-  --secondary-bg-color: #EDEDED;
-  --third-bg-color: #f5f5f5;
+  --main-bg-color: #fafafa;
+  --secondary-bg-color: #452103;
   --transition: all 0.3s;
   --main-text-font: 'Poppins', sans-serif;
   --secondary-text-font: 'Montserrat', sans-serif;
-  --bkg-black-low-opacity-color: rgba(18, 20, 23, 0.5);
-  --bkg-grey-low-opacity-color: rgba(244, 244, 244, 0.5);
+  --bkg-black-low-opacity-color: rgba(17, 17, 17, 0.7);
 }
