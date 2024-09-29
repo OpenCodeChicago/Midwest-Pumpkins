@@ -226,5 +226,5 @@ A big thank you to all contributors for your hard work and dedication to the **M
 
 This project is maintained by **Alex Smagin**, the Mentor and Organizer at [Open Code Chicago](https://github.com/OpenCodeChicago).
 
-Alex built the initial setup, design, and project configurations.  
+I designed and built the initial setup and configurations for this project.
 Visit [My Portfolio](https://alexsmagin.dev) | [GitHub](https://github.com/Alexandrbig1).
