@@ -23,7 +23,7 @@ Fork the repository by clicking the "Fork" button at the top of the project page
 After forking the project, clone your forked repository to your local machine:
 
 ```bash
-git clone https://github.com/your-username/Midwest-Pumpkins.git
+git clone https://github.com/OpenCodeChicago/Midwest-Pumpkins.git
 ```
 
 ### 3. Navigate into the Project Directory
