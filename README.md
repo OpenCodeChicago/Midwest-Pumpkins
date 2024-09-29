@@ -219,3 +219,12 @@ We’d love to have you as part of our community!
 ## 🙏 Acknowledgments
 
 A big thank you to all contributors for your hard work and dedication to the **Midwest Pumpkins project**. We also want to acknowledge **Hacktoberfest** for providing a platform to promote open-source contributions and encourage community involvement.
+
+---
+
+## 🧑‍💻 Author
+
+This project is maintained by **Alex Smagin**, the Mentor and Organizer at [Open Code Chicago](https://github.com/OpenCodeChicago).
+
+Alex built the initial setup, design, and project configurations.  
+Visit [My Portfolio](https://alexsmagin.dev) | [GitHub](https://github.com/Alexandrbig1).
