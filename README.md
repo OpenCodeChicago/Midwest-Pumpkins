@@ -121,10 +121,18 @@ We welcome contributions from both team members and the broader open-source comm
    ```
 
 7. **Create a pull request** to merge your changes into the main project:
+
    - Go to the original repository and click "Compare & pull request."
    - Assign the pull request to **Alexandrbig1** for review.
    - Use labels like `hacktoberfest2024` to ensure it's counted for Hacktoberfest!
+
 8. **Wait for review**. Your PR will be reviewed by the team lead, and once approved, it will be merged.
+
+### 📑 Additional Guidelines
+
+For detailed contribution guidelines, please refer to our [CONTRIBUTING.md](./CONTRIBUTING.md).
+
+To maintain a positive and inclusive community, we kindly ask that you review and follow our [Code of Conduct](./CODE_OF_CONDUCT.md) when participating in the project.
 
 ---
 
