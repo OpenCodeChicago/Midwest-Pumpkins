@@ -35,3 +35,9 @@
 
 - **Purva Sawant** - Contributions
   [GitHub](https://github.com/19purva)
+
+- **Neel Mishra** - Contributions
+  [GitHub](https://github.com/Neel-07)
+
+- **Gaurav Bomble** - Contributions
+  [GitHub](https://github.com/Gauravtb2253)
