@@ -14,17 +14,22 @@
     "hacktoberfest",
     "hacktoberfest2024",
     "open-source",
+    "community",
+    "web",
     "web development",
     "responsive design",
     "HTML",
     "CSS",
     "JavaScript",
     "Vite",
+    "Figma",
     "frontend",
     "collaboration",
     "GitHub Pages",
     "GitHub workflow",
-    "Figma"
+    "GitHub Projects",
+    "GitHub Discussions",
+    "GitHub Actions"
   ],
   "scripts": {
     "dev": "vite",

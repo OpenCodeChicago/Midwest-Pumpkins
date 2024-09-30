@@ -222,6 +222,43 @@ A big thank you to all contributors for your hard work and dedication to the **M
 
 ---
 
+## Project Contributors
+
+- **Daniel Dunevant** - Contributions
+  [GitHub](https://github.com/DanielDunevant)
+
+- **Brian Kim** - Contributions
+  [GitHub](https://github.com/bibimbop123)
+
+- **Liz Park** - Contributions
+  [GitHub](https://github.com/SEParkDEV)
+
+- **Steve McKay** - Contributions
+  [GitHub](https://github.com/smmckay)
+
+- **Tanvi Patel** - Contributions
+  [GitHub](https://github.com/tanvi4248)
+
+- **Christal Spaeth** - Contributions
+  [GitHub](https://github.com/christalchronicles)
+
+- **Victor Manzanilla** - Contributions
+  [GitHub](https://github.com/VictorManzanilla)
+
+- **Huda Hajira** - Contributions
+  [GitHub](https://github.com/huda-code)
+
+- **Shubham Sharma** - Contributions
+  [GitHub](https://github.com/shubhamsharma9199)
+
+- **Kwame Nketiah** - Contributions
+  [GitHub](https://github.com/bawsepap)
+
+- **Purva Sawant** - Contributions
+  [GitHub](https://github.com/19purva)
+
+---
+
 ## 🧑‍💻 Author
 
 This project is maintained by **Alex Smagin**, the Mentor and Organizer at [Open Code Chicago](https://github.com/OpenCodeChicago).

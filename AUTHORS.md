@@ -3,11 +3,11 @@
 - **Alex Smagin** - Project Lead, Creator, and Designer
   [Website](https://alexsmagin.dev) | [GitHub](https://github.com/Alexandrbig1)
 
-- **Brian Kim** - Contributions
-  [GitHub](https://github.com/bibimbop123)
-
 - **Daniel Dunevant** - Contributions
   [GitHub](https://github.com/DanielDunevant)
+
+- **Brian Kim** - Contributions
+  [GitHub](https://github.com/bibimbop123)
 
 - **Liz Park** - Contributions
   [GitHub](https://github.com/SEParkDEV)
