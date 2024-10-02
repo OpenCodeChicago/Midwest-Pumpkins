@@ -25,6 +25,7 @@ export default defineConfig({
     port: 3000,
     open: true,
   },
+  publicDir: path.resolve(__dirname, "public"), // Ensure publicDir is set
   plugins: [
     injectHTML(),
     FullReload(["./src/**/*.html", "./src/**/*.css", "./src/**/*.js"]),
