@@ -263,6 +263,12 @@ A big thank you to all contributors for your hard work and dedication to the **M
 - **Gaurav Bomble** - Contributions
   [GitHub](https://github.com/Gauravtb2253)
 
+- **Nirvana Dogra** - Contributions
+  [GitHub](https://github.com/NirvanaDogra)
+
+- **Pranjay Singh** - Contributions
+  [GitHub](https://github.com/blunterdecosta123)
+
 ---
 
 ## 🧑‍💻 Author
