@@ -1,0 +1,50 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.header nav ul li {
+    display: inline;
+    font-size: 16px;
+}
+
+.header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header .search-bar {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.header .search-bar input {
+    padding: 5px;
+    font-size: 3em;
+}
+
+.header .social-media {
+    display: flex;
+    gap: 10px;
+}
+
+.header .social-media a img {
+    width: 20px;
+    height: 20px;
+}
