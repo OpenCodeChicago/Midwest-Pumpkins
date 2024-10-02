@@ -6,6 +6,11 @@ import path from "path";
 export default defineConfig({
   root: "src",
   base: "/Midwest-Pumpkins/",
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "src"), // Alias '@' points to 'src'
+    },
+  },
   build: {
     rollupOptions: {
       input: {
