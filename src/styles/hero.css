@@ -3,6 +3,7 @@
   border-radius: 30px;
   overflow: hidden;
 }
+
 .hero-inner,
 .hero-image {
   position: relative;
@@ -43,14 +44,20 @@
   letter-spacing: -0.03em;
   margin: 0 0 60px;
 }
-.hero-description .buttons button {
+.hero-description .buttons button,
+.hero-description .buttons .top-seller {
   padding: 14px 40px;
   background-color: var(--main-color);
   border-radius: 100px;
   font: 600 14px/17.07px var(--secondary-text-font);
   color: var(--white-color);
+  transition: all 400ms ease-in-out;
+  cursor: pointer;
 }
-.hero-description .buttons button.top-seller {
+.hero-description .buttons button.buy-now:hover {
+  background-color: var(--main-color-hover);
+}
+.hero-description .buttons .top-seller {
   background-color: transparent;
   border: 1px solid var(--white-color);
   margin-left: 14px;
