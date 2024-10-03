@@ -17,19 +17,10 @@
       </p>
       <div class="buttons">
         <button type="button" class="buy-now" id="buyNowButton">Buy Now</button>
-        <button type="button" class="top-seller" aria-label="View Top Sellers">
+        <a href="#top-sellers" class="top-seller" aria-label="View Top Sellers">
           Top Sellers
-        </button>
+        </a>
       </div>
     </div>
   </div>
 </section>
-<script>
-  document.querySelector(".top-seller").addEventListener("click", function () {
-    const topSellersSection = document.querySelector(".top-sellers");
-    window.scrollTo({
-      top: topSellersSection.offsetTop,
-      behavior: "smooth",
-    });
-  });
-</script>
