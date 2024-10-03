@@ -10,6 +10,7 @@
 @import url('./burger-menu.css');
 @import url('./reviews-modal.css');
 @import url('./subscribe-modal.css');
+@import url('./modal-base.css');
 @import url('./buy-now-modal.css');
 
 :root {
