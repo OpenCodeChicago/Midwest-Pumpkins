@@ -36,8 +36,8 @@ Description: Main HTML structure for the Midwest Pumpkins project
 
     <link rel="stylesheet" href="./styles/media.css" />
     <title>Midwest Pumpkins | Hacktoberfest 2024 Open-Source Project</title>
-    <script type="module" crossorigin src="/Midwest-Pumpkins/assets/main-WTVFns0c.js"></script>
-    <link rel="stylesheet" crossorigin href="/Midwest-Pumpkins/assets/main-BK0i0XtN.css">
+    <script type="module" crossorigin src="/Midwest-Pumpkins/assets/main-I0wxOJyM.js"></script>
+    <link rel="stylesheet" crossorigin href="/Midwest-Pumpkins/assets/main-Dd6KPbZm.css">
   </head>
   <body>
     <!-- HEADER -->
@@ -62,8 +62,10 @@ Description: Main HTML structure for the Midwest Pumpkins project
         hand-picked for the best taste and size every season
       </p>
       <div class="buttons">
-        <button type="button" class="buy-now">Buy Now</button>
-        <button type="button" class="top-seller">Top Sellers</button>
+        <button type="button" class="buy-now" id="buyNowButton">Buy Now</button>
+        <a href="#top-sellers" class="top-seller" aria-label="View Top Sellers">
+          Top Sellers
+        </a>
       </div>
     </div>
   </div>
@@ -72,16 +74,16 @@ Description: Main HTML structure for the Midwest Pumpkins project
       <section class="about">about</section>
 
       <section class="features">
-    <h1 class="features-header">OUR FEATURED PUMPKINS</h1>
-    <p class="text">Discover our most popular pumpkins, perfect for all your seasonal needs. Whether it’s for carving, cooking, or décor, these are the best picks of the harvest.</p>
+    <h1 class="features-header">OUR FEATURED <span class="features-color-text">PUMPKINS</span></h1>
+    <p class="features-text">Discover our most popular pumpkins, perfect for all your seasonal needs. Whether it’s for carving, cooking, or décor, these are the best picks of the harvest.</p>
     <div class="features-flex-container">
-        <div><p class ="features-p-header">Jack-o’-Lantern Pumpkin</p></div>
-        <div><p class ="features-p-header">Decorative Mini Pumpkins (Set of 3)</p></div>
-        <div><p class ="features-p-header">Sugar Pie Pumpkin</p></div>
-        <div><p class ="features-p-header">White Ghost Pumpkin</p></div>
+        <div class="first-featured-item"><img class="featured-item-image" src="/Midwest-Pumpkins/images/jack-o-lantern-pumpkin1920x1080.png"> <p class ="features-p-text">Jack-o’-Lantern Pumpkin</p></div>
+        <div class="second-featured-item"><img class="featured-item-image" src="/Midwest-Pumpkins/images/sugar-pie-pumpkin1920x1080.png"><p class ="features-p-text">Sugar Pie Pumpkin</p></div>
+        <div class ="third-featured-item"><img class="featured-item-image" src="/Midwest-Pumpkins/images/white-ghost-pumpkin1920x1080.png"><p class ="features-p-text">White Ghost Pumpkin</p></div>
+        <div class="fourth-featured-item"><img class="featured-item-image" src="/Midwest-Pumpkins/images/decorative-mini-pumpkins1920x1080.png"><p class ="features-p-text">Decorative Mini Pumpkins (Set of 3)</p></div>
     </div>
 </section>
-      <section class="top-sellers">top-sellers</section>
+      <section id="top-sellers" class="top-sellers">top-sellers</section>
 
       <section class="reviews">reviews</section>
 
