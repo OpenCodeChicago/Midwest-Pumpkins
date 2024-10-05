@@ -5,12 +5,16 @@ import path from "path";
 
 export default defineConfig({
   root: "src",
+  base: "/Midwest-Pumpkins/",
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "src"), // Alias '@' points to 'src'
+    },
+  },
   build: {
     rollupOptions: {
       input: {
-        main: path.resolve(__dirname, "src/index.html"), // Main entry
-        // Add more HTML files if necessary, e.g.:
-        // about: path.resolve(__dirname, "src/about.html")
+        main: path.resolve(__dirname, "src/index.html"),
       },
     },
     outDir: path.resolve(__dirname, "dist"),
@@ -26,6 +30,7 @@ export default defineConfig({
     port: 3000,
     open: true,
   },
+  publicDir: path.resolve(__dirname, "public"), // Ensure publicDir is set
   plugins: [
     injectHTML(),
     FullReload(["./src/**/*.html", "./src/**/*.css", "./src/**/*.js"]),

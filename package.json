@@ -1,5 +1,7 @@
 {
   "name": "midwest-pumpkins",
+  "description": "A fully responsive web application for the Midwest Pumpkin project, built using modern web technologies like HTML, CSS, JavaScript, and Vite. This project is part of the Open-Source Hacktoberfest 2024 initiative, aimed at enhancing developer skills through real-world contribution.",
+  "homepage": "https://github.com/OpenCodeChicago/Midwest-Pumpkins",
   "author": {
     "name": "Alex Smagin",
     "email": "contact@alexsmagin.dev"
@@ -8,13 +10,37 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "keywords": [
+    "hacktoberfest",
+    "hacktoberfest2024",
+    "open-source",
+    "community",
+    "web",
+    "web development",
+    "responsive design",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Vite",
+    "Figma",
+    "frontend",
+    "collaboration",
+    "GitHub Pages",
+    "GitHub workflow",
+    "GitHub Projects",
+    "GitHub Discussions",
+    "GitHub Actions"
+  ],
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "vite build --emptyOutDir",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
-    "vite": "^5.4.1"
+    "vite": "^5.4.1",
+    "gh-pages": "^6.1.1"
   },
   "dependencies": {
     "vite-plugin-full-reload": "^1.2.0",

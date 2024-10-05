@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    padding: 20px;
+}
+
+.scroll-up-btn {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: transparent; /* Transparent background */
+    border: none; /* No border */
+    cursor: pointer;
+    width: 50px; /* Button width */
+    height: 50px; /* Button height */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-up-btn img {
+    width: 100%; /* Scale the image to fit */
+    height: auto; /* Maintain aspect ratio */
+}
