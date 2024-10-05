@@ -1,1 +1,39 @@
-<div class="reviews-modal">reviews modal</div>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave a Review Notification</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="/src/styles/reviews-modal.css">
+</head>
+<body>
+
+  <!-- Leave a Review Modal -->
+  <div id="reviews-modal" class="modal">
+    <form id="reviewForm">
+      <h2>Leave a Review</h2>
+      <label for="reviewText">Your Review:</label>
+      <textarea id="reviewText" name="reviewText" rows="4" cols="50" required></textarea>
+      <br><br>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <script>
+    document.getElementById('reviewForm').addEventListener('submit', function (event) {
+      event.preventDefault(); 
+      Swal.fire({
+        title: 'Thank You!',
+        text: 'Thank you for your review! We appreciate your feedback!',
+        icon: 'success',
+        confirmButtonText: 'OK'
+      });
+    });
+  </script>
+
+</body>
+</html>

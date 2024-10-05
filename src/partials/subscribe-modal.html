@@ -1,1 +1,38 @@
-<div class="subscribe-modal">modal</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe Modal Notification</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="/src/styles/subscribe-modal.css">
+</head>
+<body>
+  <div id="subscribe-modal" class="modal">
+    <form id="subscribeForm">
+      <h2>Subscribe</h2>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <br><br>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <script>
+    document.getElementById('subscribeForm').addEventListener('submit', function (event) {
+      event.preventDefault(); 
+      Swal.fire({
+        title: 'Thank You!',
+        text: 'Thank you for subscribing! Stay tuned for updates!',
+        icon: 'success',
+        confirmButtonText: 'OK'
+      });
+
+    });
+  </script>
+
+</body>
+</html>

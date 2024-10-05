@@ -1,1 +1,38 @@
-<div class="but-now-modal">but now modal</div>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Now Notification</title>
+    <link rel="stylesheet" href="/src/styles/buy-now-modal.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+  </head>
+  <body>
+    
+    <div id="but-now-modal" class="modal">
+      <form id="buyNowForm">
+        <h2>Buy Now</h2>
+        
+        <button type="submit">Buy</button>
+      </form>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+   
+    <script>
+      document.getElementById('buyNowForm').addEventListener('submit', function (event) {
+        event.preventDefault(); 
+        Swal.fire({
+          title: 'Success!',
+          text: 'Your order has been successfully placed!',
+          icon: 'success',
+          confirmButtonText: 'OK'
+        });
+      });
+    </script>
+  </body>
+</html>
