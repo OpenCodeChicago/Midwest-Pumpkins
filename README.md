@@ -121,10 +121,18 @@ We welcome contributions from both team members and the broader open-source comm
    ```
 
 7. **Create a pull request** to merge your changes into the main project:
+
    - Go to the original repository and click "Compare & pull request."
    - Assign the pull request to **Alexandrbig1** for review.
    - Use labels like `hacktoberfest2024` to ensure it's counted for Hacktoberfest!
+
 8. **Wait for review**. Your PR will be reviewed by the team lead, and once approved, it will be merged.
+
+### 📑 Additional Guidelines
+
+For detailed contribution guidelines, please refer to our [CONTRIBUTING.md](./CONTRIBUTING.md).
+
+To maintain a positive and inclusive community, we kindly ask that you review and follow our [Code of Conduct](./CODE_OF_CONDUCT.md) when participating in the project.
 
 ---
 
@@ -211,3 +219,61 @@ We’d love to have you as part of our community!
 ## 🙏 Acknowledgments
 
 A big thank you to all contributors for your hard work and dedication to the **Midwest Pumpkins project**. We also want to acknowledge **Hacktoberfest** for providing a platform to promote open-source contributions and encourage community involvement.
+
+---
+
+## Project Contributors
+
+- **Daniel Dunevant** - Contributions
+  [GitHub](https://github.com/DanielDunevant)
+
+- **Brian Kim** - Contributions
+  [GitHub](https://github.com/bibimbop123)
+
+- **Liz Park** - Contributions
+  [GitHub](https://github.com/SEParkDEV)
+
+- **Steve McKay** - Contributions
+  [GitHub](https://github.com/smmckay)
+
+- **Tanvi Patel** - Contributions
+  [GitHub](https://github.com/tanvi4248)
+
+- **Christal Spaeth** - Contributions
+  [GitHub](https://github.com/christalchronicles)
+
+- **Victor Manzanilla** - Contributions
+  [GitHub](https://github.com/VictorManzanilla)
+
+- **Huda Hajira** - Contributions
+  [GitHub](https://github.com/huda-code)
+
+- **Shubham Sharma** - Contributions
+  [GitHub](https://github.com/shubhamsharma9199)
+
+- **Kwame Nketiah** - Contributions
+  [GitHub](https://github.com/bawsepap)
+
+- **Purva Sawant** - Contributions
+  [GitHub](https://github.com/19purva)
+
+- **Neel Mishra** - Contributions
+  [GitHub](https://github.com/Neel-07)
+
+- **Gaurav Bomble** - Contributions
+  [GitHub](https://github.com/Gauravtb2253)
+
+- **Nirvana Dogra** - Contributions
+  [GitHub](https://github.com/NirvanaDogra)
+
+- **Pranjay Singh** - Contributions
+  [GitHub](https://github.com/blunterdecosta123)
+
+---
+
+## 🧑‍💻 Author
+
+This project is maintained by **Alex Smagin**, the Mentor and Organizer at [Open Code Chicago](https://github.com/OpenCodeChicago).
+
+I designed and built the initial setup and configurations for this project.
+Visit [My Portfolio](https://alexsmagin.dev) | [GitHub](https://github.com/Alexandrbig1).

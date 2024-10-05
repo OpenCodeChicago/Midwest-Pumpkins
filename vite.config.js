@@ -6,6 +6,11 @@ import path from "path";
 export default defineConfig({
   root: "src",
   base: "/Midwest-Pumpkins/",
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "src"), // Alias '@' points to 'src'
+    },
+  },
   build: {
     rollupOptions: {
       input: {
@@ -25,6 +30,7 @@ export default defineConfig({
     port: 3000,
     open: true,
   },
+  publicDir: path.resolve(__dirname, "public"), // Ensure publicDir is set
   plugins: [
     injectHTML(),
     FullReload(["./src/**/*.html", "./src/**/*.css", "./src/**/*.js"]),
