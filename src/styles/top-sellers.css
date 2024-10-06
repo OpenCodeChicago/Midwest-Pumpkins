@@ -1,0 +1,45 @@
+#top-sellers>div {
+    margin: 28px;
+}
+.top-sellers-header{
+    font-family: Montserrat;
+    font-size: 24px;
+    text-align: center;
+    margin: 32px;
+    color: #FB8500;
+}
+.top-sellers-color-text{
+    color: black;
+}
+.top-sellers-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 56px;
+}
+.top-sellers-container img {
+    border-radius: 16px;
+    width: 100%;
+    aspect-ratio: 9/12;
+}
+.top-sellers-about {
+    display: flex;
+    justify-content: space-between;
+}
+.top-sellers-about p {
+    font-family: montserrat;
+    font-size: 14px;
+    font-weight: 400;;
+    line-height: 18px;
+    color: #111111;
+    width: 543px;
+}
+.top-sellers-about button {
+    font-family: montserrat;
+    font-size: 18px;
+    font-weight: 600;
+    height: 50px;
+    color: white;
+    background-color: #FB8500;
+    padding: 14px 40px;
+    border-radius: 100px;
+}
