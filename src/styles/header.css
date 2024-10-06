@@ -1,16 +1,14 @@
-/* General Header Styles */
 .header {
-    background-color: #fb8500; /* Solid orange color */
+    background-color: #fb8500;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    border-radius: 50px; /* Fully rounded corners */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Slight shadow */
-    margin: 20px; /* Adds space around the header */
+    border-radius: 50px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
 }
 
-/* Logo Styles */
 .logo-container {
     flex: 1;
 }
@@ -20,7 +18,6 @@
     border-radius: 50px;
 }
 
-/* Navigation Menu */
 .nav-menu {
     flex: 2;
     display: flex;
@@ -44,15 +41,14 @@
     font-weight: bold;
     font-size: 16px;
     padding: 10px 20px;
-    border-radius: 30px; /* Rounded corners for links */
+    border-radius: 30px;
     transition: background-color 0.3s ease;
 }
 
 .nav-link:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Light background on hover */
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* Social Media Links */
 .social-media-links {
     flex: 1;
     display: flex;
@@ -70,11 +66,11 @@
     color: white;
     font-size: 18px;
     padding: 5px;
-    border-radius: 100px; /* Fully rounded icons */
+    border-radius: 100px;
     transition: background-color 0.3s ease;    
 }
 
 .social-link:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Light background on hover */
-    transform: scale(1.1); /* Slight zoom effect on hover */
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
 }
