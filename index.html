@@ -36,8 +36,8 @@ Description: Main HTML structure for the Midwest Pumpkins project
 
     <link rel="stylesheet" href="./styles/media.css" />
     <title>Midwest Pumpkins | Hacktoberfest 2024 Open-Source Project</title>
-    <script type="module" crossorigin src="/Midwest-Pumpkins/assets/main-D_jb3Zpp.js"></script>
-    <link rel="stylesheet" crossorigin href="/Midwest-Pumpkins/assets/main-Bfp8oOaE.css">
+    <script type="module" crossorigin src="/Midwest-Pumpkins/assets/main-Bo5RrT18.js"></script>
+    <link rel="stylesheet" crossorigin href="/Midwest-Pumpkins/assets/main-DcGTJMMo.css">
   </head>
   <body>
     <!-- HEADER -->
@@ -83,15 +83,23 @@ Description: Main HTML structure for the Midwest Pumpkins project
         <div class="fourth-featured-item"><img class="featured-item-image" src="/Midwest-Pumpkins/images/decorative-mini-pumpkins1920x1080.png"><p class ="features-p-text">Decorative Mini Pumpkins (Set of 3)</p></div>
     </div>
 </section>
-      <section class="top-sellers">
-   <h2 class="top-sellers-header"><span class="top-sellers-color-text">TOP</span>SELLERS</h2>
-   <div class="top-sellers-flex-container">
-      <img class="top-sellers-image" src="#" alt="orange pumpkins">
-      <img class="top-sellers-image" src="#" alt="white pumpkins">
-      <img class="top-sellers-image" src="#" alt="small orange pumpkins">
-   </div>
-   <p class="top-sellers-text">Our top-selling pumpkins are the perfect choice for any occasion. Loved by our customers for their exceptional quality, these pumpkins are not only organically grown but also packed with nutrients. Whether for carving, cooking, or decoration, these favorites are sure to bring a fresh, healthy touch to your home.</p>
-   <button>Buy now</button>
+      <section id="top-sellers" class="top-sellers">
+  <h2 class="top-sellers-header">
+    <span class="top-sellers-color-text">TOP</span>SELLERS
+  </h2>
+  <div class="top-sellers-flex-container">
+    <img class="top-sellers-image" src="#" alt="orange pumpkins" />
+    <img class="top-sellers-image" src="#" alt="white pumpkins" />
+    <img class="top-sellers-image" src="#" alt="small orange pumpkins" />
+  </div>
+  <p class="top-sellers-text">
+    Our top-selling pumpkins are the perfect choice for any occasion. Loved by
+    our customers for their exceptional quality, these pumpkins are not only
+    organically grown but also packed with nutrients. Whether for carving,
+    cooking, or decoration, these favorites are sure to bring a fresh, healthy
+    touch to your home.
+  </p>
+  <button>Buy now</button>
 </section>
 
       <section class="reviews">reviews</section>
@@ -175,7 +183,53 @@ Description: Main HTML structure for the Midwest Pumpkins project
     <!-- MODALS -->
 
     <!-- BUY NOW MODAL -->
-    <div class="but-now-modal">but now modal</div>
+    
+<!-- the modal -->
+ <div class="buy-now-modal">
+  <h1><span>BUY</span> NOW</h1>
+                  <!-- the modal content -->
+  <div class="modal-content">
+    <!-- <span class="close">&times;</span> -->
+    <form id="buyForm"> 
+      <h2>Personal Information</h2>
+        <label for="fname">First name: </label><br>
+        <input type="text" id="fname" name="fname" 
+        pattern=".{2,}" 
+        title="First name should have atleast two characters"><br>
+        
+        <label for="lname">Last name: </label><br>
+        <input type="text" id="lname" name="lname" 
+        pattern=".{2,}" 
+        title="last name should have atleast two characters"><br>
+        
+        <label for="email">Email: </label><br>
+        <input type="email" id="email" name="email" 
+        pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" 
+        title="Please enter a valid email address"><br>
+        
+        <label for="tel">Phone number: </label><br>
+        <input type="tel" id="tel" name="tel"
+        pattern="\d{10}"
+        title="Phone number must be 10 digits"><br>
+        
+        <label for="number">Card number: </label><br>
+        <input type="text" id="number" name="number"
+        pattern="\d{16}"
+        title="Card number must be 16 digits"
+        required><br>
+
+        <label for="message">Message: </label><br>
+        <textarea placeholder="Comments or Resquests" id="message" name="message" maxlength="200"></textarea><br>
+
+        
+        <input type="submit" value="Submit">
+
+    </form>
+  </div>
+</div> 
+
+  <!-- <script type="module" src="../js/buy-now-modal.js"></script> -->
+
 
 
     <!-- REVIEWS MODAL -->
