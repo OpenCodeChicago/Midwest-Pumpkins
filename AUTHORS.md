@@ -6,8 +6,8 @@
 - **Daniel Dunevant** - Contributions
   [GitHub](https://github.com/DanielDunevant)
 
-<!-- - **Brian Kim** - Contributions
-  [GitHub](https://github.com/bibimbop123) -->
+- **Brian Kim** - Contributions
+  [GitHub](https://github.com/bibimbop123)
 
 - **Liz Park** - Contributions
   [GitHub](https://github.com/SEParkDEV)
@@ -21,10 +21,10 @@
 - **Christal Spaeth** - Contributions
   [GitHub](https://github.com/christalchronicles)
 
-<!-- - **Victor Manzanilla** - Contributions
+- **Victor Manzanilla** - Contributions
   [GitHub](https://github.com/VictorManzanilla)
 
-- **Huda Hajira** - Contributions
+<!-- - **Huda Hajira** - Contributions
   [GitHub](https://github.com/huda-code)
 
 - **Shubham Sharma** - Contributions

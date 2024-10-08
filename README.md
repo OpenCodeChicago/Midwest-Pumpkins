@@ -239,6 +239,12 @@ A big thank you to all contributors for your hard work and dedication to the **M
 - **Neel Mishra** - Contributions
   [GitHub](https://github.com/Neel-07)
 
+- **Brian Kim** - Contributions
+  [GitHub](https://github.com/bibimbop123)
+
+- **Victor Manzanilla** - Contributions
+  [GitHub](https://github.com/VictorManzanilla)
+
 ---
 
 ## 🧑‍💻 Author
