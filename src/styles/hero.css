@@ -1,9 +1,8 @@
 .hero {
-  margin: 0 32px;
+  margin: 0 32px 80px;
   border-radius: 30px;
   overflow: hidden;
 }
-
 .hero-inner,
 .hero-image {
   position: relative;
@@ -11,24 +10,31 @@
 }
 .hero-image img {
   max-width: 100%;
+  height: auto;
 }
-
+.hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-image {
+  width: 100%;
+  float: left;
+}
 .hero-image::after {
   content: "";
   position: absolute;
-  width: 1000px;
-  height: 1000px;
+  width: 74vw; /* Set width relative to viewport width */
+  height: 74vw; /* Maintain square shape with relative height */
   top: 0;
-  left: -240px;
+  left: -15vw; /* Adjust left offset relative to viewport */
   transform: rotate(30deg);
   opacity: 0.6;
   background-color: #000000;
-  bottom: 0;
   transform-origin: right top;
 }
 .hero-description {
   position: absolute;
-  top: 100px;
   left: 39px;
   width: 484px;
 }
@@ -57,8 +63,91 @@
 .hero-description .buttons button.buy-now:hover {
   background-color: var(--main-color-hover);
 }
+.hero-description .buttons .top-seller:hover {
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+  color: var(--white-color);
+}
 .hero-description .buttons .top-seller {
   background-color: transparent;
   border: 1px solid var(--white-color);
   margin-left: 14px;
+}
+@media only screen and (max-width: 991px) {
+  .hero-description h1 {
+    font-size: 40px;
+    line-height: 42px;
+    margin: 0 0 15px;
+  }
+  .hero-description p {
+    font-size: 22px;
+    line-height: 28px;
+    margin: 0 0 30px;
+  }
+}
+/* For screens smaller than 768px (tablets, small devices) */
+@media only screen and (max-width: 768px) {
+  .hero-image::after {
+    width: 140vw;
+    height: 74vw;
+    left: -20vw;
+    top: auto;
+    bottom: -70vw;
+  }
+  .hero-image img {
+    max-width: max-content;
+    width: auto;
+  }
+  .hero-description h1 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .hero-description p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .hero-description {
+    left: 39px;
+    width: 340px;
+    top: auto;
+    bottom: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    margin: 0 20px 60px;
+  }
+  .hero-description h1 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .hero-description p {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 15px;
+  }
+  .hero-description {
+    top: auto;
+    left: 23px;
+    width: 232px;
+    bottom: 30px;
+  }
+  .hero-description .buttons button,
+  .hero-description .buttons .top-seller {
+    padding: 10px 18px;
+    font-size: 12px;
+  }
+}
+
+/* For screens smaller than 480px (mobile devices) */
+@media only screen and (max-width: 480px) {
+  .hero-image::after {
+    width: 150vw;
+    height: 130vw;
+    left: -20vw;
+    top: auto;
+    bottom: -50vw;
+    transform: rotate(20deg);
+  }
 }
