@@ -1,0 +1,50 @@
+.subscribe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    background-image: url("/images/pumpkin-dark-background640-427.avif");
+    background-position: center center;
+    background-size: cover; 
+    min-height: 400px;
+}
+
+.subscribe .InnerSubscribeContainer {
+    margin: auto;
+    max-width: 467px;
+    text-align: center;
+}
+.subscribe h2{
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.03em;
+    text-align: center;
+    color:#fff;
+    margin-bottom:20px;
+}
+.subscribe p{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color:#fff;
+    margin:15px 0px;
+}
+.subscribe button{
+
+    background-color: var(--main-color);
+    border-radius: 100px;
+    font: 600 14px / 17.07px var(--secondary-text-font);
+    color: var(--white-color);
+    transition: all 400ms ease-in-out;
+    cursor: pointer;
+    padding: 14px 40px;
+}
+.subscribe button:hover{
+    opacity:25%;
+}

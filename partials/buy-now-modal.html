@@ -1,0 +1,47 @@
+
+<!-- the modal -->
+ <div class="buy-now-modal">
+  <h1><span>BUY</span> NOW</h1>
+                  <!-- the modal content -->
+  <div class="modal-content">
+    <!-- <span class="close">&times;</span> -->
+    <form id="buyForm"> 
+      <h2>Personal Information</h2>
+        <label for="fname">First name: </label><br>
+        <input type="text" id="fname" name="fname" 
+        pattern=".{2,}" 
+        title="First name should have atleast two characters"><br>
+        
+        <label for="lname">Last name: </label><br>
+        <input type="text" id="lname" name="lname" 
+        pattern=".{2,}" 
+        title="last name should have atleast two characters"><br>
+        
+        <label for="email">Email: </label><br>
+        <input type="email" id="email" name="email" 
+        pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" 
+        title="Please enter a valid email address"><br>
+        
+        <label for="tel">Phone number: </label><br>
+        <input type="tel" id="tel" name="tel"
+        pattern="\d{10}"
+        title="Phone number must be 10 digits"><br>
+        
+        <label for="number">Card number: </label><br>
+        <input type="text" id="number" name="number"
+        pattern="\d{16}"
+        title="Card number must be 16 digits"
+        required><br>
+
+        <label for="message">Message: </label><br>
+        <textarea placeholder="Comments or Resquests" id="message" name="message" maxlength="200"></textarea><br>
+
+        
+        <input type="submit" value="Submit">
+
+    </form>
+  </div>
+</div> 
+
+  <!-- <script type="module" src="../js/buy-now-modal.js"></script> -->
+

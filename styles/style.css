@@ -1,0 +1,27 @@
+@import url('./reset.css');
+@import url('./header.css');
+@import url('./hero.css');
+@import url('./about.css');
+@import url('./features.css');
+@import url('./top-sellers.css');
+@import url('./reviews.css');
+@import url('./subscribe.css');
+@import url('./footer.css');
+@import url('./burger-menu.css');
+@import url('./reviews-modal.css');
+@import url('./subscribe-modal.css');
+@import url('./buy-now-modal.css');
+@import url('./scroll-up.css');
+
+:root {
+  --main-color: #fb8500;
+  --main-color-hover: #e85d04;
+  --text-main-color: #111;
+  --white-color: #fff;
+  --main-bg-color: #fafafa;
+  --secondary-bg-color: #452103;
+  --transition: all 0.3s;
+  --main-text-font: 'Poppins', sans-serif;
+  --secondary-text-font: 'Montserrat', sans-serif;
+  --bkg-black-low-opacity-color: rgba(17, 17, 17, 0.7);
+}

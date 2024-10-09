@@ -1,0 +1,64 @@
+.hero {
+  margin: 0 32px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.hero-inner,
+.hero-image {
+  position: relative;
+  overflow: hidden;
+}
+.hero-image img {
+  max-width: 100%;
+}
+
+.hero-image::after {
+  content: "";
+  position: absolute;
+  width: 1000px;
+  height: 1000px;
+  top: 0;
+  left: -240px;
+  transform: rotate(30deg);
+  opacity: 0.6;
+  background-color: #000000;
+  bottom: 0;
+  transform-origin: right top;
+}
+.hero-description {
+  position: absolute;
+  top: 100px;
+  left: 39px;
+  width: 484px;
+}
+.hero-description h1 {
+  font: 500 48px/48px var(--main-text-font);
+  color: var(--white-color);
+  letter-spacing: -0.03em;
+  margin: 0 0 30px;
+}
+.hero-description p {
+  font: 400 24px/34px var(--main-text-font);
+  color: var(--white-color);
+  letter-spacing: -0.03em;
+  margin: 0 0 60px;
+}
+.hero-description .buttons button,
+.hero-description .buttons .top-seller {
+  padding: 14px 40px;
+  background-color: var(--main-color);
+  border-radius: 100px;
+  font: 600 14px/17.07px var(--secondary-text-font);
+  color: var(--white-color);
+  transition: all 400ms ease-in-out;
+  cursor: pointer;
+}
+.hero-description .buttons button.buy-now:hover {
+  background-color: var(--main-color-hover);
+}
+.hero-description .buttons .top-seller {
+  background-color: transparent;
+  border: 1px solid var(--white-color);
+  margin-left: 14px;
+}
