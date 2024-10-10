@@ -21,13 +21,18 @@
 
 /* Button hover effect */
 .scroll-up-btn:hover {
-    transform: scale(1.1); /* Slightly enlarge button on hover */
+    transform: scale(1.1);
+    background-color: #FB8500; 
 }
 
 /* Image styling */
 .scroll-up-btn img {
-    width: 80%; /* Scale image to fit button */
+    width: 100%; /* Scale image to fit button */
     height: auto; /* Maintain aspect ratio */
+}
+
+.scroll-up-btn:hover .icon {
+    filter: brightness(0) invert(1); /* Makes the icon white on hover */
 }
 
 /* Add a smooth scroll behavior for the entire document */
