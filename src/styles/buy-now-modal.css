@@ -1,0 +1,30 @@
+.buy-now-modal {
+  display: none; /* Hidden by default, can be toggled with JS */
+  position: fixed;
+  z-index: 1000;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--white-color);
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 500px;
+}
+
+
+h1 {
+    font: var(--secondary-text-font);
+
+}
+
+span {
+   color: red;
+
+}
+
+  /* h2 {
+    font: var(--secondary-text-font);
+    font-weight: 500;
+  } */

@@ -1,4 +1,4 @@
-// Get the button
+// Get the button element
 const scrollUpBtn = document.getElementById('scrollUpBtn');
 
 // Show the button after scrolling 200px down
