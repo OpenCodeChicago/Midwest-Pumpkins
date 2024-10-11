@@ -39,10 +39,11 @@
     "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
-    "vite": "^5.4.1",
-    "gh-pages": "^6.1.1"
+    "gh-pages": "^6.1.1",
+    "vite": "^5.4.1"
   },
   "dependencies": {
+    "midwest-pumpkins": "file:",
     "vite-plugin-full-reload": "^1.2.0",
     "vite-plugin-html-inject": "^1.1.2"
   }

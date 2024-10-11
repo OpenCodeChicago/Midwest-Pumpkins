@@ -12,9 +12,6 @@
 - **Liz Park** - Contributions
   [GitHub](https://github.com/SEParkDEV)
 
-<!-- - **Steve McKay** - Contributions
-  [GitHub](https://github.com/smmckay) -->
-
 - **Tanvi Patel** - Contributions
   [GitHub](https://github.com/tanvi4248)
 
@@ -24,26 +21,23 @@
 - **Victor Manzanilla** - Contributions
   [GitHub](https://github.com/VictorManzanilla)
 
+- **Kwame Nketiah** - Contributions
+  [GitHub](https://github.com/bawsepap)
+
+- **Neel Mishra** - Contributions
+  [GitHub](https://github.com/Neel-07)
+
+- **Gaurav Bomble** - Contributions
+  [GitHub](https://github.com/Gauravtb2253)
+
 <!-- - **Huda Hajira** - Contributions
   [GitHub](https://github.com/huda-code)
 
 - **Shubham Sharma** - Contributions
   [GitHub](https://github.com/shubhamsharma9199)
 
-- **Kwame Nketiah** - Contributions
-  [GitHub](https://github.com/bawsepap)
-
 - **Purva Sawant** - Contributions
   [GitHub](https://github.com/19purva) -->
 
-- **Neel Mishra** - Contributions
-  [GitHub](https://github.com/Neel-07)
-
-<!-- - **Gaurav Bomble** - Contributions
-  [GitHub](https://github.com/Gauravtb2253)
-
-- **Nirvana Dogra** - Contributions
-  [GitHub](https://github.com/NirvanaDogra)
-
-- **Pranjay Singh** - Contributions
+<!-- - **Pranjay Singh** - Contributions
   [GitHub](https://github.com/blunterdecosta123) -->
