@@ -38,8 +38,8 @@ Description: Main HTML structure for the Midwest Pumpkins project
     <!--favicon-->
     <link rel="icon" type="image/png" href="/Midwest-Pumpkins/assets/Vector-CNHTwVk6.png" sizes="16x16">
     <title>Midwest Pumpkins | Hacktoberfest 2024 Open-Source Project</title>
-    <script type="module" crossorigin src="/Midwest-Pumpkins/assets/main-DAxLR5Rk.js"></script>
-    <link rel="stylesheet" crossorigin href="/Midwest-Pumpkins/assets/main-koLK9SJi.css">
+    <script type="module" crossorigin src="/Midwest-Pumpkins/assets/main-DBrBOK6r.js"></script>
+    <link rel="stylesheet" crossorigin href="/Midwest-Pumpkins/assets/main-DqZwCgQX.css">
   </head>
   <body>
     <!-- HEADER -->
@@ -68,16 +68,99 @@ Description: Main HTML structure for the Midwest Pumpkins project
   </div>
 </section>
 
-      <section class="about">about</section>
-
+      <section class="benefits">
+    <div class="benefits-container">
+      <div class="benefit-card">
+        <div class="icon">
+          <img src="/Midwest-Pumpkins/images/logo1.png" alt="Family-Owned Icon">
+        </div>
+        <h3 class="benefit-title">Family-Owned</h3>
+        <p class="benefit-description">
+          Proudly serving the Midwest since 1995, our family-run farm is dedicated to growing pumpkins with care and passion, passed down through generations.
+        </p>
+      </div>
+      <div class="divider"></div>
+      <div class="benefit-card">
+        <div class="icon">
+          <img src="/Midwest-Pumpkins/images/logo2.png" alt="Best Price Icon">
+        </div>
+        <h3 class="benefit-title">Best Price</h3>
+        <p class="benefit-description">
+          We believe in offering the finest pumpkins at the best prices. With Midwest Pumpkins, you get exceptional quality without breaking the bank.
+        </p>
+      </div>
+      <div class="divider"></div>
+      <div class="benefit-card">
+        <div class="icon">
+          <img src="/Midwest-Pumpkins/images/logo3.png" alt="Organic Icon">
+        </div>
+        <h3 class="benefit-title">100% Organic, Farm-Raised</h3>
+        <p class="benefit-description">
+          Our pumpkins are grown naturally on Illinois soil, free from pesticides and chemicals. You'll enjoy the pure, fresh taste of the harvest, straight from our fields.
+        </p>
+        <div class="scroll-up">
+          <button id="scrollUpBtn" class="scroll-up-btn" style="display: none">
+            <img  class="icon" src="/Midwest-Pumpkins/images/Scroll-up.svg" alt="Scroll up icon" />
+          </button>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+   
       <section class="features">
     <h1 class="features-header">OUR FEATURED <span class="features-color-text">PUMPKINS</span></h1>
     <p class="features-text">Discover our most popular pumpkins, perfect for all your seasonal needs. Whether it’s for carving, cooking, or décor, these are the best picks of the harvest.</p>
     <div class="features-flex-container">
-        <div class="first-featured-item"><img class="featured-item-image" src="/Midwest-Pumpkins/images/jack-o-lantern-pumpkin1920x1080.png"> <p class ="features-p-text">Jack-o’-Lantern Pumpkin</p></div>
-        <div class="second-featured-item"><img class="featured-item-image" src="/Midwest-Pumpkins/images/sugar-pie-pumpkin1920x1080.png"><p class ="features-p-text">Sugar Pie Pumpkin</p></div>
-        <div class ="third-featured-item"><img class="featured-item-image" src="/Midwest-Pumpkins/images/white-ghost-pumpkin1920x1080.png"><p class ="features-p-text">White Ghost Pumpkin</p></div>
-        <div class="fourth-featured-item"><img class="featured-item-image" src="/Midwest-Pumpkins/images/decorative-mini-pumpkins1920x1080.png"><p class ="features-p-text">Decorative Mini Pumpkins (Set of 3)</p></div>
+        <div class="first-featured-item" id="first-featured-item"><img class="featured-item-image" src="/Midwest-Pumpkins/images/jack-o-lantern-pumpkin1920x1080.png"> <p class ="features-p-text">Jack-o’-Lantern Pumpkin</p></div>
+        <div class="first-featured-item-details" id="first-featured-item-details">
+            <p class ="features-p-text-details">Jack-o’-Lantern Pumpkin</p>
+            <button class="pill-price">$12.99</button>
+            <button class="pill-features">Features</button>
+                <ul>
+                    <li class="list">&#8226; Perfect for carving your Halloween designs!</li>
+                    <li class="list">&#8226; Large size with a thick skin for lasting durability.</li>
+                    <li class="list">&#8226; Grown naturally, ensuring rich, vibrant color.</li>
+                </ul>
+        </div>
+
+        <div class="second-featured-item" id="second-featured-item"><img class="featured-item-image" src="/Midwest-Pumpkins/images/sugar-pie-pumpkin1920x1080.png"><p class ="features-p-text">Sugar Pie Pumpkin</p></div>
+        <div class="second-featured-item-details" id="second-featured-item-details">
+            <p class ="features-p-text-details">Sugar Pie Pumpkin</p>
+            <button class="pill-price">$9.99</button>
+            <button class="pill-features">Features</button>
+                <ul>
+                    <li class="list">&#8226; Ideal for baking sweet pumpkin pies!</li>
+                    <li class="list">&#8226; Smooth texture with a naturally sweet flavor.</li>
+                    <li class="list">&#8226; High in vitamins A and C, perfect for healthy recipes.</li>
+                </ul>
+        </div>
+
+        <div class ="third-featured-item" id="third-featured-item"><img class="featured-item-image" src="/Midwest-Pumpkins/images/white-ghost-pumpkin1920x1080.png"><p class ="features-p-text">White Ghost Pumpkin</p></div>
+        <div class="third-featured-item-details" id="third-featured-item-details">
+            <p class ="features-p-text-details">White Ghost Pumpkin</p>
+            <button class="pill-price">$14.99</button>
+            <button class="pill-features">Features</button>
+                <ul>
+                    <li class="list">&#8226; Unique white skin for striking fall décor.</li>
+                    <li class="list">&#8226; Dense, smooth flesh perfect for baking or crafting.</li>
+                    <li class="list">&#8226; Adds a creative twist to your fall decorations.</li>
+                </ul>
+        </div>
+
+        <div class="fourth-featured-item" id="fourth-featured-item"><img class="featured-item-image" src="/Midwest-Pumpkins/images/decorative-mini-pumpkins1920x1080.png"><p class ="features-p-text">Decorative Mini Pumpkins (Set of 3)</p></div>
+        <div class="fourth-featured-item-details" id="fourth-featured-item-details">
+            <p class ="features-p-text-details">Decorative Mini Pumpkins (Set of 3)</p>
+            <button class="pill-price">$4.99</button>
+            <button class="pill-features">Features</button>
+                <ul>
+                    <li class="list">&#8226; Small, vibrant pumpkins for decoration.</li>
+                    <li class="list">&#8226; Perfect for table settings, crafts, and seasonal displays.</li>
+                    <li class="list">&#8226; Long-lasting and easy to maintain.</li>
+                </ul>
+        </div>
+
+
     </div>
 </section>
       <section id="top-sellers" class="top-sellers">
