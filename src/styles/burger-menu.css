@@ -1,0 +1,113 @@
+.burger-menu__open,
+.burger-menu__close,
+.burger-menu__icon {
+  @media (width < 48rem) {
+    height: 28px;
+    width: 28px;
+  }
+
+  @media (width >= 48rem) and (width < 75rem) {
+    height: 32px;
+    width: 32px;
+  }
+
+  @media (width >= 75rem) {
+    display: none;
+  }
+}
+
+.burger-menu__open {
+  color: var(--text-main-color);
+}
+
+.burger-menu__close {
+  color: var(--white-color);
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.burger-menu__open:is(:hover, :focus),
+.burger-menu__close:is(:hover, :focus),
+.burger-menu__item a:is(:hover, :focus),
+.burger-menu__footer li a:is(:hover, :focus) {
+  outline: 1px dotted currentColor;
+  outline-offset: 0.2em;
+}
+
+.burger-menu__open:is(:hover, :focus) {
+  color: var(--main-color-hover);
+  outline-color: var(--main-color-hover);
+}
+
+.burger-menu__close:is(:hover, :focus) {
+  color: var(--white-color);
+  outline-color: var(--white-color);
+}
+
+.burger-menu__open:is(:active),
+.burger-menu__close:is(:active) {
+  transform: scale(98%);
+}
+
+.burger-menu {
+  background-color: var(--secondary-bg-color);
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 220px;
+  translate: 100vw 0;
+  transition: translate 0.5s ease-in-out;
+  z-index: 2;
+}
+
+.burger-menu__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.burger-menu__item a {
+  color: var(--white-color);
+}
+
+.burger-menu__links {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.28px;
+  margin-inline-start: 50px;
+  margin-block-start: 136px;
+}
+
+.burger-menu__footer {
+  ul {
+    color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-block-end: 20px;
+  }
+
+  li {
+    height: 24px;
+    width: 24px;
+  }
+}
+
+.burger-menu__footer-copyright {
+  color: var(--white-color);
+  font-size: 14px;
+  letter-spacing: -0.28px;
+  line-height: 18px;
+  padding-block-end: 20px;
+
+  p {
+    opacity: 0.6;
+    text-align: center;
+  }
+}
