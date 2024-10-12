@@ -38,12 +38,48 @@ Description: Main HTML structure for the Midwest Pumpkins project
     <!--favicon-->
     <link rel="icon" type="image/png" href="/Midwest-Pumpkins/assets/Vector-CNHTwVk6.png" sizes="16x16">
     <title>Midwest Pumpkins | Hacktoberfest 2024 Open-Source Project</title>
-    <script type="module" crossorigin src="/Midwest-Pumpkins/assets/main-DBrBOK6r.js"></script>
-    <link rel="stylesheet" crossorigin href="/Midwest-Pumpkins/assets/main-DqZwCgQX.css">
+    <script type="module" crossorigin src="/Midwest-Pumpkins/assets/main-BzPPErRj.js"></script>
+    <link rel="stylesheet" crossorigin href="/Midwest-Pumpkins/assets/main-CAhRP6kJ.css">
   </head>
   <body>
     <!-- HEADER -->
-    <header class="header">header</header>
+    <header class="header">
+  <div class="heading">
+    <h1>
+      <span>Midwest&nbsp;</span>
+      <span>Pumpkins</span>
+    </h1>
+    <img src="images/pumpkin.svg" alt="" />
+  </div>
+  <nav>
+    <span id="nav-label" class="visually-hidden">
+      Toggle navigation
+    </span>
+    <button
+      class="burger-menu__open"
+      aria-expanded="false"
+      aria-labelledby="nav-label"
+    >
+      <svg
+        aria-hidden="true"
+        class="burger-menu__icon"
+        width="32"
+        height="32"
+        viewBox="0 0 32 32"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M4 16H28M4 8H28M4 24H28"
+          stroke="currentColor"
+          stroke-width="2.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+  </nav>
+</header>
 
     <main>
       <section class="hero">
@@ -355,7 +391,174 @@ Description: Main HTML structure for the Midwest Pumpkins project
 
 
     <!-- BURGER MENU -->
-    <div class="burger-menu"></div>
+    <div class="burger-menu">
+  <div class="burger-menu__content">
+    <button class="burger-menu__close" aria-label="Close">
+      <svg
+        aria-hidden="true"
+        class="burger-menu__icon"
+        width="32"
+        height="32"
+        viewBox="0 0 32 32"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g id="x-close">
+          <path
+            id="Icon"
+            d="M21 7L7 21"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            id="Icon_2"
+            d="M7 7L21 21"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+      </svg>
+    </button>
+    <ul class="burger-menu__links">
+      <li class="burger-menu__item">
+        <a href="#">Home</a>
+      </li>
+      <li class="burger-menu__item">
+        <a href="#">About</a>
+      </li>
+      <li class="burger-menu__item">
+        <a href="#">Best pumpkins</a>
+      </li>
+      <li class="burger-menu__item">
+        <a href="#">Top sellers</a>
+      </li>
+      <li class="burger-menu__item">
+        <a href="#">Reviews</a>
+      </li>
+    </ul>
+    <div class="burger-menu__footer">
+      <ul>
+        <li>
+          <a
+            href="https://github.com"
+            target="_blank"
+            aria-label="GitHub"
+          >
+            <svg
+              aria-hidden="true"
+              viewBox="0 0 22 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="mdi:github">
+                <path
+                  id="Vector"
+                  d="M11.0002 1.83325C9.79638 1.83325 8.60438 2.07035 7.49223 2.53102C6.38008 2.99169 5.36955 3.6669 4.51835 4.51811C2.79927 6.23719 1.8335 8.56877 1.8335 10.9999C1.8335 15.0516 4.46433 18.4891 8.1035 19.7083C8.56183 19.7816 8.7085 19.4974 8.7085 19.2499V17.7008C6.16933 18.2508 5.6285 16.4724 5.6285 16.4724C5.20683 15.4091 4.611 15.1249 4.611 15.1249C3.77683 14.5566 4.67516 14.5749 4.67516 14.5749C5.59183 14.6391 6.07766 15.5191 6.07766 15.5191C6.87516 16.9124 8.22266 16.4999 8.74516 16.2799C8.82766 15.6841 9.066 15.2808 9.32266 15.0516C7.28766 14.8224 5.15183 14.0341 5.15183 10.5416C5.15183 9.52409 5.50016 8.70825 6.096 8.05742C6.00433 7.82825 5.6835 6.87492 6.18766 5.63742C6.18766 5.63742 6.95766 5.38992 8.7085 6.57242C9.43266 6.37075 10.221 6.26992 11.0002 6.26992C11.7793 6.26992 12.5677 6.37075 13.2918 6.57242C15.0427 5.38992 15.8127 5.63742 15.8127 5.63742C16.3168 6.87492 15.996 7.82825 15.9043 8.05742C16.5002 8.70825 16.8485 9.52409 16.8485 10.5416C16.8485 14.0433 14.7035 14.8133 12.6593 15.0424C12.9893 15.3266 13.2918 15.8858 13.2918 16.7383V19.2499C13.2918 19.4974 13.4385 19.7908 13.906 19.7083C17.5452 18.4799 20.1668 15.0516 20.1668 10.9999C20.1668 9.79613 19.9297 8.60414 19.4691 7.49199C19.0084 6.37984 18.3332 5.36931 17.482 4.51811C16.6308 3.6669 15.6202 2.99169 14.5081 2.53102C13.3959 2.07035 12.2039 1.83325 11.0002 1.83325Z"
+                  fill="currentColor"
+                />
+              </g>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.youtube.com"
+            target="_blank"
+            aria-label="YouTube"
+          >
+            <svg
+              aria-hidden="true"
+              width="22"
+              height="22"
+              viewBox="0 0 22 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9.16683 13.7499L13.9243 10.9999L9.16683 8.24992V13.7499ZM19.7635 6.57242C19.8827 7.00325 19.9652 7.58075 20.0202 8.31408C20.0843 9.04742 20.1118 9.67992 20.1118 10.2299L20.1668 10.9999C20.1668 13.0074 20.0202 14.4833 19.7635 15.4274C19.5343 16.2524 19.0027 16.7841 18.1777 17.0133C17.7468 17.1324 16.9585 17.2149 15.7485 17.2699C14.5568 17.3341 13.466 17.3616 12.4577 17.3616L11.0002 17.4166C7.15933 17.4166 4.76683 17.2699 3.82266 17.0133C2.99766 16.7841 2.466 16.2524 2.23683 15.4274C2.11766 14.9966 2.03516 14.4191 1.98016 13.6858C1.916 12.9524 1.8885 12.3199 1.8885 11.7699L1.8335 10.9999C1.8335 8.99242 1.98016 7.51659 2.23683 6.57242C2.466 5.74742 2.99766 5.21575 3.82266 4.98659C4.2535 4.86742 5.04183 4.78492 6.25183 4.72992C7.4435 4.66575 8.53433 4.63825 9.54266 4.63825L11.0002 4.58325C14.841 4.58325 17.2335 4.72992 18.1777 4.98659C19.0027 5.21575 19.5343 5.74742 19.7635 6.57242Z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
+            <svg
+              aria-hidden="true"
+              width="22"
+              height="22"
+              viewBox="0 0 22 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17.4167 2.75C17.9029 2.75 18.3692 2.94315 18.713 3.28697C19.0568 3.63079 19.25 4.0971 19.25 4.58333V17.4167C19.25 17.9029 19.0568 18.3692 18.713 18.713C18.3692 19.0568 17.9029 19.25 17.4167 19.25H4.58333C4.0971 19.25 3.63079 19.0568 3.28697 18.713C2.94315 18.3692 2.75 17.9029 2.75 17.4167V4.58333C2.75 4.0971 2.94315 3.63079 3.28697 3.28697C3.63079 2.94315 4.0971 2.75 4.58333 2.75H17.4167ZM16.9583 16.9583V12.1C16.9583 11.3074 16.6435 10.5474 16.0831 9.98693C15.5226 9.42651 14.7626 9.11167 13.97 9.11167C13.1908 9.11167 12.2833 9.58833 11.8433 10.3033V9.28583H9.28583V16.9583H11.8433V12.4392C11.8433 11.7333 12.4117 11.1558 13.1175 11.1558C13.4579 11.1558 13.7843 11.291 14.025 11.5317C14.2656 11.7724 14.4008 12.0988 14.4008 12.4392V16.9583H16.9583ZM6.30667 7.84667C6.7151 7.84667 7.10681 7.68442 7.39561 7.39561C7.68442 7.10681 7.84667 6.7151 7.84667 6.30667C7.84667 5.45417 7.15917 4.7575 6.30667 4.7575C5.8958 4.7575 5.50177 4.92072 5.21124 5.21124C4.92072 5.50177 4.7575 5.8958 4.7575 6.30667C4.7575 7.15917 5.45417 7.84667 6.30667 7.84667ZM7.58083 16.9583V9.28583H5.04167V16.9583H7.58083Z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://x.com" target="_blank" aria-label="X">
+            <svg
+              aria-hidden="true"
+              width="22"
+              height="22"
+              viewBox="0 0 22 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15.4184 19.0373L3.4403 3.63733C3.37717 3.55603 3.33812 3.45865 3.32759 3.35626C3.31706 3.25386 3.33548 3.15057 3.38075 3.05812C3.42602 2.96568 3.49632 2.88779 3.58366 2.83332C3.671 2.77885 3.77187 2.74998 3.8748 2.75H6.14814C6.23183 2.75012 6.31438 2.76935 6.38952 2.8062C6.46466 2.84305 6.53039 2.89657 6.58172 2.96267L18.5598 18.3627C18.6229 18.444 18.662 18.5414 18.6725 18.6437C18.683 18.7461 18.6646 18.8494 18.6194 18.9419C18.5741 19.0343 18.5038 19.1122 18.4165 19.1667C18.3291 19.2212 18.2282 19.25 18.1253 19.25H15.852C15.7683 19.2499 15.6857 19.2307 15.6106 19.1938C15.5355 19.1569 15.4697 19.1034 15.4184 19.0373Z"
+                stroke="currentColor"
+                stroke-width="1.5"
+              />
+              <path
+                d="M18.3332 2.75L3.6665 19.25"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.facebook.com"
+            target="_blank"
+            aria-label="Facebook"
+          >
+            <svg
+              aria-hidden="true"
+              width="22"
+              height="22"
+              viewBox="0 0 22 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.1668 10.9999C20.1668 5.93992 16.0602 1.83325 11.0002 1.83325C5.94016 1.83325 1.8335 5.93992 1.8335 10.9999C1.8335 15.4366 4.98683 19.1308 9.16683 19.9832V13.7499H7.3335V10.9999H9.16683V8.70825C9.16683 6.93909 10.606 5.49992 12.3752 5.49992H14.6668V8.24992H12.8335C12.3293 8.24992 11.9168 8.66242 11.9168 9.16658V10.9999H14.6668V13.7499H11.9168V20.1208C16.546 19.6624 20.1668 15.7574 20.1668 10.9999Z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <div class="burger-menu__footer-copyright">
+        <p>©2024 Midwest Pumpkins by OpenCode Academy.</p>
+        <p>All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 
   </body>
