@@ -33,6 +33,9 @@
 - **Huda Hajira** - Contributions
   [GitHub](https://github.com/huda-code)
 
+- **Amy Woodworth** - Contributions
+  [GitHub](https://github.com/a-woodworth)
+
 <!-- - **Shubham Sharma** - Contributions
   [GitHub](https://github.com/shubhamsharma9199) -->
 
