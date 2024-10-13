@@ -14,6 +14,12 @@
     
 }
 
+@media (max-width: 800px) {
+.features-flex-container {
+    flex-direction: column;
+    }
+}
+
 .features-flex-container > div {
     margin: 28px;
     border-radius: 15px;
@@ -47,7 +53,7 @@
     background-color: var(-secondary-bg-color);
     border: 1px solid;
     border-color: var(-secondary-bg-color);
-    color: var(--white-color);
+    color: var(--text-main-color);
 }
 
 .second-featured-item{
