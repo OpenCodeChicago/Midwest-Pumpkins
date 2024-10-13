@@ -3,71 +3,81 @@
     padding: 40px 0;
     color: #fff;
     text-align: center;
-  }
-  
-  .benefits-container {
+}
+
+.benefits-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch; /* Align items to stretch and have equal height */
     max-width: 1200px;
     margin: 0 auto;
     gap: 20px;
-  }
-  
-  .benefit-card {
-    background-color: transparent;
+}
+
+.benefit-card {
+    background-color: #5a3e2d; /* Change to a semi-transparent color for better visibility */
     padding: 20px;
     flex: 1;
     text-align: center;
-  }
-  
-  .icon img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for the effect */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    display: flex; /* Enable flexbox for the card content */
+    flex-direction: column; /* Arrange content vertically */
+    justify-content: space-between; /* Space content evenly */
+}
+
+.benefit-card:hover {
+    transform: scale(1.05); /* Scale up the card on hover */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4); /* Enhance shadow on hover */
+}
+
+.icon img {
     width: 70px;
     height: 70px;
-    /* margin-bottom: 1px; */
     text-align: left;
-  }
-  
-  .benefit-title {
+}
+
+.benefit-title {
     font-size: 1.69rem;
     text-align: left;
     margin: 15px 0;
     color: #fff;
     font-weight: bold;
-  }
-  
-  .benefit-description {
+}
+
+.benefit-description {
     font-size: 1.34rem;
     line-height: 1.6;
     text-align: left;
     color: #f9f9f9;
-  }
-  
-  .divider {
+}
+
+.divider {
     width: 1px;
     height: 100px;
     background-color: #fff;
     opacity: 0.5;
-  }
-  
-  .scroll-down {
+}
+
+.scroll-down {
     margin-top: 20px;
-  }
-  
-  .scroll-down img {
+}
+
+.scroll-down img {
     width: 30px;
     height: 30px;
     animation: bounce 2s infinite;
-  }
-  
-  @keyframes bounce {
+}
+
+@keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
-      transform: translateY(0);
+        transform: translateY(0);
     }
     40% {
-      transform: translateY(-10px);
+        transform: translateY(-10px);
     }
     60% {
-      transform: translateY(-5px);
+        transform: translateY(-5px);
     }
-  }
+}

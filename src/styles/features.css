@@ -1,172 +1,106 @@
-.features-container{
-    background-color:var(--main-bg-color);
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
 }
 
-.features-header{
-    font-family: var(-secondary-text-font);
-    font-size: 24px;
+.features {
     text-align: center;
-    margin: 32px;
+    padding: 20px;
 }
 
-.features-flex-container{
+.features-header {
+    font-size: x-large;
+    margin: 0;
+}
+
+.features-color-text {
+    color: orange;
+}
+
+.features-text {
+    font-size: large;
+    margin: 10px 0 20px;
+}
+
+.features-flex-container {
     display: flex;
-    
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.features-flex-container > div {
-    margin: 28px;
-    border-radius: 15px;
-    flex-grow: 1;
-    flex-basis: 0;
+.featured-item {
+    margin: 10px;
+    position: relative;
+    width: 400px; /* Set width for all items */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+    transition: transform 0.3s ease;
+    overflow: hidden; /* Hide overflow */
 }
 
-.features-p-text{
-    text-transform: uppercase;
-    font-size: 2em;
-    margin: 24px;
-    text-align: center;
+.normal-view {
+    display: block; /* Show normal view by default */
 }
 
-
-.features-color-text{
-    color: var(--main-color);
+.hover-view {
+    display: none; /* Hide hover view by default */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; /* Cover the full card */
+    background-color: white; /* Background color for hover view */
+    padding: 10px;
+    box-sizing: border-box; /* Include padding in width/height */
+    text-align: center; /* Center the text */
 }
 
-.features-text{
-    
-    text-align: center;
-    margin-left: 20%;
-    margin-right: 20%;
-    font-size: 14px;
+.featured-item:hover .normal-view {
+    display: none; /* Hide normal view on hover */
 }
 
-.first-featured-item{
-    box-shadow: 0px 4px 4px rgb(0,0,0,.5);
-    text-align: center;
-    background-color: var(-secondary-bg-color);
-    border: 1px solid;
-    border-color: var(-secondary-bg-color);
-    color: var(--white-color);
+.featured-item:hover .hover-view {
+    display: block; /* Show hover view on hover */
 }
 
-.second-featured-item{
-    box-shadow: 0px 4px 4px rgb(0,0,0,.5);
-    border: 1px solid;
-    border-color: var(-secondary-bg-color);
-    text-align: center;
+.featured-item-image {
+    width: 100%; /* Use 100% width for responsive images */
+    height: auto;
 }
 
-.third-featured-item{
-    box-shadow: 0px 4px 4px rgb(0,0,0,.5);
-    text-align: center;
-    background-color: var(--main-color);
-    border-color: var(--main-color);
-    border: 1px solid;
-    color: var(--white-color);
+.features-p-text {
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: large;
 }
 
-.fourth-featured-item{
-    box-shadow: 0px 4px 4px rgb(0,0,0,.5);
-    text-align: center;
-    border-color: var(--main-color);
-    border: 1px solid;
+.features-p-text-details {
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: x-large; /* Adjust size for details */
 }
 
-.features-p-text-details{
-    text-transform: uppercase;
-    font-size: 1em;
-    margin-top: 20px;
-    margin-bottom: 5px;
-    margin-left: 20px;
-    text-align: left;
-    padding-left: 5px;
-    padding-right: 100px;
-    letter-spacing: -1px;
+.pill-price,
+.pill-features {
+    margin: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    font-size: large;
+    transition: background-color 0.3s ease;
+}
+
+.pill-price:hover,
+.pill-features:hover {
+    background-color: darkorange;
 }
 
 .list {
-    font-size: .75em;
-    margin: 24px;
     text-align: left;
-    padding-left: 20px;
-    letter-spacing: -.5px;
-    margin-bottom: 10px;
-}
-
-.first-featured-item-details{
-    box-shadow: 0px 4px 4px rgb(0,0,0,.5);
-    text-align: center;
-    background-color: var(--main-bg-color);
-    border: 1px solid;
-    border-color: var(-secondary-bg-color);
-    color: var(--text-main-color);
-    display: none;
-    font-size: 32px;
-    text-align: left;
-  
-}
-
-.second-featured-item-details{
-    box-shadow: 0px 4px 4px rgb(0,0,0,.5);
-    text-align: center;
-    background-color: var(--main-bg-color);
-    border: 1px solid;
-    border-color: var(-secondary-bg-color);
-    color: var(--text-main-color);
-    display: none;
-    font-size: 32px;
-    text-align: left;
-}
-
-.third-featured-item-details{
-    box-shadow: 0px 4px 4px rgb(0,0,0,.5);
-    text-align: center;
-    background-color: var(--main-bg-color)  ;
-    border: 1px solid;
-    border-color: var(-secondary-bg-color);
-    color: var(--text-main-color);
-    display: none;
-    font-size: 32px;
-    text-align: left;
-}
-
-.fourth-featured-item-details{
-    box-shadow: 0px 4px 4px rgb(0,0,0,.5);
-    text-align: center;
-    background-color: var(--main-bg-color);  
-    border: 1px solid;
-    border-color: #452103;
-    color: black;
-    display: none;
-    font-size: 32px;
-    text-align: left;
-}
-
-.featured-item-image{
-    padding: 32px;
-}
-
-.pill-price {
-    background-color: var(--main-color);
-    border: none;
-    color: var(--white-color);
-    text-align: center;
-    text-decoration: none;
-    display: inlinek;
-    border-radius: 35px;
-    margin-left: 20px;
-    padding: 5px 10px;
-    font-size: .5em;
-}
-
-.pill-features {
-    background-color: var(--white-color);
-    border: 1px solid;
-    color: var(--tex-main-color);
-    text-align: center;
-    text-decoration: none;
-    border-radius: 35px;
-    padding: 5px 10px;
-    font-size: .5em;
+    margin: 5px 0;
+    font-size: large /* Space out list items */
 }

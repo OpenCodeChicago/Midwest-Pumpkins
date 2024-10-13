@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.top-sellers {
+    text-align: center;
+    padding: 20px;
+}
+
+.top-sellers-header {
+    font-size: 2em; /* Increase the size of the header */
+    margin-bottom: 20px;
+}
+
+.top-sellers-color-text {
+    color: orange; /* Color for the "TOP" text */
+}
+
+.top-sellers-flex-container {
+    display: flex;
+    justify-content: center; /* Center the images */
+    flex-wrap: wrap; /* Allow images to wrap */
+    margin-bottom: 20px; /* Space below the images */
+    background-color: rgb(225, 202, 174);
+    border-radius: 30px;
+    
+    
+}
+
+.top-sellers-image {
+    width: 350px; /* Set a fixed width for the images */
+    height: auto; /* Maintain aspect ratio */
+    margin: 30px; /* Space around each image */
+    border-radius: 8px; /* Rounded corners for images */
+    margin-top: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for images */
+     /* Transition effect for hover */
+     
+}
+
+/* .top-sellers-image:hover {
+    transform: scale(1.05); /* Scale up on hover */
+
+
+.top-sellers-text {
+    font-size:large; /* Text size for the description */
+    margin: 20px 0; /* Space around the text */
+    line-height: 1.5; /* Improve line spacing */
+}
+
+button {
+    background-color: orange; /* Button background color */
+    color: white; /* Button text color */
+    padding: 10px 20px; /* Padding for button */
+    border: none; /* Remove border */
+    border-radius: 20px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: large; /* Font size for button */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+button:hover {
+    background-color: darkorange; /* Darken button on hover */
+}
