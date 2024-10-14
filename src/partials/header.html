@@ -1,47 +1,37 @@
 <header class="header">
-    <nav>
-        <div class="logo">
-          <span class="orange-text">Midwest</span> Pumpkins <span class="logo-icon">🎃</span>
-        </div>
-        <div class="social-icons" id="desktop-social">
-            <a href="#"><i class="fa-brands fa-github "></i></a>
-            <a href="#"><i class="fa-brands fa-youtube "></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin "></i></a>
-            <a href="#"><i class="fa-brands fa-x-twitter "></i></a>
-            <a href="#"><i class="fa-brands fa-facebook "></i></i></a>
-        </div>
-      <ul class="desktop-menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Best pumpkins</a></li>
-        <li><a href="#">Top sellers</a></li>
-        <li><a href="#">Reviews</a></li>
-      </ul>
-      
-      <div class="burger-menu" id="burger-menu">
-        <span class="burger"></span>
-        <span class="burger"></span>
-        <span class="burger"></span>
-      </div>
-    </nav>
-  </header>
-
-  <div class="mobile-menu" id="mobile-menu">
-    <div class="mobile-nav">
-      <span class="close" id="close-menu">✖</span>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Best pumpkins</a></li>
-        <li><a href="#">Top sellers</a></li>
-        <li><a href="#">Reviews</a></li>
-      </ul>
-      <div class="mobile-social-icons">
-        <a href="#"><i class="fa-brands fa-github "></i></a>
-        <a href="#"><i class="fa-brands fa-youtube "></i></a>
-        <a href="#"><i class="fa-brands fa-linkedin "></i></a>
-        <a href="#"><i class="fa-brands fa-x-twitter "></i></a>
-        <a href="#"><i class="fa-brands fa-facebook "></i></a>
-      </div>
-    </div>
+  <div class="heading">
+    <h1>
+      <span>Midwest&nbsp;</span>
+      <span>Pumpkins</span>
+    </h1>
+    <img src="images/pumpkin.svg" alt="" />
   </div>
+  <nav>
+    <span id="nav-label" class="visually-hidden">
+      Toggle navigation
+    </span>
+    <button
+      class="burger-menu__open"
+      aria-expanded="false"
+      aria-labelledby="nav-label"
+    >
+      <svg
+        aria-hidden="true"
+        class="burger-menu__icon"
+        width="32"
+        height="32"
+        viewBox="0 0 32 32"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M4 16H28M4 8H28M4 24H28"
+          stroke="currentColor"
+          stroke-width="2.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+  </nav>
+</header>

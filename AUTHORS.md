@@ -30,13 +30,16 @@
 - **Gaurav Bomble** - Contributions
   [GitHub](https://github.com/Gauravtb2253)
 
-<!-- - **Huda Hajira** - Contributions
+- **Huda Hajira** - Contributions
   [GitHub](https://github.com/huda-code)
 
-- **Shubham Sharma** - Contributions
-  [GitHub](https://github.com/shubhamsharma9199)
+- **Amy Woodworth** - Contributions
+  [GitHub](https://github.com/a-woodworth)
 
-- **Purva Sawant** - Contributions
+<!-- - **Shubham Sharma** - Contributions
+  [GitHub](https://github.com/shubhamsharma9199) -->
+
+<!-- - **Purva Sawant** - Contributions
   [GitHub](https://github.com/19purva) -->
 
 <!-- - **Pranjay Singh** - Contributions

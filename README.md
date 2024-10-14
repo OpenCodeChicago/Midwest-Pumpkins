@@ -251,6 +251,12 @@ A big thank you to all contributors for your hard work and dedication to the **M
 - **Gaurav Bomble** - Contributions
   [GitHub](https://github.com/Gauravtb2253)
 
+- **Huda Hajira** - Contributions
+  [GitHub](https://github.com/huda-code)
+
+- **Amy Woodworth** - Contributions
+  [GitHub](https://github.com/a-woodworth)
+
 ---
 
 ## 🧑‍💻 Author
