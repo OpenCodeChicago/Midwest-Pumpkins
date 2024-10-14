@@ -257,6 +257,12 @@ A big thank you to all contributors for your hard work and dedication to the **M
 - **Amy Woodworth** - Contributions
   [GitHub](https://github.com/a-woodworth)
 
+- **Vikas Rathore** - Contributions
+  [GitHub](https://github.com/Vikassinghrathor)
+
+- **Vivek** - Contributions
+  [GitHub](https://github.com/vivek1842)
+
 ---
 
 ## 🧑‍💻 Author

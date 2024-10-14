@@ -36,6 +36,12 @@
 - **Amy Woodworth** - Contributions
   [GitHub](https://github.com/a-woodworth)
 
+- **Vikas Rathore** - Contributions
+  [GitHub](https://github.com/Vikassinghrathor)
+
+- **Vivek** - Contributions
+  [GitHub](https://github.com/vivek1842)
+
 <!-- - **Shubham Sharma** - Contributions
   [GitHub](https://github.com/shubhamsharma9199) -->
 
