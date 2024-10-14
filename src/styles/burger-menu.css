@@ -6,12 +6,12 @@
     width: 28px;
   }
 
-  @media (width >= 48rem) and (width < 75rem) {
+  @media (width >=48rem) and (width < 75rem) {
     height: 32px;
     width: 32px;
   }
 
-  @media (width >= 75rem) {
+  @media (width >=75rem) {
     display: none;
   }
 }
