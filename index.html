@@ -8,7 +8,7 @@ Description: Main HTML structure for the Midwest Pumpkins project
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/Midwest-Pumpkins/vite.svg" />
+    <link rel="icon" type="favicon" href="/Midwest-Pumpkins/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
@@ -34,12 +34,26 @@ Description: Main HTML structure for the Midwest Pumpkins project
       rel="stylesheet"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="stylesheet" href="./styles/media.css" />
-    <!--favicon-->
-    <link rel="icon" type="image/png" href="/Midwest-Pumpkins/assets/Vector-CNHTwVk6.png" sizes="16x16">
+    <!-- Sweet alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link
+      rel="icon"
+      type="image/png"
+      href="../public/images/Vector.png"
+      sizes="16x16"
+    />
     <title>Midwest Pumpkins | Hacktoberfest 2024 Open-Source Project</title>
-    <script type="module" crossorigin src="/Midwest-Pumpkins/assets/main-BzPPErRj.js"></script>
-    <link rel="stylesheet" crossorigin href="/Midwest-Pumpkins/assets/main-CAhRP6kJ.css">
+    <script type="module" crossorigin src="/Midwest-Pumpkins/assets/main-D1kMxUCX.js"></script>
+    <link rel="stylesheet" crossorigin href="/Midwest-Pumpkins/assets/main-NsmL3m9C.css">
   </head>
   <body>
     <!-- HEADER -->
@@ -52,9 +66,7 @@ Description: Main HTML structure for the Midwest Pumpkins project
     <img src="images/pumpkin.svg" alt="" />
   </div>
   <nav>
-    <span id="nav-label" class="visually-hidden">
-      Toggle navigation
-    </span>
+    <span id="nav-label" class="visually-hidden"> Toggle navigation </span>
     <button
       class="burger-menu__open"
       aria-expanded="false"
@@ -148,7 +160,7 @@ Description: Main HTML structure for the Midwest Pumpkins project
     <h1 class="features-header">OUR FEATURED <span class="features-color-text">PUMPKINS</span></h1>
     <p class="features-text">Discover our most popular pumpkins, perfect for all your seasonal needs. Whether it’s for carving, cooking, or décor, these are the best picks of the harvest.</p>
     <div class="features-flex-container">
-        <div class="first-featured-item" id="first-featured-item"><img class="featured-item-image" src="/Midwest-Pumpkins/images/jack-o-lantern-pumpkin1920x1080.png"> <p class ="features-p-text">Jack-o’-Lantern Pumpkin</p></div>
+        <div class="first-featured-item" id="first-featured-item"><img class="featured-item-image" src="/Midwest-Pumpkins/images/jack-o-lantern-pumpkin1920x1080.svg"> <p class ="features-p-text">Jack-o’-Lantern Pumpkin</p></div>
         <div class="first-featured-item-details" id="first-featured-item-details">
             <p class ="features-p-text-details">Jack-o’-Lantern Pumpkin</p>
             <button class="pill-price">$12.99</button>
@@ -160,7 +172,7 @@ Description: Main HTML structure for the Midwest Pumpkins project
                 </ul>
         </div>
 
-        <div class="second-featured-item" id="second-featured-item"><img class="featured-item-image" src="/Midwest-Pumpkins/images/sugar-pie-pumpkin1920x1080.png"><p class ="features-p-text">Sugar Pie Pumpkin</p></div>
+        <div class="second-featured-item" id="second-featured-item"><img class="featured-item-image" src="/Midwest-Pumpkins/images/sugar-pie-pumpkin1920x1080.svg"><p class ="features-p-text">Sugar Pie Pumpkin</p></div>
         <div class="second-featured-item-details" id="second-featured-item-details">
             <p class ="features-p-text-details">Sugar Pie Pumpkin</p>
             <button class="pill-price">$9.99</button>
@@ -172,7 +184,7 @@ Description: Main HTML structure for the Midwest Pumpkins project
                 </ul>
         </div>
 
-        <div class ="third-featured-item" id="third-featured-item"><img class="featured-item-image" src="/Midwest-Pumpkins/images/white-ghost-pumpkin1920x1080.png"><p class ="features-p-text">White Ghost Pumpkin</p></div>
+        <div class ="third-featured-item" id="third-featured-item"><img class="featured-item-image" src="/Midwest-Pumpkins/images/white-ghost-pumpkin1920x1080.svg"><p class ="features-p-text">White Ghost Pumpkin</p></div>
         <div class="third-featured-item-details" id="third-featured-item-details">
             <p class ="features-p-text-details">White Ghost Pumpkin</p>
             <button class="pill-price">$14.99</button>
@@ -184,7 +196,7 @@ Description: Main HTML structure for the Midwest Pumpkins project
                 </ul>
         </div>
 
-        <div class="fourth-featured-item" id="fourth-featured-item"><img class="featured-item-image" src="/Midwest-Pumpkins/images/decorative-mini-pumpkins1920x1080.png"><p class ="features-p-text">Decorative Mini Pumpkins (Set of 3)</p></div>
+        <div class="fourth-featured-item" id="fourth-featured-item"><img class="featured-item-image" src="/Midwest-Pumpkins/images/decorative-mini-pumpkins1920x1080.svg"><p class ="features-p-text">Decorative Mini Pumpkins (Set of 3)</p></div>
         <div class="fourth-featured-item-details" id="fourth-featured-item-details">
             <p class ="features-p-text-details">Decorative Mini Pumpkins (Set of 3)</p>
             <button class="pill-price">$4.99</button>
@@ -204,20 +216,22 @@ Description: Main HTML structure for the Midwest Pumpkins project
     <span class="top-sellers-color-text">TOP</span>SELLERS
   </h2>
   <div class="top-sellers-flex-container">
-    <img class="top-sellers-image" src="#" alt="orange pumpkins" />
-    <img class="top-sellers-image" src="#" alt="white pumpkins" />
-    <img class="top-sellers-image" src="#" alt="small orange pumpkins" />
+    <img class="top-sellers-image" src="/Midwest-Pumpkins/images/Top-Seller-img1.png" alt="orange pumpkins" />
+    <img class="top-sellers-image" src="/Midwest-Pumpkins/images/Top-Seller-img2.png" alt="white pumpkins" />
+    <img class="top-sellers-image" src="/Midwest-Pumpkins/images/Top-Seller-img3.png" alt="small orange pumpkins" />
   </div>
+  <div class="top-sellers-flex-textbtncontainer">
   <p class="top-sellers-text">
     Our top-selling pumpkins are the perfect choice for any occasion. Loved by
-    our customers for their exceptional quality, these pumpkins are not only
-    organically grown but also packed with nutrients. Whether for carving,
-    cooking, or decoration, these favorites are sure to bring a fresh, healthy
+    our<br/>customers for their exceptional quality, these pumpkins are not only
+    organically<br/>grown but also packed with nutrients. Whether for carving,
+    cooking, or <br/> decoration, these favorites are sure to bring a fresh, healthy
     touch to your home.
   </p>
-  <button>Buy now</button>
+  <button class="buy-now
+  ">Buy now</button>
+  </div>
 </section>
-
       <section class="reviews">reviews</section>
 
       <section class="subscribe">
@@ -335,12 +349,12 @@ Description: Main HTML structure for the Midwest Pumpkins project
     <!-- BUY NOW MODAL -->
     
 <!-- the modal -->
- <div class="buy-now-modal">
+ <div class="buy-now-modal" id="buyNowModal">
   <h1><span>BUY</span> NOW</h1>
                   <!-- the modal content -->
   <div class="modal-content">
     <!-- <span class="close">&times;</span> -->
-    <form id="buyForm"> 
+    <form id="buyNowForm"> 
       <h2>Personal Information</h2>
         <label for="fname">First name: </label><br>
         <input type="text" id="fname" name="fname" 
@@ -372,7 +386,7 @@ Description: Main HTML structure for the Midwest Pumpkins project
         <textarea placeholder="Comments or Resquests" id="message" name="message" maxlength="200"></textarea><br>
 
         
-        <input type="submit" value="Submit">
+        <button type="submit">Submit</button>
 
     </form>
   </div>
@@ -383,12 +397,28 @@ Description: Main HTML structure for the Midwest Pumpkins project
 
 
     <!-- REVIEWS MODAL -->
-    <div class="reviews-modal">reviews modal</div>
-
+    <div id="reviewModal" class="reviews-modal">
+    <div class="modal-content">
+      <form id="reviewForm">
+        <!-- Form contents -->
+        reviews modal
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+  
 
     <!-- SUBSCRIBE MODAL -->
-    <div class="subscribe-modal">modal</div>
-
+    <div id="subscribeModal" class="subscribe-modal">
+    <div class="modal-content">
+      <form id="subscribeForm">
+        <!-- Form contents -->
+        modal
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+  
 
     <!-- BURGER MENU -->
     <div class="burger-menu">
