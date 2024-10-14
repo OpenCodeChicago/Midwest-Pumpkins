@@ -39,7 +39,7 @@
 - **Vikas Rathore** - Contributions
   [GitHub](https://github.com/Vikassinghrathor)
 
-- **Vivek** - Contributions
+- **Vivek Ghule** - Contributions
   [GitHub](https://github.com/vivek1842)
 
 <!-- - **Shubham Sharma** - Contributions
