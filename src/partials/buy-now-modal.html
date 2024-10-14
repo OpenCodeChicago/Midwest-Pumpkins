@@ -1,11 +1,11 @@
 
 <!-- the modal -->
- <div class="buy-now-modal">
+ <div class="buy-now-modal" id="buyNowModal">
   <h1><span>BUY</span> NOW</h1>
                   <!-- the modal content -->
   <div class="modal-content">
     <!-- <span class="close">&times;</span> -->
-    <form id="buyForm"> 
+    <form id="buyNowForm"> 
       <h2>Personal Information</h2>
         <label for="fname">First name: </label><br>
         <input type="text" id="fname" name="fname" 
@@ -37,7 +37,7 @@
         <textarea placeholder="Comments or Resquests" id="message" name="message" maxlength="200"></textarea><br>
 
         
-        <input type="submit" value="Submit">
+        <button type="submit">Submit</button>
 
     </form>
   </div>
