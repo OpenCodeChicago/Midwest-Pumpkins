@@ -6,3 +6,4 @@ import "./js/subscribe-modal.js";
 import "./js/burger-menu.js";
 import "./js/features.js";
 import "./js/scroll-up.js"
+import "./js/header.js"
