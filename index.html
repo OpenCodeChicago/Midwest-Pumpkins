@@ -52,8 +52,8 @@ Description: Main HTML structure for the Midwest Pumpkins project
       sizes="16x16"
     />
     <title>Midwest Pumpkins | Hacktoberfest 2024 Open-Source Project</title>
-    <script type="module" crossorigin src="/Midwest-Pumpkins/assets/main-D1kMxUCX.js"></script>
-    <link rel="stylesheet" crossorigin href="/Midwest-Pumpkins/assets/main-NsmL3m9C.css">
+    <script type="module" crossorigin src="/Midwest-Pumpkins/assets/main-BJ0wt4NQ.js"></script>
+    <link rel="stylesheet" crossorigin href="/Midwest-Pumpkins/assets/main-Bbv_KHMv.css">
   </head>
   <body>
     <!-- HEADER -->
@@ -232,7 +232,62 @@ Description: Main HTML structure for the Midwest Pumpkins project
   ">Buy now</button>
   </div>
 </section>
-      <section class="reviews">reviews</section>
+      <section class="reviews">
+  <h2>
+    <span>PUMPKINS</span> PEOPLE <br />
+    LOVE!
+  </h2>
+  <br /><br /><br /><br />
+  <div class="card-container">
+    <div class="card">
+      <div class="profile-circle">
+        <img src="/Midwest-Pumpkins/images/Profile1.png" alt="Profile 1" />
+      </div>
+      <h3>Emily Roberts</h3>
+      <br /><br />
+      <p>
+        The Jack-o’-Lantern pumpkins were perfect for our Halloween party. They
+        carved beautifully and lasted for weeks!
+      </p>
+    </div>
+    <div class="card">
+      <div class="profile-circle">
+        <img src="/Midwest-Pumpkins/images/profile2.png" alt="Profile 2" />
+      </div>
+      <h3>Alex Smagin</h3>
+      <br /><br />
+      <p>
+        Midwest Pumpkins has the best organic pumpkins. We made pies with the
+        Sugar Pie variety, and the flavor was incredible!
+      </p>
+    </div>
+    <div class="card">
+      <div class="profile-circle">
+        <img src="/Midwest-Pumpkins/images/profile3.png" alt="Profile 3" />
+      </div>
+      <h3>Sarah Matthews</h3>
+      <br /><br />
+      <p>
+        I love decorating my porch with their White Ghost pumpkins. They’re
+        unique and last throughout the whole season!
+      </p>
+    </div>
+    <!-- Add more cards as needed -->
+  </div>
+
+  <div class="dots">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+  <button id="prevBtn" class="nav-btn">Previous</button>
+  <button id="nextBtn" class="nav-btn">Next</button>
+  <br />
+  <button id="open-modal" class="leave-review">Leave a Review</button>
+  <br /><br /><br /><br /><br /><br />
+</section>
 
       <section class="subscribe">
     <div class="InnerSubscribeContainer">
@@ -397,16 +452,40 @@ Description: Main HTML structure for the Midwest Pumpkins project
 
 
     <!-- REVIEWS MODAL -->
-    <div id="reviewModal" class="reviews-modal">
+    <div id="review-modal" class="modal hidden">
     <div class="modal-content">
-      <form id="reviewForm">
-        <!-- Form contents -->
-        reviews modal
-        <button type="submit">Submit</button>
-      </form>
+        <span class="close" id="close-modal">&times;</span>
+        <h2>LEAVE A REVIEW ABOUT <br><span>OUR PUMPKINS</span></h2>
+        <br><br>
+        <form id="reviewForm">
+            <div>
+                <input type="text" id="name" name="name" required placeholder="Name">
+            </div>
+            <br>
+            <div>
+                <input type="email" id="email" name="email" required placeholder="Email">
+            </div>
+            <br>
+            <div>
+                <div class="phone-input">
+                    <select id="country-code">
+                        /* Add more country codes here */
+                        <option value="+1">+1</option>
+                    </select>
+                    <input type="tel" id="phone" name="phone" required placeholder="Phone number">
+                </div>
+            </div>
+            <br>
+            <div>
+                <textarea id="message" name="message" rows="5" required placeholder="Message"></textarea>
+            </div>
+            <br>
+            <button type="submit">Send</button>
+            <br>
+        </form>
     </div>
-  </div>
-  
+</div>
+
 
     <!-- SUBSCRIBE MODAL -->
     <div id="subscribeModal" class="subscribe-modal">
