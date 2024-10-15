@@ -1,20 +1,3 @@
-button {
-    background-color: #FB8500;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-span {
-    color: #FB8500 !important;
-}
-
-button:hover {
-    background-color: #FB8500;
-}
-
 /* Modal Styles */
 .modal {
     position: fixed;
@@ -32,8 +15,8 @@ button:hover {
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 90%; 
-    max-width: 600px; 
+    width: 90%;
+    max-width: 600px;
     border-radius: 20px;
 }
 
@@ -58,32 +41,43 @@ button:hover {
 .phone-input {
     display: flex;
     align-items: center;
-    width: 100%; /* Make the phone input container take full width */
+    width: 100%;
+    /* Make the phone input container take full width */
 }
 
-.phone-input select, 
+.phone-input select,
 .phone-input input {
-    width: 100%; /* Make the input elements take up the entire width */
+    width: 100%;
+    /* Make the input elements take up the entire width */
     padding: 10px;
-    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    box-sizing: border-box;
+    /* Ensure padding doesn't affect width */
 }
 
 .phone-input select {
-    max-width: 80px; /* Limit the width of the country code select */
+    max-width: 80px;
+    /* Limit the width of the country code select */
     margin-right: 10px;
 }
 
-input[type="text"], input[type="email"], input[type="number"], textarea {
-    width: 100%; /* Ensure all text inputs and textarea take full width */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+    width: 100%;
+    /* Ensure all text inputs and textarea take full width */
     padding: 10px;
     margin-bottom: 10px;
-    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    box-sizing: border-box;
+    /* Ensure padding doesn't affect width */
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
 /* Additional textarea-specific styles for better user experience */
 textarea {
-    height: 150px; /* Set an appropriate height for the textarea */
-    resize: vertical; /* Allow vertical resizing but not horizontal */
+    height: 150px;
+    /* Set an appropriate height for the textarea */
+    resize: vertical;
+    /* Allow vertical resizing but not horizontal */
 }
