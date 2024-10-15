@@ -266,6 +266,9 @@ A big thank you to all contributors for your hard work and dedication to the **M
 - **Sreya Sudheeran** - Contributions
   [GitHub](https://github.com/SreyaSudheeran)
 
+- **Lakshita Kumawat** - Contributions
+  [GitHub](https://github.com/Lakshita-Kumawat)
+
 ---
 
 ## 🧑‍💻 Author

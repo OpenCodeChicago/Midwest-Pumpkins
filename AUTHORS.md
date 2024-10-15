@@ -45,6 +45,9 @@
 - **Sreya Sudheeran** - Contributions
   [GitHub](https://github.com/SreyaSudheeran)
 
+- **Lakshita Kumawat** - Contributions
+  [GitHub](https://github.com/Lakshita-Kumawat)
+
 <!-- - **Shubham Sharma** - Contributions
   [GitHub](https://github.com/shubhamsharma9199) -->
 
