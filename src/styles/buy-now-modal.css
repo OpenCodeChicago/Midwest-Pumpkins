@@ -13,18 +13,15 @@
   max-width: 500px;
 }
 
-
 h1 {
-    font: var(--secondary-text-font);
-
+  font: var(--secondary-text-font);
 }
 
 span {
-   color: red;
-
+  color: red;
 }
 
-  /* h2 {
+/* h2 {
     font: var(--secondary-text-font);
     font-weight: 500;
   } */
