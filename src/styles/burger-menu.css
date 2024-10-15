@@ -1,5 +1,6 @@
 .burger-menu__open,
 .burger-menu__close,
+/* hamburger open and close button icon size */
 .burger-menu__icon {
   @media (width < 48rem) {
     height: 28px;
@@ -29,8 +30,8 @@
 
 .burger-menu__open:is(:hover, :focus),
 .burger-menu__close:is(:hover, :focus),
-.burger-menu__item a:is(:hover, :focus),
-.burger-menu__footer li a:is(:hover, :focus) {
+/* Focus outline for keyboard users */
+.burger-menu__item a:is(:focus) {
   outline: 1px dotted currentColor;
   outline-offset: 0.2em;
 }
@@ -40,9 +41,10 @@
   outline-color: var(--main-color-hover);
 }
 
-.burger-menu__close:is(:hover, :focus) {
-  color: var(--white-color);
-  outline-color: var(--white-color);
+.burger-menu__close:is(:hover, :focus),
+.burger-menu__item a:is(:hover, :focus) {
+  color: var(--main-color);
+  display: inline-block;
 }
 
 .burger-menu__open:is(:active),
@@ -57,7 +59,8 @@
   right: 0;
   width: 220px;
   translate: 100vw 0;
-  transition: translate 0.5s ease-in-out;
+  /* translate: 0; */
+  transition: var(--transition);
   z-index: 2;
 }
 
@@ -96,6 +99,16 @@
   li {
     height: 24px;
     width: 24px;
+  }
+
+  svg {
+    height: 22px;
+    width: 22px;
+
+    @media (min-width: 48rem) {
+      height: 24px;
+      width: 24px;
+    }
   }
 }
 
