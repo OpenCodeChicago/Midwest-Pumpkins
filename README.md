@@ -263,6 +263,9 @@ A big thank you to all contributors for your hard work and dedication to the **M
 - **Vivek Ghule** - Contributions
   [GitHub](https://github.com/vivek1842)
 
+- **Sreya Sudheeran** - Contributions
+  [GitHub](https://github.com/SreyaSudheeran)
+
 ---
 
 ## 🧑‍💻 Author

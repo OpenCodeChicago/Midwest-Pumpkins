@@ -42,6 +42,9 @@
 - **Vivek Ghule** - Contributions
   [GitHub](https://github.com/vivek1842)
 
+- **Sreya Sudheeran** - Contributions
+  [GitHub](https://github.com/SreyaSudheeran)
+
 <!-- - **Shubham Sharma** - Contributions
   [GitHub](https://github.com/shubhamsharma9199) -->
 
