@@ -11,32 +11,40 @@
   }
 }
 
-.heading h1 span:first-child,
-.heading h1 span:last-child {
+.logo-link {
+  display: inline-flex;
+  gap: 4px;
+  align-items: center;
   font-family: var(--secondary-text-font);
   font-size: 14px;
   font-weight: 700;
   line-height: 18px;
   letter-spacing: -0.42px;
+
+  @media (min-width: 48rem) {
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.56px;
+  }
 }
 
-h1 span:first-child {
+.logo-link span:first-child {
   color: var(--main-color);
   font-style: italic;
 }
 
-h1 span:last-child {
+.logo-link span:nth-child(2) {
   color: var(--text-main-color);
+  text-transform: uppercase;
 }
 
-.heading {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  gap: 4px;
-}
-
-.heading img {
+.logo-link svg {
+  color: var(--main-color);
   height: 21px;
   width: 21px;
+
+  @media (min-width: 48rem) {
+    height: 24px;
+    width: 24px;
+  }
 }
