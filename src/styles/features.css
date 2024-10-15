@@ -11,13 +11,9 @@
 
 .features-flex-container{
     display: flex;
-    
-}
-
-@media (max-width: 800px) {
-.features-flex-container {
-    flex-direction: column;
-    }
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .features-flex-container > div {
@@ -25,6 +21,15 @@
     border-radius: 15px;
     flex-grow: 1;
     flex-basis: 0;
+    min-width: 400px;
+    max-width: 600px;
+    padding: 2rem;
+}
+
+@media(max-width: 500px){
+    .features-flex-container > div {
+        min-width: 300px;
+    }
 }
 
 .features-p-text{
@@ -35,7 +40,7 @@
 }
 
 
-.features-color-text{
+#features-color-text{
     color: var(--main-color);
 }
 
