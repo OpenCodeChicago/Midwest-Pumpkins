@@ -3,8 +3,8 @@
   justify-content: space-between;
   align-items: center;
   margin-inline: 20px;
-  padding-block-start: 20px;
-  padding-block-end: 14px;
+  padding-block-start: 32px;
+  padding-block-end: 32px;
 
   @media (min-width: 48rem) {
     margin-inline: 32px;
@@ -47,4 +47,34 @@
     height: 24px;
     width: 24px;
   }
+}
+
+.menu {
+  display: flex;
+}
+.menu li {
+  margin-right: 20px;
+}
+.menu li:last-child {
+  margin: 0;
+}
+.menu li a {
+  font: 500 14px/16px var(--secondary-text-font);
+  letter-spacing: -0.02em;
+}
+.header-social-icons {
+  display: flex;
+}
+.header-social-icons li {
+  margin-right: 10px;
+  transition: all 400ms ease-in-out;
+}
+.header-social-icons li:last-child {
+  margin: 0;
+}
+.header-social-icons li:hover svg path {
+  fill: var(--main-color-hover);
+}
+.header-social-icons li.twitter:hover svg path {
+  stroke: var(--main-color-hover);
 }
