@@ -22,6 +22,15 @@
     border-radius: 15px;
     flex-grow: 1;
     flex-basis: 0;
+    min-width: 400px;
+    max-width: 600px;
+    padding: 2rem;
+}
+
+@media(max-width: 500px){
+    .features-flex-container > div {
+        min-width: 300px;
+    }
 }
 
 .header{
@@ -30,7 +39,6 @@
 }
 
 .subheader{
-    
     text-align: center;
     margin-left: 20%;
     margin-right: 20%;

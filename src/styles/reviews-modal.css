@@ -1,0 +1,83 @@
+/* Modal Styles */
+.modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 20px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.phone-input {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /* Make the phone input container take full width */
+}
+
+.phone-input select,
+.phone-input input {
+    width: 100%;
+    /* Make the input elements take up the entire width */
+    padding: 10px;
+    box-sizing: border-box;
+    /* Ensure padding doesn't affect width */
+}
+
+.phone-input select {
+    max-width: 80px;
+    /* Limit the width of the country code select */
+    margin-right: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+    width: 100%;
+    /* Ensure all text inputs and textarea take full width */
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    /* Ensure padding doesn't affect width */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Additional textarea-specific styles for better user experience */
+textarea {
+    height: 150px;
+    /* Set an appropriate height for the textarea */
+    resize: vertical;
+    /* Allow vertical resizing but not horizontal */
+}

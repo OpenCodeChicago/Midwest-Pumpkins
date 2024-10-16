@@ -67,6 +67,7 @@
 }
 .hero-description .buttons .top-seller:hover {
   border-color: var(--main-color);
+  text-decoration: underline;
 }
 .hero-description .buttons .top-seller {
   background-color: transparent;

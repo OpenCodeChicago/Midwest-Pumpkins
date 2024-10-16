@@ -1,43 +1,52 @@
 /* General reset for the button */
 .scroll-up {
-    position: fixed; /* Position the button fixed to the viewport */
-    bottom: 20px; /* Distance from the bottom of the page */
-    right: 40px; /* Distance from the right of the page */
-    z-index: 1000; /* Ensure the button is above other content */
+    position: fixed;
+    /* Position the button fixed to the viewport */
+    bottom: 20px;
+    /* Distance from the bottom of the page */
+    right: 40px;
+    /* Distance from the right of the page */
+    z-index: 1000;
+    /* Ensure the button is above other content */
 }
 
 /* Button styling */
 .scroll-up-btn {
-    display: flex; /* Use flexbox for centering content */
-    justify-content: center; /* Center the image horizontally */
-    align-items: center; /* Center the image vertically */
-    width: 50px; /* Button width */
-    height: 50px; /* Button height */
-    border: none; /* Remove default button border */
-    border-radius: 50%; /* Make the button round */
-    cursor: pointer; /* Change cursor to pointer */
-    transition: background-color 0.3s, transform 0.3s; /* Smooth transition effects */
+    display: flex;
+    /* Use flexbox for centering content */
+    justify-content: center;
+    /* Center the image horizontally */
+    align-items: center;
+    /* Center the image vertically */
+    width: 50px;
+    /* Button width */
+    height: 50px;
+    /* Button height */
+    border: none;
+    /* Remove default button border */
+    border-radius: 50%;
+    /* Make the button round */
+    cursor: pointer;
+    /* Change cursor to pointer */
+    transition: background-color 0.3s, transform 0.3s;
+    /* Smooth transition effects */
 }
 
 /* Button hover effect */
 .scroll-up-btn:hover {
     transform: scale(1.1);
-    background-color: #FB8500; 
+    background-color: #FB8500;
 }
 
 /* Image styling */
 .scroll-up-btn img {
-    width: 100%; /* Scale image to fit button */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    /* Scale image to fit button */
+    height: auto;
+    /* Maintain aspect ratio */
 }
 
 .scroll-up-btn:hover .icon {
-    filter: brightness(0) invert(1); /* Makes the icon white on hover */
+    filter: brightness(0) invert(1);
+    /* Makes the icon white on hover */
 }
-
-/* Add a smooth scroll behavior for the entire document */
-html {
-    scroll-behavior: smooth; /* Smooth scrolling for anchors */
-}
-
-

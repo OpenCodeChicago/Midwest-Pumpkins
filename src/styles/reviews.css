@@ -1,0 +1,134 @@
+.leave-review {
+    background: none;
+    border: 2px solid #FB8500;
+    color: #FB8500;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.leave-review:hover {
+    background-color: #FB8500;
+    color: white;
+    text-decoration: none;
+}
+
+.reviews {
+    text-align: center;
+}
+
+.reviews h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.03em;
+    text-align: center;
+}
+
+
+.reviews span {
+    color: #FB8500;
+    font-style: normal !important;
+}
+
+.card h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.card p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+}
+
+.card {
+    flex: 1 1 calc(33.33% - 20px);
+    margin: 10px;
+    padding: 20px;
+    height: 250px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-circle {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile-circle img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #FB8500;
+    height: 12px;
+    width: 20px;
+    border-radius: 12px;
+}
+
+.nav-btn {
+    background-color: #FB8500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.nav-btn:hover {
+    background-color: #FB8500;
+}
