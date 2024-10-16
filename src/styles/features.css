@@ -9,13 +9,12 @@
 
 .features-flex-container{
     display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-@media (max-width: 800px) {
-    .features-flex-container {
-        flex-direction: column;
-    }
-}    
+
 
 .features-flex-container > div {
     margin: 28px;
@@ -33,7 +32,7 @@
     }
 }
 
-.header{
+.features-header{
     text-align: center;
     margin: 32px;
 }
@@ -50,8 +49,8 @@
 }
 
 
-.card{
-    padding: 24px;
+.features-card{
+    
     box-shadow: 0px 4px 4px rgb(0,0,0,.5);
     text-align: center;
     background-color: var(-secondary-bg-color);
@@ -116,7 +115,7 @@ li{
     border: 1px solid var(--main-color);
 }
 
-.card:hover .card-details{
+.features-card:hover .card-details{
     height: 100%;
 }
 
