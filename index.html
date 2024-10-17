@@ -52,8 +52,8 @@ Description: Main HTML structure for the Midwest Pumpkins project
       sizes="16x16"
     />
     <title>Midwest Pumpkins | Hacktoberfest 2024 Open-Source Project</title>
-    <script type="module" crossorigin src="/Midwest-Pumpkins/assets/main-UVV9bD6Z.js"></script>
-    <link rel="stylesheet" crossorigin href="/Midwest-Pumpkins/assets/main-CK6vxo8B.css">
+    <script type="module" crossorigin src="/Midwest-Pumpkins/assets/main-fXa_MFlD.js"></script>
+    <link rel="stylesheet" crossorigin href="/Midwest-Pumpkins/assets/main-B0rUmHLO.css">
   </head>
   <body>
     <!-- HEADER -->
@@ -67,9 +67,19 @@ Description: Main HTML structure for the Midwest Pumpkins project
       <span class="visually-hidden">Logo. Click for home.</span>
     </a>
   </div>
-  <ul class="header-social-icons">
+  <span id="desktop-social-media-links" hidden>
+    Social Media Links
+  </span>
+  <ul
+    class="header-social-icons desktop-menu"
+    aria-labelledby="desktop-social-media-links"
+  >
     <li>
-      <a href="https://github.com/OpenCodeChicago">
+      <a
+        href="https://github.com/OpenCodeChicago"
+        aria-label="GitHub"
+        target="_blank"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -85,7 +95,11 @@ Description: Main HTML structure for the Midwest Pumpkins project
       </a>
     </li>
     <li>
-      <a href="https://www.youtube.com/@AlexSmaginDev">
+      <a
+        href="https://www.youtube.com/@AlexSmaginDev"
+        aria-label="YouTube"
+        target="_blank"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -101,7 +115,11 @@ Description: Main HTML structure for the Midwest Pumpkins project
       </a>
     </li>
     <li>
-      <a href="https://www.linkedin.com/company/open-code-chicago">
+      <a
+        href="https://www.linkedin.com/company/open-code-chicago"
+        aria-label="LinkedIn"
+        target="_blank"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -117,7 +135,11 @@ Description: Main HTML structure for the Midwest Pumpkins project
       </a>
     </li>
     <li class="twitter">
-      <a href="https://x.com/alexsmagin29">
+      <a
+        href="https://x.com/alexsmagin29"
+        aria-label="X"
+        target="_blank"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -140,7 +162,11 @@ Description: Main HTML structure for the Midwest Pumpkins project
       </a>
     </li>
     <li>
-      <a href="https://www.facebook.com/profile.php?id=61565627819350">
+      <a
+        href="https://www.facebook.com/profile.php?id=61565627819350"
+        aria-label="Facebook"
+        target="_blank"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -157,12 +183,13 @@ Description: Main HTML structure for the Midwest Pumpkins project
     </li>
   </ul>
   <nav>
-    <ul class="menu">
+    <span id="desktop-nav-label" hidden>Navigation</span>
+    <ul class="menu desktop-menu" aria-labelledby="desktop-nav-label">
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
-      <li><a href="#best Pumpkins">Best Pumpkins</a></li>
-      <li><a href="#top-sellers">Top Sellers</a></li>
-      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#best-pumpkins">Best Pumpkins</a></li>
+      <li><a href="#top-sellers-section">Top Sellers</a></li>
+      <li><a href="#reviews-section">Reviews</a></li>
     </ul>
     <span id="nav-label" hidden>Toggle navigation</span>
     <button
@@ -200,52 +227,65 @@ Description: Main HTML structure for the Midwest Pumpkins project
   </div>
 </section>
 
-      <section class="benefits">
-    <div class="benefits-container">
-      <div class="benefit-card">
-        <div class="icon">
-          <img src="/Midwest-Pumpkins/images/logo1.png" alt="Family-Owned Icon">
-        </div>
-        <h3 class="benefit-title">Family-Owned</h3>
-        <p class="benefit-description">
-          Proudly serving the Midwest since 1995, our family-run farm is dedicated to growing pumpkins with care and passion, passed down through generations.
-        </p>
+      <section class="benefits" id="about">
+  <div class="benefits-container">
+    <div class="benefit-card">
+      <div class="icon">
+        <img src="/Midwest-Pumpkins/images/logo1.png" alt="Family-Owned Icon" />
       </div>
-      <div class="divider"></div>
-      <div class="benefit-card">
-        <div class="icon">
-          <img src="/Midwest-Pumpkins/images/logo2.png" alt="Best Price Icon">
-        </div>
-        <h3 class="benefit-title">Best Price</h3>
-        <p class="benefit-description">
-          We believe in offering the finest pumpkins at the best prices. With Midwest Pumpkins, you get exceptional quality without breaking the bank.
-        </p>
+      <h3 class="benefit-title">Family-Owned</h3>
+      <p class="benefit-description">
+        Proudly serving the Midwest since 1995, our family-run farm is
+        dedicated to growing pumpkins with care and passion, passed
+        down through generations.
+      </p>
+    </div>
+    <div class="divider"></div>
+    <div class="benefit-card">
+      <div class="icon">
+        <img src="/Midwest-Pumpkins/images/logo2.png" alt="Best Price Icon" />
       </div>
-      <div class="divider"></div>
-      <div class="benefit-card">
-        <div class="icon">
-          <img src="/Midwest-Pumpkins/images/logo3.png" alt="Organic Icon">
-        </div>
-        <h3 class="benefit-title">100% Organic, Farm-Raised</h3>
-        <p class="benefit-description">
-          Our pumpkins are grown naturally on Illinois soil, free from pesticides and chemicals. You'll enjoy the pure, fresh taste of the harvest, straight from our fields.
-        </p>
-        <div class="scroll-up">
-          <button id="scrollUpBtn" class="scroll-up-btn" style="display: none">
-            <img  class="icon" src="/Midwest-Pumpkins/images/Scroll-up.svg" alt="Scroll up icon" />
-          </button>
-        </div>
-        
+      <h3 class="benefit-title">Best Price</h3>
+      <p class="benefit-description">
+        We believe in offering the finest pumpkins at the best prices.
+        With Midwest Pumpkins, you get exceptional quality without
+        breaking the bank.
+      </p>
+    </div>
+    <div class="divider"></div>
+    <div class="benefit-card">
+      <div class="icon">
+        <img src="/Midwest-Pumpkins/images/logo3.png" alt="Organic Icon" />
+      </div>
+      <h3 class="benefit-title">100% Organic, Farm-Raised</h3>
+      <p class="benefit-description">
+        Our pumpkins are grown naturally on Illinois soil, free from
+        pesticides and chemicals. You'll enjoy the pure, fresh taste
+        of the harvest, straight from our fields.
+      </p>
+      <div class="scroll-up">
+        <button
+          id="scrollUpBtn"
+          class="scroll-up-btn"
+          style="display: none"
+        >
+          <img
+            class="icon"
+            src="/Midwest-Pumpkins/images/Scroll-up.svg"
+            alt="Scroll up icon"
+          />
+        </button>
       </div>
     </div>
-  </section>
-   
-      <section class="features">
+  </div>
+</section>
+
+      <section class="features" id="best-pumpkins">
     <h2 class="features-header">OUR FEATURED <span class="header-color">PUMPKINS</span></h1>
     <p class="subheader">Discover our most popular pumpkins, perfect for all your seasonal needs. Whether it’s for carving, cooking, or décor, these are the best picks of the harvest.</p>
 
     <div class="features-flex-container">
-        <div class="features-card first"><img src="/Midwest-Pumpkins/images/jack-o-lantern-pumpkin1920x1080.svg"> <h3>Jack-o’-Lantern Pumpkin</h3>      
+        <div class="features-card first"><img src="/Midwest-Pumpkins/images/jack-o-lantern-pumpkin1920x1080.svg"> <h3>Jack-o’-Lantern Pumpkin</h3>
             <div class="card-details">
                 <h3>Jack-o’-Lantern Pumpkin</h3>
                 <button class="pill-price">$12.99</button>
@@ -298,28 +338,42 @@ Description: Main HTML structure for the Midwest Pumpkins project
         </div>
     </div>
 </section>
-      <section id="top-sellers" class="top-sellers">
+      <section id="top-sellers" class="top-sellers-section">
   <h2 class="top-sellers-header">
     <span class="top-sellers-color-text">TOP</span>SELLERS
   </h2>
   <div class="top-sellers-flex-container">
-    <img class="top-sellers-image" src="/Midwest-Pumpkins/images/Top-Seller-img1.png" alt="orange pumpkins" />
-    <img class="top-sellers-image" src="/Midwest-Pumpkins/images/Top-Seller-img2.png" alt="white pumpkins" />
-    <img class="top-sellers-image" src="/Midwest-Pumpkins/images/Top-Seller-img3.png" alt="small orange pumpkins" />
+    <img
+      class="top-sellers-image"
+      src="/Midwest-Pumpkins/images/Top-Seller-img1.png"
+      alt="orange pumpkins"
+    />
+    <img
+      class="top-sellers-image"
+      src="/Midwest-Pumpkins/images/Top-Seller-img2.png"
+      alt="white pumpkins"
+    />
+    <img
+      class="top-sellers-image"
+      src="/Midwest-Pumpkins/images/Top-Seller-img3.png"
+      alt="small orange pumpkins"
+    />
   </div>
   <div class="top-sellers-flex-textbtncontainer">
-  <p class="top-sellers-text">
-    Our top-selling pumpkins are the perfect choice for any occasion. Loved by
-    our<br/>customers for their exceptional quality, these pumpkins are not only
-    organically<br/>grown but also packed with nutrients. Whether for carving,
-    cooking, or <br/> decoration, these favorites are sure to bring a fresh, healthy
-    touch to your home.
-  </p>
-  <button class="buy-now
-  ">Buy now</button>
+    <p class="top-sellers-text">
+      Our top-selling pumpkins are the perfect choice for any
+      occasion. Loved by our<br />customers for their exceptional
+      quality, these pumpkins are not only organically<br />grown but
+      also packed with nutrients. Whether for carving, cooking, or
+      <br />
+      decoration, these favorites are sure to bring a fresh, healthy
+      touch to your home.
+    </p>
+    <button class="buy-now">Buy now</button>
   </div>
 </section>
-      <section class="reviews">
+
+      <section class="reviews" id="reviews-section">
   <h2>
     <span>PUMPKINS</span> PEOPLE <br />
     LOVE!
@@ -333,8 +387,8 @@ Description: Main HTML structure for the Midwest Pumpkins project
       <h3>Emily Roberts</h3>
       <br /><br />
       <p>
-        The Jack-o’-Lantern pumpkins were perfect for our Halloween party. They
-        carved beautifully and lasted for weeks!
+        The Jack-o’-Lantern pumpkins were perfect for our Halloween
+        party. They carved beautifully and lasted for weeks!
       </p>
     </div>
     <div class="card">
@@ -344,8 +398,8 @@ Description: Main HTML structure for the Midwest Pumpkins project
       <h3>Alex Smagin</h3>
       <br /><br />
       <p>
-        Midwest Pumpkins has the best organic pumpkins. We made pies with the
-        Sugar Pie variety, and the flavor was incredible!
+        Midwest Pumpkins has the best organic pumpkins. We made pies
+        with the Sugar Pie variety, and the flavor was incredible!
       </p>
     </div>
     <div class="card">
@@ -355,8 +409,8 @@ Description: Main HTML structure for the Midwest Pumpkins project
       <h3>Sarah Matthews</h3>
       <br /><br />
       <p>
-        I love decorating my porch with their White Ghost pumpkins. They’re
-        unique and last throughout the whole season!
+        I love decorating my porch with their White Ghost pumpkins.
+        They’re unique and last throughout the whole season!
       </p>
     </div>
     <!-- Add more cards as needed -->
@@ -471,50 +525,72 @@ Description: Main HTML structure for the Midwest Pumpkins project
 
     <!-- BUY NOW MODAL -->
     
+<div class="modal-container">
+
+
 <!-- the modal -->
- <div class="buy-now-modal" id="buyNowModal">
-  <h1><span>BUY</span> NOW</h1>
+ <div class="buy-now-modal">
+  <button class="close-button">&times;</button>
+
+  <div class="modal-title">
+    <h2><span>BUY</span>&nbsp;NOW</h2>
+  </div>
+  
+  
                   <!-- the modal content -->
-  <div class="modal-content">
-    <!-- <span class="close">&times;</span> -->
-    <form id="buyNowForm"> 
-      <h2>Personal Information</h2>
-        <label for="fname">First name: </label><br>
-        <input type="text" id="fname" name="fname" 
+  
+    <form id="buyForm" class="modal-content"> 
+      <fieldset>
+      <legend>Personal Information</legend>
+        <label for="fname">First name: </label>
+        <input type="text" id="fname" name="fname" placeholder="First Name"
+
         pattern=".{2,}" 
-        title="First name should have atleast two characters"><br>
-        
-        <label for="lname">Last name: </label><br>
-        <input type="text" id="lname" name="lname" 
+        title="First name should have atleast two characters">
+      
+
+      
+        <label for="lname">Last name: </label>
+        <input type="text" id="lname" name="lname" placeholder="Last Name"
         pattern=".{2,}" 
-        title="last name should have atleast two characters"><br>
+        title="last name should have atleast two characters">
+      
+       
+        <label for="email">Email: </label>
         
-        <label for="email">Email: </label><br>
-        <input type="email" id="email" name="email" 
+        <input type="email" id="email" name="email" placeholder="Email"
         pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" 
-        title="Please enter a valid email address"><br>
-        
-        <label for="tel">Phone number: </label><br>
-        <input type="tel" id="tel" name="tel"
+        title="Please enter a valid email address">
+      
+
+        <label for="tel">Phone number: </label>
+        <div class="input-group">
+          <span class="flag">🇺🇸</span>
+        <input type="tel" id="tel" name="tel" placeholder="Phone number"
         pattern="\d{10}"
-        title="Phone number must be 10 digits"><br>
-        
-        <label for="number">Card number: </label><br>
-        <input type="text" id="number" name="number"
+        title="Phone number must be 10 digits">
+    </div>
+
+    
+        <label for="number">Card number: </label>
+        <div class="input-group">
+        <input type="text" id="number" name="number" placeholder="Card number"
         pattern="\d{16}"
         title="Card number must be 16 digits"
-        required><br>
+        required>
+        <span class="card-logo">💳</span>
+        </div>  
 
-        <label for="message">Message: </label><br>
-        <textarea placeholder="Comments or Resquests" id="message" name="message" maxlength="200"></textarea><br>
+        <label for="message">Message: </label>
+        <textarea placeholder="Enter your message" id="message" name="message" maxlength="200"></textarea>
 
         
-        <button type="submit">Submit</button>
-
+        <button type="submit" value="Submit" class="submit-button">Submit</button>
+      </fieldset>
     </form>
-  </div>
+  
 </div> 
-
+</div>
   <!-- <script type="module" src="../js/buy-now-modal.js"></script> -->
 
 
