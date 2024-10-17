@@ -5,8 +5,9 @@
     text-align: center;
     margin: auto;
     background-image: url("/images/pumpkin-dark-background640-427.avif");
-    background-position: center center;
-    background-size: cover; 
+    background-size: 100%;  /* Adjust this percentage to zoom out */
+    background-position: center;
+    position: relative;
     min-height: 400px;
 }
 
