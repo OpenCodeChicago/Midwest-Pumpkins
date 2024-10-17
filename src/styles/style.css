@@ -20,7 +20,7 @@
   --white-color: #fff;
   --main-bg-color: #fafafa;
   --secondary-bg-color: #452103;
-  --transition: all 0.3s;
+  --transition: all 0.3s ease-in-out;
   --main-text-font: 'Poppins', sans-serif;
   --secondary-text-font: 'Montserrat', sans-serif;
   --bkg-black-low-opacity-color: rgba(17, 17, 17, 0.7);
