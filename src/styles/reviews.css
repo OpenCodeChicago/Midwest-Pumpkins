@@ -1,8 +1,9 @@
+/* Leave Review Button */
 .leave-review {
     background: none;
-    border: 2px solid #FB8500;
-    color: #FB8500;
-    font-family: 'Montserrat', sans-serif;
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+    font-family: var(--secondary-text-font);
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
@@ -10,22 +11,25 @@
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 25px;
-    transition: background-color 0.3s, color 0.3s;
+    transition: var(--transition);
 }
 
 .leave-review:hover {
-    background-color: #FB8500;
-    color: white;
+    background-color: var(--main-color);
+    color: var(--white-color);
     text-decoration: none;
 }
 
+/* Reviews Section */
 .reviews {
     padding: 2rem;
     text-align: center;
+    overflow: hidden;
+    margin-top: 7%;
 }
 
 .reviews h2 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--secondary-text-font);
     font-size: 24px;
     font-weight: 600;
     line-height: 28px;
@@ -33,14 +37,34 @@
     text-align: center;
 }
 
-
 .reviews span {
-    color: #FB8500;
+    color: var(--main-color);
     font-style: normal !important;
 }
 
+/* Card Section */
+.card-container {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 400%;
+    transition: transform 1.5s ease-in-out;
+    padding-top: 70px;
+}
+
+.card {
+    flex: 1 0 calc(8.33% - 20px);
+    margin: 30px 10px;
+    padding: 20px;
+    height: 250px;
+    background-color: var(--white-color);
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    min-width: 300px;
+}
+
 .card h3 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--secondary-text-font);
     font-size: 18px;
     font-weight: 600;
     line-height: 24px;
@@ -48,9 +72,8 @@
     margin-top: 20px;
 }
 
-
 .card p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--secondary-text-font);
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
@@ -59,26 +82,7 @@
     margin-top: 10px;
 }
 
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    padding: 2.5rem;
-}
-
-.card {
-    flex: 1 1 calc(33.33% - 20px);
-    margin: 30px 10px;
-    padding: 20px;
-    height: 250px;
-    background-color: white;
-    border-radius: 10px;
-    position: relative;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    min-width: 300px;
-}
-
+/* Profile Circle */
 .profile-circle {
     position: absolute;
     top: -40px;
@@ -88,7 +92,7 @@
     height: 80px;
     overflow: hidden;
     border-radius: 50%;
-    border: 3px solid white;
+    border: 3px solid var(--white-color);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -98,7 +102,7 @@
     display: block;
 }
 
-
+/* Navigation Dots */
 .dots {
     text-align: center;
     margin-top: 20px;
@@ -115,15 +119,16 @@
 }
 
 .dot.active {
-    background-color: #FB8500;
+    background-color: var(--main-color);
     height: 12px;
     width: 20px;
     border-radius: 12px;
 }
 
+/* Navigation Buttons */
 .nav-btn {
-    background-color: #FB8500;
-    color: white;
+    background-color: var(--main-color);
+    color: var(--white-color);
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
@@ -132,5 +137,79 @@
 }
 
 .nav-btn:hover {
-    background-color: #FB8500;
+    background-color: var(--main-color-hover);
+}
+
+/* Tablet Styles (768px to 1023px) */
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .card-container {
+        width: 600%;
+        /* Increased to accommodate 2 cards per view */
+    }
+
+    .card {
+        flex: 1 0 calc(16.66% - 20px);
+        /* 100% / (6 * 2 cards) */
+        min-width: calc(50% - 20px);
+        /* Show 2 cards */
+        margin: 30px 10px;
+    }
+
+    .reviews {
+        padding: 1.5rem;
+    }
+
+    .reviews h2 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+}
+
+/* Mobile Styles (up to 767px) */
+@media screen and (max-width: 767px) {
+    .card-container {
+        width: 1200%;
+        /* Increased to accommodate 1 card per view */
+    }
+
+    .card {
+        flex: 1 0 calc(8.33% - 20px);
+        /* 100% / 12 */
+        min-width: calc(100% - 20px);
+        /* Show 1 card */
+        margin: 30px 10px;
+        height: auto;
+        /* Allow height to be flexible */
+        min-height: 200px;
+    }
+
+    .reviews {
+        padding: 1rem;
+    }
+
+    .reviews h2 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .leave-review {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .card h3 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .card p {
+        font-size: 13px;
+        line-height: 17px;
+    }
+
+    .profile-circle {
+        width: 60px;
+        height: 60px;
+        top: -30px;
+    }
 }
