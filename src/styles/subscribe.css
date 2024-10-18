@@ -34,7 +34,7 @@
     letter-spacing: -0.02em;
     text-align: center;
     color:#fff;
-    margin:15px 0px;
+    margin:15px;
 }
 .subscribe button{
 
@@ -47,5 +47,5 @@
     padding: 14px 40px;
 }
 .subscribe button:hover{
-    opacity:25%;
+    opacity:75%;
 }

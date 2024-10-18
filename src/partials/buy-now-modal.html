@@ -1,1 +1,69 @@
-<div class="but-now-modal">but now modal</div>
+
+<div class="modal-container">
+
+
+<!-- the modal -->
+ <div class="buy-now-modal">
+  <button class="close-button">&times;</button>
+
+  <div class="modal-title">
+    <h2><span>BUY</span>&nbsp;NOW</h2>
+  </div>
+  
+  
+                  <!-- the modal content -->
+  
+    <form id="buyForm" class="modal-content"> 
+      <fieldset>
+      <legend>Personal Information</legend>
+        <label for="fname">First name: </label>
+        <input type="text" id="fname" name="fname" placeholder="First Name"
+
+        pattern=".{2,}" 
+        title="First name should have atleast two characters">
+      
+
+      
+        <label for="lname">Last name: </label>
+        <input type="text" id="lname" name="lname" placeholder="Last Name"
+        pattern=".{2,}" 
+        title="last name should have atleast two characters">
+      
+       
+        <label for="email">Email: </label>
+        
+        <input type="email" id="email" name="email" placeholder="Email"
+        pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" 
+        title="Please enter a valid email address">
+      
+
+        <label for="tel">Phone number: </label>
+        <div class="input-group">
+          <span class="flag">🇺🇸</span>
+        <input type="tel" id="tel" name="tel" placeholder="Phone number"
+        pattern="\d{10}"
+        title="Phone number must be 10 digits">
+    </div>
+
+    
+        <label for="number">Card number: </label>
+        <div class="input-group">
+        <input type="text" id="number" name="number" placeholder="Card number"
+        pattern="\d{16}"
+        title="Card number must be 16 digits"
+        required>
+        <span class="card-logo">💳</span>
+        </div>  
+
+        <label for="message">Message: </label>
+        <textarea placeholder="Enter your message" id="message" name="message" maxlength="200"></textarea>
+
+        
+        <button type="submit" value="Submit" class="submit-button">Submit</button>
+      </fieldset>
+    </form>
+  
+</div> 
+</div>
+  <!-- <script type="module" src="../js/buy-now-modal.js"></script> -->
+
