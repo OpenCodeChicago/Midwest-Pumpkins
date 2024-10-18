@@ -90,12 +90,25 @@
 .burger-menu__links {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  /* gap: 24px; */
+  gap: 20px;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: -0.28px;
   margin-inline-start: 50px;
   margin-block-start: 136px;
+}
+
+.burger-menu__links a::after {
+  content: '';
+  display: block;
+  border-bottom: 2px solid transparent;
+  width: 24px;
+  padding-block-start: 4px;
+}
+
+.burger-menu__links a:hover::after {
+  border-bottom: 2px solid var(--main-color);
 }
 
 .burger-menu__footer {
