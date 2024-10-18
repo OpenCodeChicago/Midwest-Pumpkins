@@ -1,6 +1,6 @@
 .top-sellers {
   width: auto;
-  padding: 3rem;
+  padding: 4rem;
   box-sizing: border-box;
 }
 
@@ -29,6 +29,7 @@
   height: auto;
   border-radius: 1rem;
   object-fit: cover;
+  max-height: 35rem;
 }
 
 .top-sellers-flex-textbtncontainer {
@@ -36,10 +37,11 @@
   justify-content: space-between;
   align-items: flex-start;
   margin-top: 0.625rem;
+  gap: 20px;
 }
 
 .top-sellers-text {
-  max-width: 680px;
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.125;
   letter-spacing: -0.02em;
@@ -66,7 +68,7 @@
 
 @media (max-width: 768px) {
   .top-sellers {
-    padding: 2rem;
+    padding: 2.5rem 2rem;
   }
 
   .top-sellers h2 {
@@ -113,7 +115,6 @@
   }
 
   .top-sellers h2 {
-    font-size: 1.5rem;
     margin-bottom: 1rem;
   }
 

@@ -52,6 +52,18 @@
   transform: scale(98%);
 }
 
+.menu{
+  @media ((width <= 75rem)) {
+    display: none;
+  }
+}
+
+.header-social-icons{
+  @media ((width <= 477px)) {
+    display: none;
+  }
+}
+
 .burger-menu {
   background-color: var(--secondary-bg-color);
   position: fixed;
