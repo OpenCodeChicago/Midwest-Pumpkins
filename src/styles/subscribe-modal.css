@@ -1,88 +1,82 @@
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+.subscribe-modal {
+  display: block;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 100px;
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  overflow:hidden;
-  border-radius:20px;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
+.subscribe-modal.show{
+  opacity: 1;
+  pointer-events: auto;
+}
 
-.modal-header{
-  height:196px;
-  max-width:538px;
-  width:90%;
+.modal-header {
+  height: 196px;
+  max-width: 538px;
+  width: 90%;
   background-image: url("/images/subscribe-Pumpkin-pile.avif");
-  background-size: 100%;  /* Adjust this percentage to zoom out */
-background-position: center;
-background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
   position: relative;
   margin: auto;
   padding: 40px;
-  border-radius:40px 40px 0px 0px;
-}
-@media(max-width:700px) {
-  .modal-header {
-    background-size: 130%; 
-    background-position: center;  /* Keeps the center of the image visible */
-  }
+  border-radius: 40px 40px 0px 0px;
 }
 
+.close {
+  color: #fff;
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
 
-  /* The Close Button */
-  .close {
-    color: #fff;
-    position:absolute;
-    right:40px;
-    top:40px;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
+.close:hover {
+  opacity: 0.75;
+}
 
-/* Modal Content */
 .modal-content {
   background-color: #fefefe;
   margin: auto;
   padding: 40px;
   border: 1px solid #888;
   width: 90%;
-  max-width:538px;
-  border-radius:0px 0px 40px 40px;
+  max-width: 538px;
+  border-radius: 0px 0px 40px 40px;
 }
 
-.modal span, .modal strong{
+.modal-content span,
+.modal-content strong {
   font-family: Montserrat;
   font-size: 24px;
   font-weight: 600;
   line-height: 28px;
   letter-spacing: -0.03em;
   text-align: left;
-  text-transform:uppercase;
-}
-.modal p{
-  color:#111111
-} 
-.modal strong{
-  color:#FB8500;
+  text-transform: uppercase;
 }
 
-.modal form {width:100%}
-input::placeholder{
+.modal-content strong {
+  color: #FB8500;
+}
+
+.modal-content form {
+  width: 100%;
+  margin-top: 20px;
+}
+
+input::placeholder {
   font-family: Montserrat;
   font-size: 18px;
   font-weight: 400;
@@ -91,11 +85,14 @@ input::placeholder{
   text-align: left;
   color: #4040404D;
 }
-input[type=email],input[type=submit]{
+
+input[type=email],
+input[type=submit] {
   display: inline-block;
-  border-radius:100px;
+  border-radius: 100px;
   padding: 12px;
 }
+
 input[type=email] {
   width: 60%;
   margin: 8px 0;
@@ -103,23 +100,28 @@ input[type=email] {
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
+
 input[type=submit] {
   width: 35%;
-  background-color:#FB8500;
-  color:#fff;
+  background-color: #FB8500;
+  color: #fff;
   font-family: Montserrat;
   font-size: 14px;
   font-weight: 600;
   line-height: 17.07px;
   text-align: center;
-    border:none;
-    transition: all 400ms ease-in-out;
-
+  border: none;
+  transition: all 400ms ease-in-out;
+  cursor: pointer;
 }
 
-input[type=submit]:hover{
-  opacity:25%;
+input[type=submit]:hover {
+  opacity: 0.75;
 }
 
-
-
+@media(max-width:700px) {
+  .modal-header {
+    background-size: 130%;
+    background-position: center;
+  }
+}
