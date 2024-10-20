@@ -52,8 +52,8 @@ Description: Main HTML structure for the Midwest Pumpkins project
       sizes="16x16"
     />
     <title>Midwest Pumpkins | Hacktoberfest 2024 Open-Source Project</title>
-    <script type="module" crossorigin src="/Midwest-Pumpkins/assets/main-CxwdmS8j.js"></script>
-    <link rel="stylesheet" crossorigin href="/Midwest-Pumpkins/assets/main-YZ5h_UIc.css">
+    <script type="module" crossorigin src="/Midwest-Pumpkins/assets/main-Ydg3dphR.js"></script>
+    <link rel="stylesheet" crossorigin href="/Midwest-Pumpkins/assets/main-D_xSuj02.css">
   </head>
   <body>
     <!-- HEADER -->
@@ -504,14 +504,13 @@ Description: Main HTML structure for the Midwest Pumpkins project
       <section class="subscribe">
     <div class="InnerSubscribeContainer">
         <h2>STAY UPDATED</h2>
-        <p>Be the first to know about our latest harvest, special offers, and events by subscribing to our newsletter. Fresh pumpkins are just a click away!</p>
+        <p>Be the first to know about our latest harvest, special offers, and events by subscribing to our newsletter.
+            Fresh pumpkins are just a click away!</p>
         <div class="buttons">
-            
-            <button type="button"  id="myBtn" data-toggle="modal" data-target="#subscribeNowButton">Subscribe</button>
+            <button type="button" id="myBtn">Subscribe</button>
         </div>
     </div>
 </section>
-
     </main>
 
     <!-- FOOTER -->
@@ -704,27 +703,25 @@ Description: Main HTML structure for the Midwest Pumpkins project
 
 
     <!-- SUBSCRIBE MODAL -->
-    
-<div id="subscribeModal" class="subscribe-modal">
-    <div class="modal-header">
-        <span class="close">
-          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M21 7L7 21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M7 7L21 21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </span>
-    </div>
-    <!-- Modal content -->
-    <div class="modal-content">
-      <span>Explore our <br><strong>pumpkin</strong> First!</span>
-      <form action="/">
-        <input type="email" name="subscribe-email" placeholder="Enter your email">
-        <input type="submit" value="Subscribe">
-      </form>
-    </div>
-  
+    <div id="subscribeModal" class="subscribe-modal">
+  <div class="modal-header">
+    <span class="close" id="close-modal">
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M21 7L7 21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M7 7L21 21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </span>
   </div>
+  <div class="modal-content">
+    <span>Explore our <br><strong>pumpkin</strong> First!</span>
+    <form id="subscribeForm" action="/">
+      <input type="email" name="subscribe-email" placeholder="Enter your email" required>
+      <input type="submit" value="Subscribe">
+    </form>
+  </div>
+</div>
 
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- BURGER MENU -->
     <div class="burger-menu">
