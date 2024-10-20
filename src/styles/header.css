@@ -58,19 +58,24 @@
 .menu {
   display: flex;
 }
+
 .menu li {
   margin-right: 20px;
 }
+
 .menu li:last-child {
   margin: 0;
 }
+
 .menu li a {
   font: 500 14px/16px var(--secondary-text-font);
   letter-spacing: -0.02em;
 }
 
-.menu a:hover {
+.menu a:hover,
+.menu a:focus {
   color: var(--main-color-hover);
+  display: inline-block;
 }
 
 .menu li a::after {
@@ -81,37 +86,46 @@
   padding-block-start: 4px;
 }
 
-.menu li a:hover::after {
+.menu li a:hover::after,
+.menu li a:focus::after {
   border-bottom: 2px solid var(--main-color-hover);
 }
 
 /* Focus outline for keyboard users */
 .logo-link:is(:focus),
-.menu a:is(:focus),
 .header-social-icons a:is(:focus) {
   outline: 1px dotted currentColor;
   outline-offset: 0.2em;
 }
 
 .header-social-icons {
-  display: flex;
-}
-.header-social-icons li {
-  margin-right: 10px;
-  transition: all 400ms ease-in-out;
-}
-.header-social-icons li:last-child {
-  margin: 0;
-}
-.header-social-icons li:hover svg path {
-  fill: var(--main-color-hover);
-}
-.header-social-icons li.twitter:hover svg path {
-  stroke: var(--main-color-hover);
+  display: inline-flex;
+  gap: 0.75rem;
+  margin-inline-end: 137px;
 }
 
-.desktop-menu {
-  @media (width < 75rem) {
+.header-social-icons a {
+  color: #000;
+  display: inline-block;
+}
+
+.header-social-icons a:is(:hover, :focus) {
+  color: var(--main-color-hover);
+}
+
+.header-social-icons svg {
+  height: 24px;
+  width: 24px;
+}
+
+.desktop-menu-wrapper {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (width < 75rem) {
+  .desktop-menu {
     display: none;
   }
 }
