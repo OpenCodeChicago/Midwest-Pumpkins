@@ -5,8 +5,9 @@
     text-align: center;
     margin: auto;
     background-image: url("/images/pumpkin-dark-background640-427.avif");
-    background-size: 100%;  /* Adjust this percentage to zoom out */
+    background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     position: relative;
     min-height: 400px;
 }
@@ -16,36 +17,41 @@
     max-width: 467px;
     text-align: center;
 }
-.subscribe h2{
-    font-family: Montserrat;
+
+.subscribe h2 {
+    font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     font-weight: 600;
     line-height: 28px;
     letter-spacing: -0.03em;
-    text-align: center;
-    color:#fff;
-    margin-bottom:20px;
+    color: #fff;
+    margin-bottom: 20px;
 }
-.subscribe p{
-    font-family: Montserrat;
+
+.subscribe p {
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
     letter-spacing: -0.02em;
-    text-align: center;
-    color:#fff;
-    margin:15px;
+    color: #fff;
+    margin: 15px;
 }
-.subscribe button{
 
+.subscribe button {
     background-color: var(--main-color);
+    border: none;
     border-radius: 100px;
-    font: 600 14px / 17.07px var(--secondary-text-font);
+    font-family: var(--secondary-text-font);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
     color: var(--white-color);
     transition: all 400ms ease-in-out;
     cursor: pointer;
     padding: 14px 40px;
 }
-.subscribe button:hover{
-    opacity:75%;
+
+.subscribe button:hover {
+    opacity: 0.75;
 }
