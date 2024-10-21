@@ -1,75 +1,120 @@
+/* General Styles for All Devices */
 .benefits {
-    background-color: #3e1f0d; /* Dark brown background */
-    padding: 40px 0;
-    color: #fff;
-    text-align: center;
-  }
-  
-  .benefits-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    gap: 20px;
-  }
-  
-  .benefit-card {
-    background-color: transparent;
-    padding: 20px;
-    flex: 1;
-    text-align: center;
-    min-width: 300px;
-  }
-  
-  .icon img {
-    width: 70px;
-    height: 70px;
-    /* margin-bottom: 1px; */
-    text-align: left;
-  }
-  
-  .benefit-title {
-    font-size: 1.69rem;
-    text-align: left;
-    margin: 15px 0;
-    color: #fff;
-    font-weight: bold;
-  }
-  
-  .benefit-description {
-    font-size: 1.34rem;
-    line-height: 1.6;
-    text-align: left;
-    color: #f9f9f9;
-  }
-  
-  .divider {
-    width: 1px;
-    height: 100px;
-    background-color: #fff;
-    opacity: 0.5;
-  }
-  
-  .scroll-down {
-    margin-top: 20px;
-  }
-  
-  .scroll-down img {
-    width: 30px;
-    height: 30px;
-    animation: bounce 2s infinite;
-  }
-  
-  @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
+  background-color: #3e1f0d; /* Dark brown background */
+  padding: 40px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.benefits-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.benefit-card {
+  background-color: transparent;
+  padding: 20px;
+  flex: 1;
+  text-align: center;
+  min-width: 300px;
+}
+
+.icon img {
+  width: 70px;
+  height: 70px;
+  text-align: left;
+}
+
+.benefit-title {
+  font-size: 1.69rem;
+  text-align: left;
+  margin: 15px 0;
+  color: #fff;
+  font-weight: bold;
+}
+
+.benefit-description {
+  font-size: 1.34rem;
+  line-height: 1.6;
+  text-align: left;
+  color: #f9f9f9;
+}
+
+.divider {
+  width: 1px;
+  height: 100px;
+  background-color: #fff;
+  opacity: 0.5;
+}
+
+.scroll-down {
+  margin-top: 20px;
+}
+
+.scroll-down img {
+  width: 30px;
+  height: 30px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
       transform: translateY(0);
-    }
-    40% {
-      transform: translateY(-10px);
-    }
-    60% {
-      transform: translateY(-5px);
-    }
   }
+  40% {
+      transform: translateY(-10px);
+  }
+  60% {
+      transform: translateY(-5px);
+  }
+}
+
+/* Mobile Specific Changes */
+@media (max-width: 768px) {
+  .benefits-container {
+      flex-direction: column;
+      gap: 0; /* Removing the gap for a stacked layout */
+  }
+
+  .benefit-card {
+      border-bottom: 1px solid #fff; /* Adding bottom borders */
+      padding-bottom: 20px;
+  }
+
+  .divider {
+      display: none; /* Remove dividers for mobile */
+  }
+
+  .benefit-card:last-child {
+      border-bottom: none; /* No bottom border for the last card */
+  }
+
+  .benefit-card {
+      min-width: 100%; /* Ensure each card takes full width */
+  }
+}
+
+/* Tablet Specific Changes */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .benefits-container {
+      flex-direction: row;
+  }
+
+  .benefit-card {
+      border: none; /* Remove borders on tablet */
+  }
+
+  .divider {
+      display: none; /* No divider on tablet */
+  }
+
+  .benefit-card:last-child {
+      flex: 1; /* Ensure third card maintains its place */
+      max-width: 30%; /* Control the width of the last card */
+  }
+}
