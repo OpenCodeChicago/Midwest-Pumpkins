@@ -49,6 +49,10 @@
   margin-right: 1rem;
 }
 
+body.dark-mode .dark-mode-text {
+  color: var(--white-color);
+}
+
 .buy-now {
   margin-top: 0.89%;
   background-color: var(--main-color);

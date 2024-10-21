@@ -15,10 +15,10 @@
 }
 
 body.dark-mode .dark-mode-text {
-  color: white;
+  color: var(--white-color);
 }
 
-.features-flex-container > div {
+.features-flex-container>div {
   margin: 28px;
   border-radius: 15px;
   flex-grow: 1;
@@ -29,7 +29,7 @@ body.dark-mode .dark-mode-text {
 }
 
 @media (max-width: 500px) {
-  .features-flex-container > div {
+  .features-flex-container>div {
     min-width: 300px;
   }
 }

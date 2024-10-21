@@ -20,8 +20,8 @@
 body.dark-mode .nav-item,
 body.dark-mode .icon,
 body.dark-mode .dark-mode-text,
-body.dark-mode .logo-link svg{
-    color: white;
+body.dark-mode {
+  color: var(--white-color);
 }
 
 .logo-link {
@@ -137,7 +137,8 @@ body.dark-mode .logo-link svg{
   }
 }
 
-.dark-theme-btn, .dark-theme-icon{
+.dark-theme-btn,
+.dark-theme-icon {
   height: 30px;
   width: 30px;
 
@@ -152,6 +153,6 @@ body.dark-mode .logo-link svg{
   }
 }
 
-.dark-theme-btn{
+.dark-theme-btn {
   margin: 0 1rem;
 }
