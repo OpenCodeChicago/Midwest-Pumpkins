@@ -70,6 +70,7 @@
     line-height: 24px;
     text-align: center;
     margin-top: 20px;
+    color: var(--text-main-color);
 }
 
 .review-card p {
@@ -80,6 +81,7 @@
     letter-spacing: -0.02em;
     text-align: center;
     margin-top: 10px;
+    color: var(--text-main-color);
 }
 
 /* Profile Circle */
