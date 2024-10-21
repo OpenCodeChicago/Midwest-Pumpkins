@@ -129,3 +129,22 @@
     display: none;
   }
 }
+
+.dark-theme-btn, .dark-theme-icon{
+  height: 30px;
+  width: 30px;
+
+  @media (width < 48rem) {
+    height: 28px;
+    width: 28px;
+  }
+
+  @media (width >=48rem) and (width < 75rem) {
+    height: 32px;
+    width: 32px;
+  }
+}
+
+.dark-theme-btn{
+  margin: 0 1rem;
+}

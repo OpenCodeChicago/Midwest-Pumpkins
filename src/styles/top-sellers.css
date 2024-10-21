@@ -5,7 +5,7 @@ body {
   font-size: 16px;
 }
 
-.top-sellers {
+#top-sellers {
   width: auto;
   padding: 3rem;
   box-sizing: border-box;
