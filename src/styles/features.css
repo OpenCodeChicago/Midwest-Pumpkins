@@ -14,6 +14,10 @@
   flex-wrap: wrap;
 }
 
+body.dark-mode .dark-mode-text {
+  color: white;
+}
+
 .features-flex-container > div {
   margin: 28px;
   border-radius: 15px;

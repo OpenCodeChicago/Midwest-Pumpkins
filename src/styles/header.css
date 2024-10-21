@@ -17,6 +17,13 @@
   }
 }
 
+body.dark-mode .nav-item,
+body.dark-mode .icon,
+body.dark-mode .dark-mode-text,
+body.dark-mode .logo-link svg{
+    color: white;
+}
+
 .logo-link {
   display: inline-flex;
   gap: 4px;
