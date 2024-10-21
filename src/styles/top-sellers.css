@@ -61,6 +61,11 @@
   cursor: pointer;
   text-transform: capitalize;
   white-space: nowrap;
+  transition: var(--transition);
+}
+
+.buy-now:hover {
+  background-color: var(--main-color-hover);
 }
 
 @media (max-width: 768px) {

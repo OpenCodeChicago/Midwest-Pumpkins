@@ -50,8 +50,9 @@
     transition: all 400ms ease-in-out;
     cursor: pointer;
     padding: 14px 40px;
+    transition: var(--transition);
 }
 
 .subscribe button:hover {
-    opacity: 0.75;
+    background-color: var(--main-color-hover);
 }

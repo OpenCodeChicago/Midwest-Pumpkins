@@ -269,6 +269,9 @@ A big thank you to all contributors for your hard work and dedication to the **M
 - **Lakshita Kumawat** - Contributions
   [GitHub](https://github.com/Lakshita-Kumawat)
 
+- **Linuka Arambawela** - Contributions
+  [GitHub](https://github.com/LinukaAr)
+
 ---
 
 ## 🧑‍💻 Author

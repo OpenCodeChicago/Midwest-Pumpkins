@@ -3,55 +3,67 @@
   border-radius: 30px;
   overflow: hidden;
 }
+
 .hero-inner,
 .hero-image {
   position: relative;
   overflow: hidden;
 }
+
 .hero-image img {
   max-width: 100%;
   height: auto;
 }
+
 .hero-inner {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .hero-image {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .hero-image::after {
   content: "";
   position: absolute;
-  width: 74vw; /* Set width relative to viewport width */
-  height: 74vw; /* Maintain square shape with relative height */
+  width: 74vw;
+  /* Set width relative to viewport width */
+  height: 74vw;
+  /* Maintain square shape with relative height */
   top: 0;
-  left: -15vw; /* Adjust left offset relative to viewport */
+  left: -15vw;
+  /* Adjust left offset relative to viewport */
   transform: rotate(30deg);
   opacity: 0.6;
   background-color: #000000;
   transform-origin: right top;
 }
+
 .hero-description {
   position: absolute;
   left: 39px;
   width: 484px;
 }
+
 .hero-description h1 {
   font: 500 48px/48px var(--main-text-font);
   color: var(--white-color);
   letter-spacing: -0.03em;
   padding: 0 0 30px;
 }
+
 .hero-description p {
   font: 400 24px/34px var(--main-text-font);
   color: var(--white-color);
   letter-spacing: -0.03em;
   padding: 0 0 60px;
 }
+
 .hero-description .buttons button,
 .hero-description .buttons .top-seller {
   padding: 14px 40px;
@@ -62,30 +74,35 @@
   transition: all 400ms ease-in-out;
   cursor: pointer;
 }
+
 .hero-description .buttons button.buy-now:hover {
   background-color: var(--main-color-hover);
 }
+
 .hero-description .buttons .top-seller:hover {
   border-color: var(--main-color);
-  text-decoration: underline;
 }
+
 .hero-description .buttons .top-seller {
   background-color: transparent;
   border: 1px solid var(--white-color);
   margin-left: 14px;
 }
+
 @media (min-width: 769px) and (max-width: 1200px) {
   .hero-description h1 {
     font-size: 38px;
     line-height: 40px;
     padding: 0 0 15px;
   }
+
   .hero-description p {
     font-size: 20px;
     line-height: 26px;
     padding: 0 0 30px;
   }
 }
+
 /* For screens smaller than 768px (tablets, small devices) */
 @media (min-width: 376px) and (max-width: 768px) {
   .hero-image::after {
@@ -95,29 +112,35 @@
     top: auto;
     bottom: -70vw;
   }
+
   .hero-image img {
     max-width: max-content;
     width: auto;
   }
+
   .hero-description h1 {
     font-size: 30px;
     padding: 0 0 15px;
     line-height: 34px;
   }
+
   .hero-description p {
     font-size: 18px;
     line-height: 22px;
     padding: 0 0 30px;
   }
+
   .hero-description .buttons button,
   .hero-description .buttons .top-seller {
     padding: 10px 20px;
     font-size: 12px;
     line-height: 14px;
   }
+
   .hero {
     margin: 0 20px 60px;
   }
+
   .hero-description {
     left: 15px;
     width: 280px;
@@ -130,30 +153,36 @@
   .hero {
     margin: 0 20px 60px;
   }
+
   .hero-image img {
     max-width: max-content;
     width: auto;
   }
+
   .hero-description h1 {
     font-size: 24px;
     line-height: 28px;
   }
+
   .hero-description p {
     font-size: 16px;
     line-height: 24px;
     padding: 0 0 15px;
   }
+
   .hero-description {
     top: auto;
     left: 23px;
     width: 232px;
     bottom: 30px;
   }
+
   .hero-description .buttons button,
   .hero-description .buttons .top-seller {
     padding: 10px 18px;
     font-size: 12px;
   }
+
   .hero-image::after {
     width: 150vw;
     height: 130vw;

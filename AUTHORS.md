@@ -48,6 +48,9 @@
 - **Lakshita Kumawat** - Contributions
   [GitHub](https://github.com/Lakshita-Kumawat)
 
+- **Linuka Arambawela** - Contributions
+  [GitHub](https://github.com/LinukaAr)
+
 <!-- - **Shubham Sharma** - Contributions
   [GitHub](https://github.com/shubhamsharma9199) -->
 
