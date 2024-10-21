@@ -1,15 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
   // Get the modal
-  var modal = document.getElementById("subscribeModal");
+  const modal = document.getElementById("subscribeModal");
 
   // Get the button that opens the modal
-  var btn = document.getElementById("myBtn");
+  const btn = document.getElementById("myBtn");
 
   // Get the <span> element that closes the modal
-  var closeBtn = document.getElementById("close-modal"); // Changed to select by ID
-
-  // Debugging: Check if the close button is correctly selected
-  console.log(closeBtn);
+  const closeBtn = document.getElementById("close-subscribe-modal"); // Changed to select by ID
 
   // When the user clicks the button, open the modal
   btn.addEventListener("click", () => {
@@ -44,16 +41,14 @@ document.addEventListener("DOMContentLoaded", () => {
       modal.classList.remove("show"); // Close the modal after submission
     });
 
-    //KeyCode Listener for escape close
-    document.addEventListener('keydown', keyCode);
+  //KeyCode Listener for escape close
+  document.addEventListener("keydown", keyCode);
 });
 
-
-
 function keyCode(event) {
-    var modal = document.getElementById("subscribeModal");
-    var x = event.keyCode;
-    if (x == 27) {
-        modal.style.display = "none";
-    }
+  const modal = document.getElementById("close-subscribe-modal");
+  const x = event.keyCode;
+  if (x == 27) {
+    modal.style.display = "none";
   }
+}

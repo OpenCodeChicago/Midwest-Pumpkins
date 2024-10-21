@@ -1,33 +1,53 @@
 <div id="review-modal" class="modal hidden">
-    <div class="modal-content">
-        <span class="close" id="close-modal">&times;</span>
-        <h2>LEAVE A REVIEW ABOUT <br><span>OUR PUMPKINS</span></h2>
-        <br><br>
-        <form id="reviewForm">
-            <div>
-                <input type="text" id="name" name="name" required placeholder="Name">
-            </div>
-            <br>
-            <div>
-                <input type="email" id="email" name="email" required placeholder="Email">
-            </div>
-            <br>
-            <div>
-                <div class="phone-input">
-                    <select id="country-code">
-                        /* Add more country codes here */
-                        <option value="+1">+1</option>
-                    </select>
-                    <input type="tel" id="phone" name="phone" required placeholder="Phone number">
-                </div>
-            </div>
-            <br>
-            <div>
-                <textarea id="message" name="message" rows="5" required placeholder="Message"></textarea>
-            </div>
-            <br>
-            <button type="submit">Send</button>
-            <br>
-        </form>
-    </div>
+  <div class="modal-content">
+    <button class="close" id="close-modal">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <h2>LEAVE A REVIEW ABOUT <br /><span>OUR PUMPKINS</span></h2>
+    <br /><br />
+    <form id="reviewForm">
+      <div>
+        <input type="text" id="name" name="name" required placeholder="Name" />
+      </div>
+      <br />
+      <div>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="Email"
+        />
+      </div>
+      <br />
+      <div>
+        <div class="phone-input">
+          <select id="country-code">
+            /* Add more country codes here */
+            <option value="+1">+1</option>
+          </select>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            required
+            placeholder="Phone number"
+          />
+        </div>
+      </div>
+      <br />
+      <div>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          required
+          placeholder="Message"
+        ></textarea>
+      </div>
+      <br />
+      <button type="submit">Send</button>
+      <br />
+    </form>
+  </div>
 </div>
