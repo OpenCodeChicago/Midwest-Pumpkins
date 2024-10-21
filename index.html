@@ -52,15 +52,15 @@ Description: Main HTML structure for the Midwest Pumpkins project
       sizes="16x16"
     />
     <title>Midwest Pumpkins | Hacktoberfest 2024 Open-Source Project</title>
-    <script type="module" crossorigin src="/Midwest-Pumpkins/assets/main-DlLzsYNa.js"></script>
-    <link rel="stylesheet" crossorigin href="/Midwest-Pumpkins/assets/main-4i-Q56V4.css">
+    <script type="module" crossorigin src="/Midwest-Pumpkins/assets/main-DMQBGZMN.js"></script>
+    <link rel="stylesheet" crossorigin href="/Midwest-Pumpkins/assets/main-zrulybn0.css">
   </head>
   <body>
     <!-- HEADER -->
     <header class="header" id="home">
   <div class="heading">
     <a class="logo-link" href="./index.html">
-      <span>Midwest</span><span>Pumpkins</span>
+      <span>Midwest</span><span class="dark-mode-text">Pumpkins</span>
       <svg aria-hidden="true">
         <use href="sprite.svg#icon-pumpkin-logo"></use>
       </svg>
@@ -81,7 +81,7 @@ Description: Main HTML structure for the Midwest Pumpkins project
           target="_blank"
           aria-label="GitHub"
         >
-          <svg aria-hidden="true">
+          <svg class="icon" aria-hidden="true">
             <use href="sprite.svg#icon-github"></use>
           </svg>
         </a>
@@ -92,7 +92,7 @@ Description: Main HTML structure for the Midwest Pumpkins project
           target="_blank"
           aria-label="YouTube"
         >
-          <svg aria-hidden="true">
+          <svg  class="icon" aria-hidden="true">
             <use href="sprite.svg#icon-youtube"></use>
           </svg>
         </a>
@@ -103,14 +103,14 @@ Description: Main HTML structure for the Midwest Pumpkins project
           target="_blank"
           aria-label="LinkedIn"
         >
-          <svg aria-hidden="true">
+          <svg  class="icon" aria-hidden="true">
             <use href="sprite.svg#icon-linkedin"></use>
           </svg>
         </a>
       </li>
       <li>
         <a href="https://x.com" target="_blank" aria-label="X">
-          <svg aria-hidden="true">
+          <svg  class="icon" aria-hidden="true">
             <use href="sprite.svg#icon-x-twitter"></use>
           </svg>
         </a>
@@ -121,7 +121,7 @@ Description: Main HTML structure for the Midwest Pumpkins project
           target="_blank"
           aria-label="Facebook"
         >
-          <svg aria-hidden="true">
+          <svg  class="icon" aria-hidden="true">
             <use href="sprite.svg#icon-facebook"></use>
           </svg>
         </a>
@@ -133,11 +133,11 @@ Description: Main HTML structure for the Midwest Pumpkins project
         class="menu desktop-menu"
         aria-labelledby="desktop-nav-label"
       >
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#best-pumpkins">Best Pumpkins</a></li>
-        <li><a href="#top-sellers">Top Sellers</a></li>
-        <li><a href="#reviews">Reviews</a></li>
+        <li><a class="nav-item" href="#home">Home</a></li>
+        <li><a class="nav-item" href="#about">About</a></li>
+        <li><a class="nav-item" href="#best-pumpkins">Best Pumpkins</a></li>
+        <li><a class="nav-item" href="#top-sellers">Top Sellers</a></li>
+        <li><a class="nav-item" href="#reviews">Reviews</a></li>
       </ul>
       <span id="nav-label" hidden>Toggle navigation</span>
       <button
@@ -153,7 +153,7 @@ Description: Main HTML structure for the Midwest Pumpkins project
       </button>
     </nav>
     <button class="dark-theme-btn">
-      <svg aria-hidden="true" class="dark-theme-icon">
+      <svg aria-hidden="true" class="dark-theme-icon ">
         <use href="dark-mode.svg#sun"></use>
       </svg>
     </button>
@@ -237,8 +237,8 @@ Description: Main HTML structure for the Midwest Pumpkins project
 </section>
 
       <section class="features" id="best-pumpkins">
-    <h2 class="features-header">OUR FEATURED <span class="header-color">PUMPKINS</span></h1>
-    <p class="subheader">Discover our most popular pumpkins, perfect for all your seasonal needs. Whether it’s for carving, cooking, or décor, these are the best picks of the harvest.</p>
+    <h2 class="features-header dark-mode-text">OUR FEATURED <span class="header-color">PUMPKINS</span></h1>
+    <p class="subheader dark-mode-text">Discover our most popular pumpkins, perfect for all your seasonal needs. Whether it’s for carving, cooking, or décor, these are the best picks of the harvest.</p>
 
     <div class="features-flex-container">
         <div class="features-card first"><img src="/Midwest-Pumpkins/images/jack-o-lantern-pumpkin1920x1080.svg"> <h3>Jack-o’-Lantern Pumpkin</h3>
@@ -254,7 +254,7 @@ Description: Main HTML structure for the Midwest Pumpkins project
             </div>
         </div>
 
-        <div class="features-card second"><img src="/Midwest-Pumpkins/images/sugar-pie-pumpkin1920x1080.svg"><h3>Sugar Pie Pumpkin</h3>
+        <div class="features-card second"><img src="/Midwest-Pumpkins/images/sugar-pie-pumpkin1920x1080.svg"><h3 class="dark-mode-text">Sugar Pie Pumpkin</h3>
             <div class="card-details">
                 <h3>Sugar Pie Pumpkin</h3>
                 <button class="pill-price">$9.99</button>
@@ -267,7 +267,7 @@ Description: Main HTML structure for the Midwest Pumpkins project
             </div>
         </div>
 
-        <div class ="features-card third"><img src="/Midwest-Pumpkins/images/white-ghost-pumpkin1920x1080.svg"><h3>White Ghost Pumpkin</h3>
+        <div class ="features-card third"><img src="/Midwest-Pumpkins/images/white-ghost-pumpkin1920x1080.svg"><h3 class="dark-mode-text">White Ghost Pumpkin</h3>
             <div class="card-details">
                 <h3>White Ghost Pumpkin</h3>
                 <button class="pill-price">$14.99</button>
@@ -296,7 +296,7 @@ Description: Main HTML structure for the Midwest Pumpkins project
 </section>
       <section id="top-sellers" class="top-sellers">
   <h2 class="top-sellers-header">
-    <span class="top-sellers-color-text">TOP</span>SELLERS
+    <span class="top-sellers-color-text">TOP</span><span class="dark-mode-text">SELLERS</span>
   </h2>
   <div class="top-sellers-flex-container">
   <img class="top-sellers-image" src="/Midwest-Pumpkins/images/Top-Seller-img1.png" alt="orange pumpkins" />
@@ -314,7 +314,7 @@ Description: Main HTML structure for the Midwest Pumpkins project
 </div>
 </section>
       <section class="reviews" id="reviews">
-  <h2>
+  <h2 class="dark-mode-text">
     <span>PUMPKINS</span> PEOPLE <br />
     LOVE!
   </h2>
