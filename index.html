@@ -52,7 +52,7 @@ Description: Main HTML structure for the Midwest Pumpkins project
       sizes="16x16"
     />
     <title>Midwest Pumpkins | Hacktoberfest 2024 Open-Source Project</title>
-    <script type="module" crossorigin src="/Midwest-Pumpkins/assets/main-Dwjm1-dh.js"></script>
+    <script type="module" crossorigin src="/Midwest-Pumpkins/assets/main-CymZZCrI.js"></script>
     <link rel="stylesheet" crossorigin href="/Midwest-Pumpkins/assets/main-B5y-zXKg.css">
   </head>
   <body>
@@ -625,60 +625,83 @@ Description: Main HTML structure for the Midwest Pumpkins project
 
     <!-- REVIEWS MODAL -->
     <div id="review-modal" class="modal hidden">
-    <div class="modal-content">
-        <span class="close" id="close-modal">&times;</span>
-        <h2>LEAVE A REVIEW ABOUT <br><span>OUR PUMPKINS</span></h2>
-        <br><br>
-        <form id="reviewForm">
-            <div>
-                <input type="text" id="name" name="name" required placeholder="Name">
-            </div>
-            <br>
-            <div>
-                <input type="email" id="email" name="email" required placeholder="Email">
-            </div>
-            <br>
-            <div>
-                <div class="phone-input">
-                    <select id="country-code">
-                        /* Add more country codes here */
-                        <option value="+1">+1</option>
-                    </select>
-                    <input type="tel" id="phone" name="phone" required placeholder="Phone number">
-                </div>
-            </div>
-            <br>
-            <div>
-                <textarea id="message" name="message" rows="5" required placeholder="Message"></textarea>
-            </div>
-            <br>
-            <button type="submit">Send</button>
-            <br>
-        </form>
-    </div>
+  <div class="modal-content">
+    <button class="close" id="close-modal">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <h2>LEAVE A REVIEW ABOUT <br /><span>OUR PUMPKINS</span></h2>
+    <br /><br />
+    <form id="reviewForm">
+      <div>
+        <input type="text" id="name" name="name" required placeholder="Name" />
+      </div>
+      <br />
+      <div>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="Email"
+        />
+      </div>
+      <br />
+      <div>
+        <div class="phone-input">
+          <select id="country-code">
+            /* Add more country codes here */
+            <option value="+1">+1</option>
+          </select>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            required
+            placeholder="Phone number"
+          />
+        </div>
+      </div>
+      <br />
+      <div>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          required
+          placeholder="Message"
+        ></textarea>
+      </div>
+      <br />
+      <button type="submit">Send</button>
+      <br />
+    </form>
+  </div>
 </div>
 
 
     <!-- SUBSCRIBE MODAL -->
     <div id="subscribeModal" class="subscribe-modal">
   <div class="modal-header">
-    <span class="close" id="close-modal">
-      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M21 7L7 21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-        <path d="M7 7L21 21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-      </svg>
-    </span>
+    <button type="button" class="close" id="close-subscribe-modal">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
   </div>
   <div class="modal-content">
-    <span>Explore our <br><strong>pumpkin</strong> First!</span>
+    <span>Explore our <br /><strong>pumpkin</strong> First!</span>
     <form id="subscribeForm" action="/">
-      <input type="email" name="subscribe-email" placeholder="Enter your email" required>
-      <input type="submit" value="Subscribe">
+      <input
+        type="email"
+        name="subscribe-email"
+        placeholder="Enter your email"
+        required
+      />
+      <input type="submit" value="Subscribe" />
     </form>
   </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 
     <!-- BURGER MENU -->
     <div class="burger-menu">
