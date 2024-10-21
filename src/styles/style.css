@@ -25,3 +25,12 @@
   --secondary-text-font: 'Montserrat', sans-serif;
   --bkg-black-low-opacity-color: rgba(17, 17, 17, 0.7);
 }
+
+.dark-mode{
+  --main-bg-color: #131313;
+  /* Need to add colors for the dark theme*/
+} 
+
+body{
+  background-color: var(--main-bg-color);
+}
