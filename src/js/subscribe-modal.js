@@ -43,4 +43,17 @@ document.addEventListener("DOMContentLoaded", () => {
       });
       modal.classList.remove("show"); // Close the modal after submission
     });
+
+    //KeyCode Listener for escape close
+    document.addEventListener('keydown', keyCode);
 });
+
+
+
+function keyCode(event) {
+    var modal = document.getElementById("subscribeModal");
+    var x = event.keyCode;
+    if (x == 27) {
+        modal.style.display = "none";
+    }
+  }
