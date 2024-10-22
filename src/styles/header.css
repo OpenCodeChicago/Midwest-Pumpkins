@@ -17,13 +17,6 @@
   }
 }
 
-/* body.dark-mode .nav-item,
-body.dark-mode .icon,
-body.dark-mode .dark-mode-text,
-body.dark-mode {
-  color: var(--white-color);
-} */
-
 .logo-link {
   display: inline-flex;
   gap: 4px;
