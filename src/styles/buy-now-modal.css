@@ -3,27 +3,34 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5); /* Modal overlay */
+  background-color: rgba(0, 0, 0, 0.5); 
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 999;
+  z-index: 1;
 
 }
 .buy-now-modal{
   background-color: var(--main-bg-color);
-  width: 400px;
+  width: 610px;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
 }
+.close-button{
+  background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    float: right;
+}
 
 .modal-title{
   display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin-bottom: 20px;
 }
@@ -38,17 +45,23 @@ span {
   color: var(--main-color);
 
 }
-.close-button{
-  background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    float: right;
-}
+
 .modal-content{
   display: flex;
   flex-direction: column;
 }
+legend{
+  padding: 10px;
+}
+
+.field-names{
+  display: flex;
+  gap: 10px;
+}
+.field-group{
+ flex: 1;
+}
+
 
 .modal-content fieldset{
   border: none;
@@ -88,5 +101,7 @@ span {
 }
 
 .submit-button:hover {
-  background-color: darken(var(--main-color-hover), 10%);
+  background-color: var(--main-color-hover);
 }
+
+
