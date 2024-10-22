@@ -21,6 +21,10 @@
   color: var(--text-main-color);
 }
 
+.dark-mode .burger-menu__open {
+  color: var(--white-color);
+}
+
 .burger-menu__close {
   color: var(--white-color);
   position: fixed;
@@ -38,6 +42,11 @@
 .burger-menu__open:is(:hover, :focus) {
   color: var(--main-color-hover);
   outline-color: var(--main-color-hover);
+}
+
+.dark-mode .burger-menu__open:is(:hover, :focus) {
+  color: var(--main-color);
+  outline-color: var(--main-color);
 }
 
 .burger-menu__close:is(:hover, :focus),
