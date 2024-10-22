@@ -8,12 +8,10 @@ function showNotification(message) {
   });
 }
 
-document
-  .getElementById("buyNowForm")
-  .addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevent form
-    showNotification("Your order has been successfully placed!");
-  });
+document.getElementById("buyForm").addEventListener("submit", function (event) {
+  event.preventDefault(); // Prevent form
+  showNotification("Your order has been successfully placed!");
+});
 
 // js for buy-now modal open/close
 
