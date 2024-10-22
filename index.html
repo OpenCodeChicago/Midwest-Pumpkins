@@ -52,8 +52,8 @@ Description: Main HTML structure for the Midwest Pumpkins project
       sizes="16x16"
     />
     <title>Midwest Pumpkins | Hacktoberfest 2024 Open-Source Project</title>
-    <script type="module" crossorigin src="/Midwest-Pumpkins/assets/main-CymZZCrI.js"></script>
-    <link rel="stylesheet" crossorigin href="/Midwest-Pumpkins/assets/main-B5y-zXKg.css">
+    <script type="module" crossorigin src="/Midwest-Pumpkins/assets/main-DNBxwbV1.js"></script>
+    <link rel="stylesheet" crossorigin href="/Midwest-Pumpkins/assets/main-ChcObUF0.css">
   </head>
   <body>
     <!-- HEADER -->
@@ -92,7 +92,7 @@ Description: Main HTML structure for the Midwest Pumpkins project
           target="_blank"
           aria-label="YouTube"
         >
-          <svg  class="icon" aria-hidden="true">
+          <svg class="icon" aria-hidden="true">
             <use href="sprite.svg#icon-youtube"></use>
           </svg>
         </a>
@@ -103,14 +103,14 @@ Description: Main HTML structure for the Midwest Pumpkins project
           target="_blank"
           aria-label="LinkedIn"
         >
-          <svg  class="icon" aria-hidden="true">
+          <svg class="icon" aria-hidden="true">
             <use href="sprite.svg#icon-linkedin"></use>
           </svg>
         </a>
       </li>
       <li>
         <a href="https://x.com" target="_blank" aria-label="X">
-          <svg  class="icon" aria-hidden="true">
+          <svg class="icon" aria-hidden="true">
             <use href="sprite.svg#icon-x-twitter"></use>
           </svg>
         </a>
@@ -121,7 +121,7 @@ Description: Main HTML structure for the Midwest Pumpkins project
           target="_blank"
           aria-label="Facebook"
         >
-          <svg  class="icon" aria-hidden="true">
+          <svg class="icon" aria-hidden="true">
             <use href="sprite.svg#icon-facebook"></use>
           </svg>
         </a>
@@ -135,8 +135,12 @@ Description: Main HTML structure for the Midwest Pumpkins project
       >
         <li><a class="nav-item" href="#home">Home</a></li>
         <li><a class="nav-item" href="#about">About</a></li>
-        <li><a class="nav-item" href="#best-pumpkins">Best Pumpkins</a></li>
-        <li><a class="nav-item" href="#top-sellers">Top Sellers</a></li>
+        <li>
+          <a class="nav-item" href="#best-pumpkins">Best Pumpkins</a>
+        </li>
+        <li>
+          <a class="nav-item" href="#top-sellers">Top Sellers</a>
+        </li>
         <li><a class="nav-item" href="#reviews">Reviews</a></li>
       </ul>
       <span id="nav-label" hidden>Toggle navigation</span>
@@ -152,8 +156,9 @@ Description: Main HTML structure for the Midwest Pumpkins project
         </svg>
       </button>
     </nav>
-    <button class="dark-theme-btn">
-      <svg aria-hidden="true" class="dark-theme-icon ">
+    <span id="toggle-theme" hidden>Toggle color theme</span>
+    <button class="dark-theme-btn" aria-labelledby="toggle-theme">
+      <svg aria-hidden="true" class="dark-theme-icon">
         <use href="dark-mode.svg#sun"></use>
       </svg>
     </button>
@@ -559,6 +564,7 @@ Description: Main HTML structure for the Midwest Pumpkins project
 <!-- the modal -->
  <div class="buy-now-modal">
   <button class="close-button">&times;</button>
+  <br>
 
   <div class="modal-title">
     <h2><span>BUY</span>&nbsp;NOW</h2>
@@ -570,28 +576,31 @@ Description: Main HTML structure for the Midwest Pumpkins project
     <form id="buyForm" class="modal-content"> 
       <fieldset>
       <legend>Personal Information</legend>
-        <label for="fname">First name: </label>
-        <input type="text" id="fname" name="fname" placeholder="First Name"
+        <div class="field-names">
 
+        
+      <div class="field-group">
+        <label for="fname"></label>
+        <input type="text" id="fname" name="fname" placeholder="First Name"
         pattern=".{2,}" 
         title="First name should have atleast two characters">
-      
+      </div>
 
-      
-        <label for="lname">Last name: </label>
+      <div class="field-group">
+        <label for="lname"></label>
         <input type="text" id="lname" name="lname" placeholder="Last Name"
         pattern=".{2,}" 
         title="last name should have atleast two characters">
-      
-       
-        <label for="email">Email: </label>
+      </div>
+    </div>
+        <label for="email">Email </label>
         
         <input type="email" id="email" name="email" placeholder="Email"
         pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" 
         title="Please enter a valid email address">
       
 
-        <label for="tel">Phone number: </label>
+        <label for="tel">Phone number </label>
         <div class="input-group">
           <span class="flag">🇺🇸</span>
         <input type="tel" id="tel" name="tel" placeholder="Phone number"
@@ -600,7 +609,7 @@ Description: Main HTML structure for the Midwest Pumpkins project
     </div>
 
     
-        <label for="number">Card number: </label>
+        <label for="number">Card number </label>
         <div class="input-group">
         <input type="text" id="number" name="number" placeholder="Card number"
         pattern="\d{16}"
@@ -609,7 +618,7 @@ Description: Main HTML structure for the Midwest Pumpkins project
         <span class="card-logo">💳</span>
         </div>  
 
-        <label for="message">Message: </label>
+        <label for="message">Message </label>
         <textarea placeholder="Enter your message" id="message" name="message" maxlength="200"></textarea>
 
         
