@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .getElementById("subscribeForm")
     .addEventListener("submit", function (event) {
       event.preventDefault();
+      
       Swal.fire({
         icon: "success",
         title: "Thank you for subscribing! Stay tuned for updates!",
