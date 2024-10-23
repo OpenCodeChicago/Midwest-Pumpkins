@@ -13,7 +13,8 @@
 }
 
 .features-flex-container > div {
-    margin: 28px;
+    margin: 32px 12px 0px 12px;
+
     border-radius: 15px;
     flex-grow: 1;
     flex-basis: 0;
@@ -135,8 +136,10 @@
     border: 1px solid var(--main-color);
 }
 
-div.features-card:hover div.card-details{
-    height: 100%;
+@media(hover: hover){
+    div.features-card:hover div.card-details{
+        height: 100%;
+    }
 }
 
 .pill-price {
