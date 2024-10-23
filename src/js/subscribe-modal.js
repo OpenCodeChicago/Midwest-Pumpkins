@@ -47,9 +47,9 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function keyCode(event) {
-  const modal = document.getElementById("close-subscribe-modal");
+  const modal = document.getElementById("subscribeModal");
   const x = event.keyCode;
   if (x == 27) {
-    modal.style.display = "none";
+    modal.classList.remove("show"); // Close the modal after submission
   }
 }
