@@ -3,7 +3,6 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5); 
   position: fixed;
   top: 0;
   left: 0;
@@ -72,15 +71,15 @@ legend{
   display: flex;
   gap: 10px;
   margin-bottom: 20px;
+
 }
 
 .modal-content input,
 .modal-content textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #1111110D;
     border-radius: 10px;
-    background-color: var(--input-bg);
+    background-color: var(--white-color);
     color: var(--font-color);
     font-size: 14px;
 }
@@ -105,3 +104,43 @@ legend{
 }
 
 
+@media (max-width: 1024px) {
+  .buy-now-modal {
+    width: 90%;
+    padding: 1rem;
+
+  }
+
+  .modal-title h2 {
+
+    font-size: 22px;
+  }
+
+  .input-group {
+    flex-direction: column;
+
+  }
+  
+  .field-names {
+
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .buy-now-modal {
+    width: 95%;
+
+  }
+
+  .modal-title h2 {
+    font-size: 20px;
+
+
+  }
+
+  .field-names {
+    flex-direction: column;
+  }
+}
