@@ -7,25 +7,25 @@
 }
 
 .features-flex-container{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .features-flex-container > div {
     margin: 32px 12px 0px 12px;
-
     border-radius: 15px;
-    flex-grow: 1;
-    flex-basis: 0;
-    min-width: 400px;
-    max-width: 600px;
     padding: 2rem;
 }
 
-@media(max-width: 500px){
-    .features-flex-container > div {
-        min-width: 300px;
+@media (min-width: 320px) and (max-width: 480px){
+    .features-flex-container{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 1400px){
+    .features-flex-container{
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -41,7 +41,7 @@
     font-size: 18px;
 }
 
-@media(max-width: 500px){
+@media(max-width: 768px){
     .subheader{
         margin: 0% 10% 0% 10%;
     }
@@ -85,34 +85,49 @@
 }
 
 .card-details h3{
-    font-size: 26px;
+    font-size: 22px;
     text-transform: uppercase;
     font-weight: bold;
-    padding: 16px 25px 8px 25px;
-}
-
-@media(max-width: 500px){
-    .card-details h3 {
-        padding-top: 8px;
-        font-size: 20px;
-    }
+    padding: 5px 15px 8px 10px;
 }
 
 .card-details ul{
-    font-size: 20px;
-    padding: 10px 25px 35px 25px;
+    font-size: 18px;
+    padding: 10px 15px 35px 20px;
     text-align: left;
+}
+
+@media (min-width: 480px) and (max-width: 940px){
+    .card-details ul {
+        font-size: 16px;
+    }
+
+    .features-card h3{
+        font-size: 26px;
+    }
+
+    .card-details h3 {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 940px) and (max-width: 1400px){
+    .card-details ul {
+        font-size: 24px;
+    }
+
+    .features-card h3{
+        font-size: 32px;
+    }
+
+    .card-details h3 {
+        font-size: 26px;
+    }
 }
 
 .card-details li{
     letter-spacing: -.5px;
     padding: 5px;
-}
-
-@media(max-width: 500px){
-    .card-details ul {
-        font-size: 18px;
-    }
 }
 
 .first{
@@ -146,14 +161,14 @@
 }
 
 .pill-price {
-    margin-left: 25px;
+    margin-left: 15px;
     background-color: var(--main-color);
     color: var(--white-color);
     text-align: center;
     display: inline;
     border-radius: 35px;
     padding: 5px 10px;
-    font-size: 16px;
+    font-size: 14px;
     cursor: auto;
 }
 
@@ -165,18 +180,6 @@
     text-align: center;
     border-radius: 35px;
     padding: 5px 10px;
-    font-size: 16px;
+    font-size: 14px;
     cursor: auto;
-}
-
-@media(max-width: 500px){
-    .pill-price {
-        font-size: 16px;
-    }
-}
-
-@media(max-width: 500px){
-    .pill-features {
-        font-size: 16px;
-    }
 }

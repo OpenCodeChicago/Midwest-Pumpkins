@@ -2,7 +2,7 @@ var cards = Array.from(document.getElementsByClassName("features-card"));
 
 
 window.onresize = window.onload = function() {
-        if(screen.width < 500){
+        if(screen.width < 1024){
             cards.forEach(showDetails);
         }    
 }
