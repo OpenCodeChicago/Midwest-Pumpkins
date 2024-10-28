@@ -3,27 +3,33 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5); /* Modal overlay */
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 999;
+  z-index: 1;
 
 }
 .buy-now-modal{
   background-color: var(--main-bg-color);
-  width: 400px;
+  width: 610px;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
 }
+.close-button{
+  background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    float: right;
+}
 
 .modal-title{
   display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin-bottom: 20px;
 }
@@ -38,17 +44,23 @@ span {
   color: var(--main-color);
 
 }
-.close-button{
-  background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    float: right;
-}
+
 .modal-content{
   display: flex;
   flex-direction: column;
 }
+legend{
+  padding: 10px;
+}
+
+.field-names{
+  display: flex;
+  gap: 10px;
+}
+.field-group{
+ flex: 1;
+}
+
 
 .modal-content fieldset{
   border: none;
@@ -59,15 +71,15 @@ span {
   display: flex;
   gap: 10px;
   margin-bottom: 20px;
+
 }
 
 .modal-content input,
 .modal-content textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #1111110D;
     border-radius: 10px;
-    background-color: var(--input-bg);
+    background-color: var(--white-color);
     color: var(--font-color);
     font-size: 14px;
 }
@@ -88,5 +100,47 @@ span {
 }
 
 .submit-button:hover {
-  background-color: darken(var(--main-color-hover), 10%);
+  background-color: var(--main-color-hover);
+}
+
+
+@media (max-width: 1024px) {
+  .buy-now-modal {
+    width: 90%;
+    padding: 1rem;
+
+  }
+
+  .modal-title h2 {
+
+    font-size: 22px;
+  }
+
+  .input-group {
+    flex-direction: column;
+
+  }
+  
+  .field-names {
+
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .buy-now-modal {
+    width: 95%;
+
+  }
+
+  .modal-title h2 {
+    font-size: 20px;
+
+
+  }
+
+  .field-names {
+    flex-direction: column;
+  }
 }

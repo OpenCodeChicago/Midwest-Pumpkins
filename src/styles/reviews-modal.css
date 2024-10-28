@@ -1,83 +1,245 @@
 /* Modal Styles */
 .modal {
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 90%;
-    max-width: 600px;
-    border-radius: 20px;
+.review-modal-content {
+  background-color: #fafafa;
+  border: 1px solid rgba(17, 17, 17, 0.5);
+  border-radius: 15px;
+  position: relative;
+}
+
+.review-modal__icon {
+  height: 24px;
+  width: 24px;
 }
 
 .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+  color: var(--text-main-color);
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 3;
 }
 
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
+.close:is(:hover, :focus) {
+  color: var(--main-color);
+  outline: 1px dotted currentColor;
+  outline-offset: 0.2em;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
-.phone-input {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    /* Make the phone input container take full width */
+.review-modal__form {
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  box-shadow: 0px 5.445px 5.445px 0px rgba(0, 0, 0, 0.03);
+  padding: 32px 20px;
+  max-width: 320px;
+
+  @media (min-width: 768px) {
+    padding: 40px;
+    max-width: 517px;
+  }
 }
 
-.phone-input select,
-.phone-input input {
-    width: 100%;
-    /* Make the input elements take up the entire width */
-    padding: 10px;
-    box-sizing: border-box;
-    /* Ensure padding doesn't affect width */
+.review-modal__form fieldset {
+  border: none;
 }
 
-.phone-input select {
-    max-width: 80px;
-    /* Limit the width of the country code select */
-    margin-right: 10px;
+.review-modal__form legend {
+  color: var(--text-main-color);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: -0.72px;
+  margin-block-end: 32px;
+  padding: 0;
+  text-transform: uppercase;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="number"],
-textarea {
-    width: 100%;
-    /* Ensure all text inputs and textarea take full width */
-    padding: 10px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
-    /* Ensure padding doesn't affect width */
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.review-modal__form legend span:first-child {
+  color: var(--text-main-color);
 }
 
-/* Additional textarea-specific styles for better user experience */
-textarea {
-    height: 150px;
-    /* Set an appropriate height for the textarea */
-    resize: vertical;
-    /* Allow vertical resizing but not horizontal */
+.review-modal__form legend span:last-child {
+  color: var(--main-color);
+}
+
+@media (min-width: 768px) {
+  .review-modal__form legend span:last-child::before {
+    content: '\a';
+    white-space: pre;
+  }
+}
+
+.review-modal__field {
+  position: relative;
+}
+
+.review-modal__field input,
+.review-modal__field textarea {
+  background-color: #fafafa;
+  border-radius: 8px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  caret-color: var(--text-main-color);
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  margin-block-end: 14px;
+  padding: 14px 18px;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+    margin-block-end: 18px;
+    padding: 22px 24px;
+  }
+}
+
+.review-modal__field label {
+  color: rgba(17, 17, 17, 0.6);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.28px;
+  display: block;
+  pointer-events: none;
+  position: absolute;
+  left: 18px;
+  top: 14px;
+  transition: 0.2s ease all;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+    letter-spacing: -0.36px;
+    left: 22px;
+    top: 24px;
+  }
+}
+
+.review-modal__field textarea {
+  resize: none;
+}
+
+.review-modal__field input:focus,
+.review-modal__field textarea:focus {
+  border: 1.5px solid var(--main-color);
+}
+
+.review-modal__field input:focus ~ label,
+.review-modal__field input:valid ~ label,
+.review-modal__field
+  input:invalid:where([aria-invalid='true'])
+  ~ label,
+.review-modal__field textarea:focus ~ label,
+.review-modal__field textarea:valid ~ label {
+  background-color: #fafafa;
+  font-size: 0.75em;
+  top: -0.8em;
+  left: 0.75em;
+  padding: 0 0.25em;
+
+  @media (min-width: 768px) {
+    font-size: 1em;
+  }
+}
+
+.review-modal__field input:focus ~ label::after,
+.review-modal__field input:valid ~ label::after,
+.review-modal__field
+  input:invalid:where([aria-invalid='true'])
+  ~ label::after,
+.review-modal__field textarea:focus ~ label::after,
+.review-modal__field textarea:valid ~ label::after {
+  content: ' (required)';
+}
+
+.phone-input__icon {
+  background-color: #fafafa;
+  border-right: 2px solid rgba(17, 17, 17, 0.08);
+  color: var(--text-main-color);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.28px;
+  position: absolute;
+  top: 15px;
+  left: 18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  padding-inline-end: 14px;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+    padding-inline-end: 20px;
+    top: 24px;
+    left: 24px;
+  }
+}
+
+.phone-input__icon img {
+  height: 18px;
+  width: 24px;
+
+  @media (min-width: 768px) {
+    height: 24px;
+    width: 32px;
+  }
+}
+
+label[for='review-phone'] {
+  position: absolute;
+  left: 106px;
+
+  @media (min-width: 768px) {
+    left: 136px;
+  }
+}
+
+#review-phone {
+  padding-inline-start: 106px;
+
+  @media (min-width: 768px) {
+    padding-inline-start: 136px;
+  }
+}
+
+.review-modal__submit {
+  background-color: var(--main-color);
+  border-radius: 100px;
+  color: var(--white-color);
+  padding: 12px 28px;
+
+  @media (min-width: 768px) {
+    padding: 14px 40px;
+  }
+}
+
+.review-modal__submit:is(:hover, :focus) {
+  background-color: var(--main-color-hover);
+  transition: var(--transition);
+}
+
+.review-modal__textarea {
+  padding: 0;
+}
+
+.review-modal__input:valid {
+}
+
+.review-modal__input:invalid {
 }

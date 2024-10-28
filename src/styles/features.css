@@ -1,146 +1,185 @@
-.features {
-  font-size: 2em;
-  font-family: var(-secondary-text-font);
+.features{
+    font-family: var(-secondary-text-font);
 }
 
-.features-container {
-  background-color: var(--main-bg-color);
+.features-container{
+    background-color:var(--main-bg-color);
 }
 
-.features-flex-container {
-  display: flex;
-  justify-content: space-evenly;
-  gap: 20px;
-  flex-wrap: wrap;
+.features-flex-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-body.dark-mode .dark-mode-text {
-  color: var(--white-color);
+.features-flex-container > div {
+    margin: 32px 12px 0px 12px;
+    border-radius: 15px;
+    padding: 2rem;
 }
 
-.features-flex-container>div {
-  margin: 28px;
-  border-radius: 15px;
-  flex-grow: 1;
-  flex-basis: 0;
-  min-width: 400px;
-  max-width: 600px;
-  padding: 2rem;
+@media (min-width: 320px) and (max-width: 480px){
+    .features-flex-container{
+        grid-template-columns: 1fr;
+    }
 }
 
-@media (max-width: 500px) {
-  .features-flex-container>div {
-    min-width: 300px;
-  }
+@media (min-width: 480px) and (max-width: 1400px){
+    .features-flex-container{
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
-.features-header {
-  text-align: center;
-  margin: 32px;
+.features-header{
+    font-size: 32px;
+    text-align: center;
+    margin: 32px;
 }
 
-.subheader {
-  text-align: center;
-  margin-left: 20%;
-  margin-right: 20%;
-  font-size: 14px;
+.subheader{
+    text-align: center;
+    margin: 0% 25% 0% 25%;
+    font-size: 18px;
 }
 
-.header-color {
-  color: var(--main-color);
+@media(max-width: 768px){
+    .subheader{
+        margin: 0% 10% 0% 10%;
+    }
 }
 
-.features-card {
-  box-shadow: 0px 4px 4px rgb(0, 0, 0, 0.5);
-  text-align: center;
-  background-color: var(-secondary-bg-color);
-  border: 1px solid;
-  border-color: var(-secondary-bg-color);
-  color: var(--text-main-color);
-  position: relative;
+.header-color{
+    color: var(--main-color);
 }
 
-.card-details {
-  box-shadow: 0px 4px 4px rgb(0, 0, 0, 0.5);
-  background-color: var(--main-bg-color);
-  border-radius: 15px;
-  border-color: var(-secondary-bg-color);
-  color: var(--text-main-color);
-  font-size: 1em;
-  text-align: left;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  overflow: hidden;
-  width: 100%;
-  height: 0;
-  transition: 0.5s ease;
+.features-card{
+    box-shadow: 0px 4px 4px rgb(0,0,0,.5);
+    text-align: center;
+    background-color: var(-secondary-bg-color);
+    border: 1px solid;
+    border-color: var(-secondary-bg-color);
+    position: relative;
 }
 
-.features h3 {
-  text-transform: uppercase;
-  font-weight: normal;
-  padding: 16px;
+.features-card h3{
+    margin: 12px 0px 0px 5px;
+    margin-top: 12px;
+    font-size: 30px;
+    font-weight: normal;
 }
 
-.features ul {
-  padding: 12px;
+.card-details{
+    box-shadow: 0px 4px 4px rgb(0,0,0,.5);
+    background-color: var(--main-bg-color);
+    border-radius: 15px;
+    border-color: var(-secondary-bg-color);
+    color: var(--text-main-color);
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
 }
 
-.features li {
-  font-size: 0.85em;
-  text-align: left;
-  letter-spacing: -0.5px;
-  padding: 5px;
+.card-details h3{
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 5px 15px 8px 10px;
 }
 
-
-.first {
-  background-color: var(--secondary-bg-color);
-  color: var(--white-color);
-  border: 1px solid var(--secondary-bg-color);
+.card-details ul{
+    font-size: 18px;
+    padding: 10px 15px 35px 20px;
+    text-align: left;
 }
 
-.second {
-  border: 1px solid var(--main-color);
+@media (min-width: 480px) and (max-width: 940px){
+    .card-details ul {
+        font-size: 16px;
+    }
+
+    .features-card h3{
+        font-size: 26px;
+    }
+
+    .card-details h3 {
+        font-size: 18px;
+    }
 }
 
-.third {
-  border: 1px solid var(--text-main-color);
+@media (min-width: 940px) and (max-width: 1400px){
+    .card-details ul {
+        font-size: 24px;
+    }
+
+    .features-card h3{
+        font-size: 32px;
+    }
+
+    .card-details h3 {
+        font-size: 26px;
+    }
 }
 
-
-.fourth {
-  background-color: var(--main-color);
-  color: var(--white-color);
-  border: 1px solid var(--main-color);
+.card-details li{
+    letter-spacing: -.5px;
+    padding: 5px;
 }
 
-.features-card:hover .card-details {
-  height: 100%;
+.first{
+    background-color: var( --secondary-bg-color);
+    color: var(--white-color);
+    border: 1px solid var( --secondary-bg-color);
+}
+
+.second{
+    background-color: var( --white-color);
+    color: var(--text-main-color);
+    border: 1px solid var(--text-main-color);
+}
+
+.third{
+    border: 1px solid var(--main-color);
+    background-color: var(--main-color);
+    color: var(--white-color);
+}
+
+.fourth{
+    background-color: var( --main-bg-color);
+    color: var(--text-main-color);
+    border: 1px solid var(--main-color);
+}
+
+@media(hover: hover){
+    div.features-card:hover div.card-details{
+        height: 100%;
+    }
 }
 
 .pill-price {
-  margin-left: 15px;
-  background-color: var(--main-color);
-  color: var(--white-color);
-  text-align: center;
-  display: inline;
-  border-radius: 35px;
-  padding: 5px 10px;
-  font-size: 0.75em;
-  cursor: auto;
+    margin-left: 15px;
+    background-color: var(--main-color);
+    color: var(--white-color);
+    text-align: center;
+    display: inline;
+    border-radius: 35px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: auto;
 }
 
 .pill-features {
-  margin-left: 5px;
-  background-color: var(--white-color);
-  border: 1px solid;
-  color: var(--tex-main-color);
-  text-align: center;
-  border-radius: 35px;
-  padding: 5px 10px;
-  font-size: 0.75em;
-  cursor: auto;
+    margin-left: 5px;
+    background-color: var(--white-color);
+    border: 1px solid;
+    color: var(--tex-main-color);
+    text-align: center;
+    border-radius: 35px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: auto;
 }

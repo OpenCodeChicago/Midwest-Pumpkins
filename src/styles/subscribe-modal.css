@@ -32,7 +32,7 @@
   border-radius: 40px 40px 0px 0px;
 }
 
-.close {
+#subscribeModal .close {
   color: #fff;
   position: absolute;
   right: 40px;
@@ -40,10 +40,11 @@
   font-size: 28px;
   font-weight: bold;
   cursor: pointer;
+  transition: var(--transition);
 }
 
-.close:hover {
-  opacity: 0.75;
+#subscribeModal  .close:hover {
+  transform: rotate(45deg);
 }
 
 .modal-content {
@@ -56,8 +57,8 @@
   border-radius: 0px 0px 40px 40px;
 }
 
-.modal-content span,
-.modal-content strong {
+#subscribeModal .modal-content span,
+#subscribeModal .modal-content strong {
   font-family: Montserrat;
   font-size: 24px;
   font-weight: 600;
@@ -65,18 +66,19 @@
   letter-spacing: -0.03em;
   text-align: left;
   text-transform: uppercase;
+  color:#111111;
 }
 
-.modal-content strong {
-  color: #FB8500;
+#subscribeModal .modal-content strong {
+  color:  var(--main-color);
 }
 
-.modal-content form {
+#subscribeModal .modal-content form {
   width: 100%;
   margin-top: 20px;
 }
 
-input::placeholder {
+#subscribeModal input::placeholder {
   font-family: Montserrat;
   font-size: 18px;
   font-weight: 400;
@@ -86,14 +88,14 @@ input::placeholder {
   color: #4040404D;
 }
 
-input[type=email],
-input[type=submit] {
+#subscribeModal input[type=email],
+#subscribeModal input[type=submit] {
   display: inline-block;
   border-radius: 100px;
   padding: 12px;
 }
 
-input[type=email] {
+#subscribeModal input[type=email] {
   width: 60%;
   margin: 8px 0;
   display: inline-block;
@@ -101,10 +103,10 @@ input[type=email] {
   box-sizing: border-box;
 }
 
-input[type=submit] {
+#subscribeModal input[type=submit] {
   width: 35%;
-  background-color: #FB8500;
-  color: #fff;
+  background-color: var(--main-color);
+  color: var(--white-color);
   font-family: Montserrat;
   font-size: 14px;
   font-weight: 600;
@@ -115,8 +117,8 @@ input[type=submit] {
   cursor: pointer;
 }
 
-input[type=submit]:hover {
-  opacity: 0.75;
+#subscribeModal input[type=submit]:hover {
+  background-color: var(--main-color-hover);
 }
 
 @media(max-width:700px) {

@@ -1,33 +1,103 @@
 <div id="review-modal" class="modal hidden">
-    <div class="modal-content">
-        <span class="close" id="close-modal">&times;</span>
-        <h2>LEAVE A REVIEW ABOUT <br><span>OUR PUMPKINS</span></h2>
-        <br><br>
-        <form id="reviewForm">
-            <div>
-                <input type="text" id="name" name="name" required placeholder="Name">
-            </div>
-            <br>
-            <div>
-                <input type="email" id="email" name="email" required placeholder="Email">
-            </div>
-            <br>
-            <div>
-                <div class="phone-input">
-                    <select id="country-code">
-                        /* Add more country codes here */
-                        <option value="+1">+1</option>
-                    </select>
-                    <input type="tel" id="phone" name="phone" required placeholder="Phone number">
-                </div>
-            </div>
-            <br>
-            <div>
-                <textarea id="message" name="message" rows="5" required placeholder="Message"></textarea>
-            </div>
-            <br>
-            <button type="submit">Send</button>
-            <br>
-        </form>
-    </div>
+  <div class="review-modal-content">
+    <button class="close" id="close-modal">
+      <svg aria-hidden="true" class="review-modal__icon">
+        <use href="sprite.svg#icon-x-close"></use>
+      </svg>
+    </button>
+    <form
+      action="#"
+      method="post"
+      class="review-modal__form"
+      id="reviewForm"
+      novalidate
+    >
+      <fieldset>
+        <legend class="review-modal__form-title">
+          Leave a review <span>about</span>&nbsp;<span
+            >our pumpkins</span
+          >
+        </legend>
+        <div class="review-modal__field">
+          <input
+            class="review-modal__input"
+            type="text"
+            id="review-name"
+            name="review-name"
+            maxlength="50"
+            minlength="2"
+            autocomplete="off"
+            aria-describedby="name-error"
+            required
+          />
+          <label for="review-name" class="review-modal__label"
+            >Name</label
+          >
+          <p class="review-modal__error-message" id="name-error"></p>
+        </div>
+        <div class="review-modal__field">
+          <input
+            class="review-modal__input"
+            type="email"
+            id="review-email"
+            name="review-email"
+            maxlength="64"
+            autocomplete="off"
+            aria-describedby="email-error"
+            required
+          />
+          <label for="review-email" class="review-modal__label"
+            >Email</label
+          >
+          <p class="review-modal__error-message" id="email-error"></p>
+        </div>
+        <div class="review-modal__field">
+          <div class="phone-input">
+            <input
+              class="review-modal__input"
+              type="tel"
+              id="review-phone"
+              name="review-phone"
+              aria-describedby="phone-error"
+              required
+            />
+            <span class="phone-input__icon">
+              <img
+                src="images/us-flag-icon.png"
+                alt="United States flag"
+              />
+              +1
+            </span>
+            <label for="review-phone" class="review-modal__label">
+              Phone number
+            </label>
+            <p
+              class="review-modal__phone-message"
+              id="phone-error"
+            ></p>
+          </div>
+        </div>
+        <div class="review-modal__field">
+          <textarea
+            id="review-message"
+            name="review-message"
+            maxlength="200"
+            rows="5"
+            aria-describedby="textarea-error"
+            required
+          ></textarea>
+          <label for="review-message" class="review-modal__label">
+            Message
+          </label>
+          <p
+            class="review-modal__textarea-message"
+            id="textarea-error"
+          ></p>
+        </div>
+        <button class="review-modal__submit" type="submit">
+          Send
+        </button>
+      </fieldset>
+    </form>
+  </div>
 </div>
