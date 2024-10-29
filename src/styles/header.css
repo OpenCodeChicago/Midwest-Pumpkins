@@ -89,7 +89,7 @@
 }
 
 .menu li a::after {
-  content: '';
+  content: "";
   display: block;
   border-bottom: 2px solid transparent;
   width: 24px;

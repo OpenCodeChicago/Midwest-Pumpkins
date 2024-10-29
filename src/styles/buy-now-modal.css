@@ -1,4 +1,4 @@
-.modal-container{
+.modal-container {
   display: none;
   justify-content: center;
   align-items: center;
@@ -9,9 +9,8 @@
   right: 0;
   bottom: 0;
   z-index: 1;
-
 }
-.buy-now-modal{
+.buy-now-modal {
   background-color: var(--main-bg-color);
   width: 610px;
   border-radius: 10px;
@@ -19,74 +18,71 @@
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
 }
-.close-button{
+.close-button {
   background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    float: right;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  float: right;
 }
 
-.modal-title{
+.modal-title {
   display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .modal-title h2 {
   font-size: 24px;
-    font-weight: 600;
-    letter-spacing: -0.03em;
-    text-align: center;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  text-align: center;
 }
 span {
   color: var(--main-color);
-
 }
 
-.modal-content{
+.modal-content {
   display: flex;
   flex-direction: column;
 }
-legend{
+legend {
   padding: 10px;
 }
 
-.field-names{
+.field-names {
   display: flex;
   gap: 10px;
 }
-.field-group{
- flex: 1;
+.field-group {
+  flex: 1;
 }
 
-
-.modal-content fieldset{
+.modal-content fieldset {
   border: none;
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .input-group {
   display: flex;
   gap: 10px;
   margin-bottom: 20px;
-
 }
 
 .modal-content input,
 .modal-content textarea {
-    width: 100%;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: var(--white-color);
-    color: var(--font-color);
-    font-size: 14px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--white-color);
+  color: var(--font-color);
+  font-size: 14px;
 }
 
 .modal-content input::placeholder,
 .modal-content textarea::placeholder {
-    color: #4040404D;
+  color: #4040404d;
 }
 
 .submit-button {
@@ -103,26 +99,21 @@ legend{
   background-color: var(--main-color-hover);
 }
 
-
 @media (max-width: 1024px) {
   .buy-now-modal {
     width: 90%;
     padding: 1rem;
-
   }
 
   .modal-title h2 {
-
     font-size: 22px;
   }
 
   .input-group {
     flex-direction: column;
-
   }
-  
-  .field-names {
 
+  .field-names {
     flex-direction: column;
     gap: 5px;
   }
@@ -131,13 +122,10 @@ legend{
 @media (max-width: 768px) {
   .buy-now-modal {
     width: 95%;
-
   }
 
   .modal-title h2 {
     font-size: 20px;
-
-
   }
 
   .field-names {
