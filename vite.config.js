@@ -8,7 +8,7 @@ export default defineConfig({
   base: "/Midwest-Pumpkins/",
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "src"), // Alias '@' points to 'src'
+      "@": path.resolve(__dirname, "src"),
     },
   },
   build: {
@@ -30,7 +30,7 @@ export default defineConfig({
     port: 3000,
     open: true,
   },
-  publicDir: path.resolve(__dirname, "public"), // Ensure publicDir is set
+  publicDir: path.resolve(__dirname, "public"),
   plugins: [
     injectHTML(),
     FullReload(["./src/**/*.html", "./src/**/*.css", "./src/**/*.js"]),
