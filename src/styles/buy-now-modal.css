@@ -44,6 +44,7 @@ span {
 }
 
 .modal-content {
+  border: none;
   display: flex;
   flex-direction: column;
 }
@@ -67,14 +68,16 @@ legend {
 .input-group {
   display: flex;
   gap: 10px;
+  margin-top: 10px;
   margin-bottom: 20px;
 }
 
 .modal-content input,
 .modal-content textarea {
   width: 100%;
-  padding: 10px;
+  padding: 22px 24px;
   border-radius: 10px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
   background-color: var(--white-color);
   color: var(--font-color);
   font-size: 14px;
@@ -131,4 +134,8 @@ legend {
   .field-names {
     flex-direction: column;
   }
+}
+
+.card-logo{
+  vertical-align: middle;
 }
