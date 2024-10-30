@@ -52,8 +52,8 @@ Description: Main HTML structure for the Midwest Pumpkins project
       sizes="16x16"
     />
     <title>Midwest Pumpkins | Hacktoberfest 2024 Open-Source Project</title>
-    <script type="module" crossorigin src="/Midwest-Pumpkins/assets/main-DgrY59_9.js"></script>
-    <link rel="stylesheet" crossorigin href="/Midwest-Pumpkins/assets/main-C2E_uwU0.css">
+    <script type="module" crossorigin src="/Midwest-Pumpkins/assets/main-DAAER2-l.js"></script>
+    <link rel="stylesheet" crossorigin href="/Midwest-Pumpkins/assets/main-DWYe3gI1.css">
   </head>
   <body>
     <!-- HEADER -->
@@ -636,27 +636,27 @@ Description: Main HTML structure for the Midwest Pumpkins project
       <fieldset>
       <legend>Personal Information</legend>
         <div class="field-names">
+            <div class="input-group">
+              <label for="fname"></label>
+              <input type="text" id="fname" name="fname" placeholder="First Name"
+              pattern=".{2,}" 
+              title="First name should have atleast two characters">
+            </div>
 
-        
-      <div class="field-group">
-        <label for="fname"></label>
-        <input type="text" id="fname" name="fname" placeholder="First Name"
-        pattern=".{2,}" 
-        title="First name should have atleast two characters">
-      </div>
-
-      <div class="field-group">
-        <label for="lname"></label>
-        <input type="text" id="lname" name="lname" placeholder="Last Name"
-        pattern=".{2,}" 
-        title="last name should have atleast two characters">
-      </div>
+            <div class="input-group">
+              <label for="lname"></label>
+              <input type="text" id="lname" name="lname" placeholder="Last Name"
+              pattern=".{2,}" 
+              title="last name should have atleast two characters">
+            </div>
     </div>
-        <label for="email">Email </label>
-        
+        <label for="email">Email </label> 
+
+        <div class="input-group">
         <input type="email" id="email" name="email" placeholder="Email"
         pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" 
         title="Please enter a valid email address">
+        </div>
       
 
         <label for="tel">Phone number </label>
