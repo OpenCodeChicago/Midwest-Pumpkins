@@ -1,24 +1,40 @@
-.features{
+.features {
     font-family: var(-secondary-text-font);
+    padding: 0 20px;
+    margin: 0 auto;
 }
 
-.features-container{
-    background-color:var(--main-bg-color);
+.features-container {
+    background-color: var(--main-bg-color);
 }
 
-.features-grid-container{
+.features-grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 32px;
 }
 
-.features-grid-container > div {
-    margin: 32px 12px 0px 12px;
+@media(min-width: 768px) {
+    .features-grid-container {
+        margin-top: 50px;
+        gap: 32px;
+    }
+}
+
+@media(min-width: 1200px) {
+    .features-grid-container {
+        gap: 20px;
+    }
+}
+
+.features-grid-container>div {
     border-radius: 15px;
     padding: 2rem;
 }
 
-.features-card{
-    box-shadow: 0px 4px 4px rgb(0,0,0,.5);
+.features-card {
+    box-shadow: 0px 4px 4px rgb(0, 0, 0, .5);
     text-align: center;
     background-color: var(-secondary-bg-color);
     border: 1px solid;
@@ -28,37 +44,37 @@
     aspect-ratio: 1/1;
 }
 
-.features-card h3{
+.features-card h3 {
     position: relative;
     top: 15%;
     font-weight: 600;
     margin: 1rem;
 }
 
-.features-card img{
+.features-card img {
     position: relative;
     top: 8%;
 }
 
-.features-header{
+.features-header {
     font-size: 24px;
     text-align: center;
     margin: 32px;
 }
 
-.subheader{
+.subheader {
     text-align: center;
     margin: 0% 25% 0% 25%;
     font-size: 1.34rem;
     line-height: 1.6;
 }
 
-.header-color{
+.header-color {
     color: var(--main-color);
 }
 
-.card-details{
-    box-shadow: 0px 4px 4px rgb(0,0,0,.5);
+.card-details {
+    box-shadow: 0px 4px 4px rgb(0, 0, 0, .5);
     background-color: var(--main-bg-color);
     border-radius: 15px;
     border-color: var(-secondary-bg-color);
@@ -73,14 +89,14 @@
     transition: .5s ease;
 }
 
-.card-details h3{
+.card-details h3 {
     text-transform: uppercase;
     font-weight: 600;
     margin: 3rem;
     margin-bottom: 1.25rem;
 }
 
-.card-details ul{
+.card-details ul {
     font-weight: 400;
     text-align: left;
     margin: 3rem;
@@ -88,23 +104,23 @@
     margin-left: 4rem;
 }
 
-.card-details li{
+.card-details li {
     line-height: 1.5;
 }
 
-.first{
-    background-color: var( --secondary-bg-color);
+.first {
+    background-color: var(--secondary-bg-color);
     color: var(--white-color);
-    border: 1px solid var( --secondary-bg-color);
+    border: 1px solid var(--secondary-bg-color);
 }
 
-.second{
-    background-color: var( --white-color);
+.second {
+    background-color: var(--white-color);
     color: var(--text-main-color);
     border: 1px solid var(--text-main-color);
 }
 
-.third{
+.third {
     border: 1px solid var(--main-color);
     background-color: var(--main-color);
     color: var(--white-color);
@@ -116,7 +132,7 @@
     border: 1px solid var(--main-color);
 }
 
-.card-contents > button{
+.card-contents>button {
     border: 1px solid;
     text-align: center;
     padding: 2% 5%;
@@ -138,97 +154,104 @@
     margin-left: 6px;
 }
 
-@media(max-width: 768px){
-    .subheader{
+@media(max-width: 768px) {
+    .subheader {
         margin: 0% 10% 0% 10%;
     }
 }
 
-@media(hover: hover){
-    div.features-card:hover div.card-details{
+@media(hover: hover) {
+    div.features-card:hover div.card-details {
         height: 100%;
     }
 }
 
-@media (max-width: 700px){ /*set mobile screen column*/
-    .features-grid-container{
+@media (max-width: 700px) {
+
+    /*set mobile screen column*/
+    .features-grid-container {
         grid-template-columns: 1fr;
     }
 }
 
-@media (min-width: 700px) and (max-width: 1280px){ /*set tablet screen grid*/
-    .features-grid-container{
+@media (min-width: 700px) and (max-width: 1280px) {
+
+    /*set tablet screen grid*/
+    .features-grid-container {
         grid-template-columns: 1fr 1fr;
     }
-    
+
 }
 
-@media (min-width: 320px) and (max-width: 699px){ /*set mobile screen font*/
-    
-    .features-card h3{
+@media (min-width: 320px) and (max-width: 699px) {
+    /*set mobile screen font*/
+
+    .features-card h3 {
         font-size: clamp(1rem, 6vw, 8rem);
     }
 
-    .card-details h3{
+    .card-details h3 {
         font-size: clamp(1rem, 6vw, 8rem);
     }
-    
-    .card-details ul{ 
+
+    .card-details ul {
         font-size: clamp(1rem, 4.5vw, 4rem);
     }
 
-    .pill-price{
+    .pill-price {
         font-size: clamp(1rem, 3vw, 6rem);
     }
-    
-    .pill-features{
+
+    .pill-features {
         font-size: clamp(1rem, 3vw, 6rem);
     }
 
 }
 
-@media(min-width: 700px) and (max-width: 1279px){ /*set tablet screen font*/
+@media(min-width: 700px) and (max-width: 1279px) {
+    /*set tablet screen font*/
 
-    .features-card h3{
+    .features-card h3 {
         font-size: clamp(1rem, 3vw, 4rem);
     }
 
-    .card-details h3{
+    .card-details h3 {
         font-size: clamp(1rem, 3vw, 4rem);
     }
-    
-    .card-details ul{ 
+
+    .card-details ul {
         font-size: clamp(1rem, 2.25vw, 4rem);
     }
 
-    .pill-price{
+    .pill-price {
         font-size: clamp(1rem, 1.5vw, 3rem);
     }
 
-    .pill-features{
+    .pill-features {
         font-size: clamp(1rem, 1.5vw, 3rem);
     }
 }
 
-@media (min-width: 1280px){ /*set large screen font*/
-    .features-card h3{
+@media (min-width: 1280px) {
+
+    /*set large screen font*/
+    .features-card h3 {
         font-size: clamp(1rem, 1.5vw, 4rem);
     }
 
-    .card-details h3{
+    .card-details h3 {
         font-size: clamp(1rem, 1.5vw, 4rem);
     }
-    
-    .card-details ul{ 
+
+    .card-details ul {
         font-size: clamp(1rem, 1.1vw, 3rem);
     }
 
-    .pill-price{
+    .pill-price {
         font-size: clamp(1rem, 1vw, 1.5rem);
     }
 
-    .pill-features{
+    .pill-features {
         font-size: clamp(1rem, 1vw, 1.5rem);
     }
 }
-
