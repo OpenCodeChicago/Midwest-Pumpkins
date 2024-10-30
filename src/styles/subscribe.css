@@ -30,9 +30,9 @@
 
 .subscribe p {
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-size: 1.34rem;
+    line-height: 1.6;
     font-weight: 400;
-    line-height: 18px;
     letter-spacing: -0.02em;
     color: #fff;
     margin: 15px;

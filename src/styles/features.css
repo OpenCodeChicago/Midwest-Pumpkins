@@ -49,7 +49,8 @@
 .subheader{
     text-align: center;
     margin: 0% 25% 0% 25%;
-    font-size: 14px;
+    font-size: 1.34rem;
+    line-height: 1.6;
 }
 
 .header-color{
@@ -110,7 +111,7 @@
 }
 
 .fourth{
-    background-color: var( --main-bg-color);
+    background-color: var( --white-color);
     color: var(--text-main-color);
     border: 1px solid var(--main-color);
 }
