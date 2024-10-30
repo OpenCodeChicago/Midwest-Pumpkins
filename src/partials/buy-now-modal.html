@@ -16,52 +16,119 @@
   
     <form id="buyForm" class="modal-content"> 
       <fieldset>
-      <legend>Personal Information</legend>
+
+
         <div class="field-names">
-            <div class="input-group">
-              <label for="fname"></label>
-              <input type="text" id="fname" name="fname" placeholder="First Name"
-              pattern=".{2,}" 
-              title="First name should have atleast two characters">
-            </div>
+          
+          <div class="review-modal__field">
+            <input
+              class="review-modal__input"
+              type="text"
+              id="review-name"
+              name="review-name"
+              maxlength="50"
+              minlength="2"
+              autocomplete="off"
+              aria-describedby="name-error"
+              required
+            />
+            <label for="review-name" class="review-modal__label"
+              >First name</label>
+            <p class="review-modal__error-message" id="name-error"></p>
+          </div>
 
-            <div class="input-group">
-              <label for="lname"></label>
-              <input type="text" id="lname" name="lname" placeholder="Last Name"
-              pattern=".{2,}" 
-              title="last name should have atleast two characters">
-            </div>
-    </div>
-        <label for="email">Email </label> 
-
-        <div class="input-group">
-        <input type="email" id="email" name="email" placeholder="Email"
-        pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" 
-        title="Please enter a valid email address">
+          <div class="review-modal__field">
+            <input
+              class="review-modal__input"
+              type="text"
+              id="review-name"
+              name="review-name"
+              maxlength="50"
+              minlength="2"
+              autocomplete="off"
+              aria-describedby="name-error"
+              required
+            />
+            <label for="review-name" class="review-modal__label"
+              >Last name</label
+            >
+            <p class="review-modal__error-message" id="name-error"></p>
+          </div>
+        </div>
+    
+        <div class="review-modal__field">
+          <input
+            class="review-modal__input"
+            type="email"
+            id="review-email"
+            name="review-email"
+            maxlength="64"
+            autocomplete="off"
+            aria-describedby="email-error"
+            required
+          />
+          <label for="review-email" class="review-modal__label"
+            >Email</label
+          >
+          <p class="review-modal__error-message" id="email-error"></p>
         </div>
       
-
-        <label for="tel">Phone number </label>
-        <div class="input-group">
-          <span class="flag">🇺🇸</span>
-        <input type="tel" id="tel" name="tel" placeholder="Phone number"
-        pattern="\d{10}"
-        title="Phone number must be 10 digits">
-    </div>
+        <div class="review-modal__field">
+          <div class="phone-input">
+            <input
+              class="review-modal__input"
+              type="tel"
+              id="review-phone"
+              name="review-phone"
+              aria-describedby="phone-error"
+              required
+            />
+            <span class="phone-input__icon">
+              <img
+                src="images/us-flag-icon.png"
+                alt="United States flag"
+              />
+              +1
+            </span>
+            <label for="review-phone" class="review-modal__label">
+              Phone number
+            </label>
+            <p
+              class="review-modal__phone-message"
+              id="phone-error"
+            ></p>
+          </div>
+        </div>
 
     
-        <label for="number">Card number </label>
-        <div class="input-group">
-        <input type="text" id="number" name="number" placeholder="Card number"
+        
+        <div class="review-modal__field">
+        <input type="text" id="number" name="number"
         pattern="\d{16}"
         title="Card number must be 16 digits"
         required>
         <span class="card-logo">💳</span>
+        <label for="buy-card" class="review-modal__label">
+          Card number
+        </label>
         </div>  
 
-        <label for="message">Message </label>
-        <div class="input-group">
-        <textarea placeholder="Enter your message" id="message" name="message" maxlength="200"></textarea>
+        <div class="review-modal__field">
+          <textarea
+            id="review-message"
+            name="review-message"
+            maxlength="200"
+            rows="5"
+            aria-describedby="textarea-error"
+            required
+          ></textarea>
+          <label for="review-message" class="review-modal__label">
+            Message
+          </label>
+          <p
+            class="review-modal__textarea-message"
+            id="textarea-error"
+          ></p>
         </div>
         
         <button type="submit" value="Submit" class="submit-button">Submit</button>
@@ -71,4 +138,5 @@
 </div> 
 </div>
   <!-- <script type="module" src="../js/buy-now-modal.js"></script> -->
+
 
