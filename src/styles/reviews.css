@@ -75,8 +75,8 @@
 
 .review-card p {
     font-family: var(--secondary-text-font);
-    font-size: 1.34rem;
-  line-height: 1.6;
+    font-size: 14px;
+    line-height: 1.6;
     font-weight: 400;
     letter-spacing: -0.02em;
     text-align: center;
