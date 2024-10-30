@@ -49,7 +49,8 @@
 .subheader{
     text-align: center;
     margin: 0% 25% 0% 25%;
-    font-size: 14px;
+    font-size: 1.34rem;
+    line-height: 1.6;
 }
 
 .header-color{
