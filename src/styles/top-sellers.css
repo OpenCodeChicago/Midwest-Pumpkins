@@ -41,7 +41,8 @@
 .top-sellers-text {
   max-width: 680px;
   font-weight: 400;
-  line-height: 1.125;
+  font-size: 1.34rem;
+  line-height: 1.6;
   letter-spacing: -0.02em;
   text-align: left;
   color: #111111;

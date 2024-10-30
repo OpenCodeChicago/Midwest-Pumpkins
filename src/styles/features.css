@@ -126,8 +126,8 @@
     color: var(--white-color);
 }
 
-.fourth {
-    background-color: var(--main-bg-color);
+.fourth{
+    background-color: var( --white-color);
     color: var(--text-main-color);
     border: 1px solid var(--main-color);
 }
