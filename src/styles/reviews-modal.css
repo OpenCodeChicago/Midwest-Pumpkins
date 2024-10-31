@@ -89,7 +89,7 @@
 
 .review-modal__field input,
 .review-modal__field textarea {
-  background-color: #fafafa;
+  background-color: var(--main-bg-color);
   border-radius: 8px;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   caret-color: var(--text-main-color);
@@ -144,8 +144,9 @@
   input:invalid:where([aria-invalid='true'])
   ~ label,
 .review-modal__field textarea:focus ~ label,
-.review-modal__field textarea:valid ~ label {
-  background-color: #fafafa;
+.review-modal__field textarea:valid ~ label,
+.review-modal__field textarea:where([aria-invalid='true']) ~ label {
+  background-color: var(--main-bg-color);
   font-size: 0.75em;
   top: -0.8em;
   left: 0.75em;
@@ -162,8 +163,22 @@
   input:invalid:where([aria-invalid='true'])
   ~ label::after,
 .review-modal__field textarea:focus ~ label::after,
-.review-modal__field textarea:valid ~ label::after {
+.review-modal__field textarea:valid ~ label::after,
+.review-modal__field
+  textarea:invalid:where([aria-invalid='true'])
+  ~ label::after {
   content: ' (required)';
+}
+
+.review-modal__field input:invalid:where([aria-invalid='true']),
+.review-modal__field textarea:invalid:where([aria-invalid='true']),
+/* For border color change on text with empty spaces */
+.review-modal__field input:valid:where([aria-invalid='true']) {
+  border: 1.5px dashed var(--text-main-color);
+}
+
+.review-modal__field input:invalid:where([aria-invalid='false']) {
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
 }
 
 .phone-input__icon {
@@ -201,7 +216,7 @@
   }
 }
 
-label[for='review-phone'] {
+label[for='review-modal-phone'] {
   position: absolute;
   left: 106px;
 
@@ -210,7 +225,7 @@ label[for='review-phone'] {
   }
 }
 
-#review-phone {
+#review-modal-phone {
   padding-inline-start: 106px;
 
   @media (min-width: 768px) {
@@ -229,17 +244,32 @@ label[for='review-phone'] {
   }
 }
 
-.review-modal__submit:is(:hover, :focus) {
+.review-modal__submit:hover,
+.review-modal__submit:focus {
   background-color: var(--main-color-hover);
   transition: var(--transition);
+}
+
+.review-modal__submit:focus {
+  outline: 1px dashed var(--text-main-color);
+  outline-offset: 0.2em;
 }
 
 .review-modal__textarea {
   padding: 0;
 }
 
-.review-modal__input:valid {
+.review-modal__error-message {
+  color: var(--main-text-color);
+  display: none;
+  font-size: 12px;
+  font-style: italic;
+  line-height: 1.5;
+  margin-block-end: 14px;
+  margin-block-start: -14px;
+  text-align: right;
 }
 
-.review-modal__input:invalid {
+[aria-invalid='true'] ~ .review-modal__error-message {
+  display: block;
 }
