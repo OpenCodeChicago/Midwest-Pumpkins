@@ -52,8 +52,8 @@ Description: Main HTML structure for the Midwest Pumpkins project
       sizes="16x16"
     />
     <title>Midwest Pumpkins | Hacktoberfest 2024 Open-Source Project</title>
-    <script type="module" crossorigin src="/Midwest-Pumpkins/assets/main-DTDm4FCy.js"></script>
-    <link rel="stylesheet" crossorigin href="/Midwest-Pumpkins/assets/main-DC9Uwnkk.css">
+    <script type="module" crossorigin src="/Midwest-Pumpkins/assets/main-BOvMyjg7.js"></script>
+    <link rel="stylesheet" crossorigin href="/Midwest-Pumpkins/assets/main-DHTyfjcZ.css">
   </head>
   <body>
     <!-- HEADER -->
@@ -326,8 +326,7 @@ Description: Main HTML structure for the Midwest Pumpkins project
       quality, these pumpkins are not only organically </br> grown but also packed with nutrients. Whether for carving,
       cooking, or <br /> decoration, these favorites are sure to bring a fresh, healthy touch to your home.
     </p>
-<button class="buy-now
-  ">Buy now</button>
+<button type="button" class="buy-now" id="topSellersBuyNowButton">Buy now</button>
 </div>
 </section>
       <section class="reviews" id="reviews">
@@ -616,148 +615,98 @@ Description: Main HTML structure for the Midwest Pumpkins project
     <!-- MODALS -->
 
     <!-- BUY NOW MODAL -->
-    
-<div class="modal-container">
+    <div class="modal-container">
+  <!-- the modal -->
+  <div class="buy-now-modal">
+    <button type="button" class="close-button">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
 
+    <div class="modal-title">
+      <h2><span>BUY</span>&nbsp;NOW</h2>
+    </div>
 
-<!-- the modal -->
- <div class="buy-now-modal">
-  <button class="close-button">&times;</button>
-  <br>
-
-  <div class="modal-title">
-    <h2><span>BUY</span>&nbsp;NOW</h2>
-  </div>
-  
-  
-                  <!-- the modal content -->
-  
-    <form id="buyForm" class="modal-content"> 
-      <fieldset>
-
-
-        <div class="field-names">
-          
-          <div class="review-modal__field">
+    <!-- the modal content -->
+    <form class="modal-buy-form" id="buyForm">
+      <div>
+        <span class="modal-buy-form-input-desc">Personal Information</span>
+        <span class="modal-buy-name-thumb">
+          <label class="modal-buy-form-label modal-name-field">
             <input
-              class="review-modal__input"
               type="text"
-              id="review-name"
-              name="review-name"
-              maxlength="50"
-              minlength="2"
-              autocomplete="off"
-              aria-describedby="name-error"
+              name="first-name"
+              class="modal-buy-form-input"
+              placeholder="First Name"
               required
-            />
-            <label for="review-name" class="review-modal__label"
-              >First name</label>
-            <p class="review-modal__error-message" id="name-error"></p>
-          </div>
-
-          <div class="review-modal__field">
+          /></label>
+          <label class="modal-buy-form-label modal-name-field">
             <input
-              class="review-modal__input"
               type="text"
-              id="review-name"
-              name="review-name"
-              maxlength="50"
-              minlength="2"
-              autocomplete="off"
-              aria-describedby="name-error"
-              required
-            />
-            <label for="review-name" class="review-modal__label"
-              >Last name</label
-            >
-            <p class="review-modal__error-message" id="name-error"></p>
-          </div>
-        </div>
-    
-        <div class="review-modal__field">
-          <input
-            class="review-modal__input"
-            type="email"
-            id="review-email"
-            name="review-email"
-            maxlength="64"
-            autocomplete="off"
-            aria-describedby="email-error"
+              name="last-name"
+              class="modal-buy-form-input"
+              placeholder="Last Name"
+              required /></label
+        ></span>
+      </div>
+      <label class="modal-buy-form-label">
+        <span class="modal-buy-form-input-desc">Email</span>
+        <input
+          type="email"
+          name="email"
+          class="modal-buy-form-input"
+          placeholder="Enter your email"
+          required
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+        />
+      </label>
+      <label class="modal-buy-form-label">
+        <span class="modal-buy-form-input-desc">Phone number</span>
+        <span class="modal-buy-input-wrapper buy-tel-thumb"
+          ><input
+            type="tel"
+            name="user_phone"
+            class="modal-buy-form-input buy-tel"
+            placeholder="Phone number"
             required
           />
-          <label for="review-email" class="review-modal__label"
-            >Email</label
-          >
-          <p class="review-modal__error-message" id="email-error"></p>
-        </div>
-      
-        <div class="review-modal__field">
-          <div class="phone-input">
-            <input
-              class="review-modal__input"
-              type="tel"
-              id="review-phone"
-              name="review-phone"
-              aria-describedby="phone-error"
-              required
-            />
-            <span class="phone-input__icon">
-              <img
-                src="images/us-flag-icon.png"
-                alt="United States flag"
-              />
-              +1
-            </span>
-            <label for="review-phone" class="review-modal__label">
-              Phone number
-            </label>
-            <p
-              class="review-modal__phone-message"
-              id="phone-error"
-            ></p>
-          </div>
-        </div>
-
-    
-        
-        <div class="review-modal__field">
-        <input type="text" id="number" name="number"
-        pattern="\d{16}"
-        title="Card number must be 16 digits"
-        required>
-        <span class="card-logo">💳</span>
-        <label for="buy-card" class="review-modal__label">
-          Card number
-        </label>
-        </div>  
-
-        <div class="review-modal__field">
-          <textarea
-            id="review-message"
-            name="review-message"
-            maxlength="200"
-            rows="5"
-            aria-describedby="textarea-error"
+          <span class="phone-input__icon">
+            <img src="images/us-flag-icon.png" alt="United States flag" />
+            +1
+          </span></span
+        >
+      </label>
+      <label class="modal-buy-form-label">
+        <span class="modal-buy-form-input-desc">Card number</span>
+        <span class="modal-buy-input-wrapper">
+          <input
+            type="text"
+            name="number"
+            pattern="\d{16}"
+            title="Card number must be 16 digits"
+            class="modal-buy-form-input buy-card"
+            placeholder="Enter card"
             required
-          ></textarea>
-          <label for="review-message" class="review-modal__label">
-            Message
-          </label>
-          <p
-            class="review-modal__textarea-message"
-            id="textarea-error"
-          ></p>
-        </div>
-        
-        <button type="submit" value="Submit" class="submit-button">Submit</button>
-      </fieldset>
+            pattern="[0-9]{13,16}" />
+          <img
+            class="modal-buy-mastercard-icon"
+            width="22"
+            height="13"
+            src="images/mastercard.svg"
+            alt="MasterCard icon"
+        /></span>
+      </label>
+      <label class="modal-buy-form-label">
+        <span class="modal-buy-form-input-desc">Comment</span>
+        <textarea
+          name="user_message"
+          class="modal-buy-form-message"
+          placeholder="Enter text"
+        ></textarea>
+      </label>
+      <button type="submit" class="modal-buy-form-btn">Submit</button>
     </form>
-  
-</div> 
+  </div>
 </div>
-  <!-- <script type="module" src="../js/buy-now-modal.js"></script> -->
-
-
 
 
     <!-- REVIEWS MODAL -->
