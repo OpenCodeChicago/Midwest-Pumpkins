@@ -10,6 +10,7 @@
   bottom: 0;
   z-index: 1;
 }
+
 .buy-now-modal {
   background-color: var(--main-bg-color);
   width: 610px;
@@ -17,20 +18,36 @@
   padding: 20px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  position: relative;
 }
+
 .close-button {
   background: none;
   border: none;
   font-size: 24px;
   cursor: pointer;
-  float: right;
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.close-button:hover {
+  transform: rotate(45deg);
+  color: var(--main-color)
 }
 
 .modal-title {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
 }
 
 .modal-title h2 {
@@ -39,16 +56,20 @@
   letter-spacing: -0.03em;
   text-align: center;
 }
+
 span {
   color: var(--main-color);
 }
 
-.modal-content {
+.form-modal {
+  padding: 0 12px;
   border: none;
   display: flex;
   flex-direction: column;
+  gap: 8px;
   background-color: var(--main-bg-color);
 }
+
 legend {
   padding: 10px;
 }
@@ -57,37 +78,30 @@ legend {
   display: flex;
   gap: 10px;
 }
+
 .field-group {
   flex: 1;
-}
-
-.modal-content fieldset {
-  border: none;
-  margin-bottom: 20px;
 }
 
 .input-group {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-top: 10px;
-  margin-bottom: 20px;
 }
 
-.card-logo{
+.card-logo {
   position: absolute;
   right: 5%;
   top: 25%;
 }
 
-.flag{
+.flag {
   position: relative;
 }
 
-.modal-content input,
-.modal-content textarea {
+.form-modal input,
+.form-modal textarea {
   width: 100%;
-  padding: 22px 24px;
   border-radius: 10px;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   background-color: var(--main-bg-color);
@@ -95,8 +109,8 @@ legend {
   font-size: 14px;
 }
 
-.modal-content input::placeholder,
-.modal-content textarea::placeholder {
+.form-modal input::placeholder,
+.form-contmodalent textarea::placeholder {
   color: #4040404d;
 }
 
@@ -149,7 +163,7 @@ legend {
   }
 }
 
-.card-logo{
+.card-logo {
   vertical-align: middle;
 }
 
@@ -177,3 +191,220 @@ legend {
   }
 }
 
+.modal-buy-product-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px 16px;
+  margin-bottom: 32px;
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-buy-product-list {
+    flex-wrap: nowrap;
+    margin-bottom: 40px;
+  }
+}
+
+.modal-buy-product-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 85px;
+  padding: 8px 16px;
+  background: var(--main-light-font-color);
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-buy-product-item {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+    width: 160px;
+    height: 196px;
+
+    padding: 24px 20px 18px;
+  }
+}
+
+.modal-buy-weight-wrapper {
+  margin-left: auto;
+  padding: 6px 16px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  color: #111111;
+  background-color: #FAFAFA;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 100px;
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-buy-weight-wrapper {
+    margin: 0 auto;
+    padding: 8px 27px;
+  }
+}
+
+.modal-buy-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.modal-buy-form-input-desc {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-buy-form-input-desc {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+}
+
+.modal-buy-form-input {
+  width: 100%;
+  height: 45px;
+  padding: 18px 14px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-buy-form-input {
+    height: 66px;
+    padding: 22px 24px;
+  }
+}
+
+.modal-buy-form-input::placeholder,
+.modal-buy-form-message::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-buy-name-thumb {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+  }
+
+  .modal-buy-form-input::placeholder,
+  .modal-buy-form-message::placeholder {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-name-field {
+    width: 266px;
+  }
+}
+
+.modal-buy-input-wrapper {
+  position: relative;
+  display: block;
+}
+
+
+.buy-tel {
+  padding-left: 106px;
+}
+
+@media only screen and (min-width: 768px) {
+  .buy-tel {
+    padding-left: 177px;
+  }
+}
+
+
+
+.modal-buy-mastercard-icon {
+  width: 22px;
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.buy-card {
+  padding-right: 35px;
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-buy-mastercard-icon {
+    left: unset;
+    right: 24px;
+    width: 30px;
+    height: 18px;
+  }
+
+  .buy-card {
+    padding-right: 63px;
+  }
+}
+
+.modal-buy-form-message {
+  resize: none;
+  width: 100%;
+  height: 91px;
+  padding: 14px 18px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-buy-form-message {
+    padding: 22px 24px;
+    height: 137px;
+  }
+}
+
+.modal-buy-form-btn {
+  display: block;
+  padding: 12px 28px;
+  width: 109px;
+  height: 41px;
+  border: none;
+  background-color: var(--main-color);
+  border-radius: 100px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  color: var(--white-color);
+  transition: var(--transition);
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-buy-form-btn {
+    width: 133px;
+    height: 45px;
+    padding: 14px 40px;
+  }
+}
+
+.modal-buy-form-btn:hover,
+.modal-buy-form-btn:focus {
+  background-color: var(--main-color-hover);
+}
