@@ -247,7 +247,6 @@ label[for='review-modal-phone'] {
 .review-modal__submit:hover,
 .review-modal__submit:focus {
   background-color: var(--main-color-hover);
-  transition: var(--transition);
 }
 
 .review-modal__submit:focus {

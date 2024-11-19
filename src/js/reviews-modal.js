@@ -91,7 +91,7 @@ function validateInput(e) {
 }
 
 function validateReviewForm() {
-  // Check for errors on exiting input field
+  // Check for errors on input field exit
   reviewFormInputs.forEach((input) => {
     input.addEventListener('blur', (e) => {
       validateInput(e);
@@ -103,14 +103,31 @@ function validateReviewForm() {
     input.addEventListener('input', (e) => {
       const valid = input.checkValidity();
 
+      if (!valid) {
+        validateInput(e);
+      }
+
       if (valid) {
         // Remove aria attribute on input field
         input.setAttribute('aria-invalid', false);
         input.removeAttribute('aria-live', 'polite');
 
-        // Remove error message
-        document.getElementById(`${input.id}-error`).innerText = '';
+        // Clear error messages
+        document.getElementById(`${input.id}-error`).textContent = '';
       }
+    });
+  });
+
+  // Check for empty fields on form submission
+  reviewForm.addEventListener('submit', (e) => {
+    const noValues = reviewFormInputs.filter(
+      (input) => input.value.trim() === ''
+    );
+
+    noValues.forEach((input) => {
+      // Set aria attribute on input field
+      input.setAttribute('aria-invalid', true);
+      input.setAttribute('aria-live', 'polite');
     });
   });
 }
