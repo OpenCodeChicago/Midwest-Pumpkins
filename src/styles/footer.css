@@ -242,5 +242,6 @@
 
   .footer-rights-text {
     padding-block-start: unset;
+    padding: 10px;
   }
 }
